@@ -16,4 +16,6 @@ Ich arbeite mit wissenschaftlich fundierten Methoden der Verhaltenstherapie und 
 # 
 **DIESE SEITE BEFINDET SICH GERADE IM AUFBAU**
 
-![](/images/chatgpt-image-27.-märz-2026-15_01_02.png)
+<p style="text-align:center;">
+  <img src="/images/chatgpt-image-27.-märz-2026-15_01_02.png" width="600" />
+</p>
