@@ -1,0 +1,48 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        background: #f7f7f5;
+        color: #333;
+      }
+      nav {
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid #eee;
+      }
+      nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #444;
+      }
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Start</a>
+      <a href="/about">Über mich</a>
+      <a href="/services">Leistungen</a>
+      <a href="/contact">Kontakt</a>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
