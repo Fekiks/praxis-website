@@ -1,13 +1,13 @@
 ---
-title: "Leistungen"
+title: Leistungen
 ---
-
 ## Behandlungsschwerpunkte
 
-- Angststörungen
-- Depressionen
-- Stress und Überlastung
-- Lebenskrisen
+* Angststörungen
+* Depressionen
+* Stress und Überlastung
+* Lebenskrisen
+* EMDR-Verfahren
 
 ## Verfahren
 
