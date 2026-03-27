@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: false
+identity_url: https://praxis-website.netlify.app/.netlify/identity
 
 media_folder: "public/images"
 public_folder: "/images"
