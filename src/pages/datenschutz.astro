@@ -2,12 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getEntry, render } from "astro:content";
 
-const entry = await getEntry("pages", "index");
-
-if (!entry) {
-  throw new Error('Eintrag "contact" nicht gefunden.');
-}
-
+const entry = await getEntry("pages", "datenschutz");
 const { Content } = await render(entry);
 ---
 
