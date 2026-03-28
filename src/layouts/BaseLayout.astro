@@ -48,7 +48,7 @@ const { title } = Astro.props;
         padding: 40px;
         background: white;
         border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       }
 
       h1 {
@@ -75,11 +75,51 @@ const { title } = Astro.props;
         text-decoration: none;
       }
 
+      /* 👉 Bilder global sauber skalieren */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
       footer {
         text-align: center;
         margin: 40px 0;
         font-size: 14px;
         color: var(--muted);
+      }
+
+      footer a {
+        color: var(--muted);
+        text-decoration: none;
+        margin: 0 8px;
+      }
+
+      footer a:hover {
+        color: var(--primary);
+      }
+
+      /* 👉 MOBILE OPTIMIERUNG */
+      @media (max-width: 768px) {
+        nav {
+          padding: 15px 20px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        main {
+          margin: 20px;
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
       }
     </style>
   </head>
@@ -97,11 +137,8 @@ const { title } = Astro.props;
     </main>
 
     <footer>
-      <a href="/impressum">Impressum</a> · 
+      <a href="/impressum">Impressum</a> ·
       <a href="/datenschutz">Datenschutz</a>
     </footer>
-
-    <!-- Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </body>
 </html>

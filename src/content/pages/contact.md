@@ -2,19 +2,36 @@
 title: "Kontakt"
 ---
 
-## Praxis
+## Kontakt
 
-Musterstraße 1  
-12345 Musterstadt  
+Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich gerne bei mir melden.
 
-## Telefon
+Der erste Schritt ist oft der schwierigste – ich freue mich, wenn Sie Kontakt aufnehmen.
 
-0123 456789  
+---
 
-## E-Mail
+## Erstgespräch
 
-praxis@example.de  
+In einem ersten Gespräch lernen wir uns kennen und besprechen Ihr Anliegen.
 
-## Sprechzeiten
+Dabei klären wir gemeinsam, ob und wie eine Zusammenarbeit sinnvoll ist.
 
-Nach Vereinbarung
+Das Erstgespräch ist unverbindlich.
+
+---
+
+## So erreichen Sie mich
+
+**Telefon:**  
+[Telefonnummer einfügen]
+
+**E-Mail:**  
+[Mailadresse einfügen]
+
+---
+
+## Hinweis
+
+Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin.
+
+Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
