@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <html lang="de">
@@ -36,10 +37,28 @@ const { title } = Astro.props;
       nav a {
         text-decoration: none;
         color: var(--muted);
+        position: relative;
       }
 
       nav a:hover {
         color: var(--primary);
+      }
+
+      /* 👉 AKTIVE SEITE */
+      nav a.active {
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      nav a.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        border-radius: 2px;
       }
 
       main {
@@ -54,6 +73,7 @@ const { title } = Astro.props;
       h1 {
         font-size: 2rem;
         margin-bottom: 10px;
+        text-align: center; /* 👉 optional: macht "Kontakt" mittig */
       }
 
       h2 {
@@ -75,7 +95,6 @@ const { title } = Astro.props;
         text-decoration: none;
       }
 
-      /* 👉 Bilder global sauber skalieren */
       img {
         max-width: 100%;
         height: auto;
@@ -100,7 +119,7 @@ const { title } = Astro.props;
         color: var(--primary);
       }
 
-      /* 👉 MOBILE OPTIMIERUNG */
+      /* 👉 MOBILE */
       @media (max-width: 768px) {
         nav {
           padding: 15px 20px;
@@ -126,10 +145,10 @@ const { title } = Astro.props;
 
   <body>
     <nav>
-      <a href="/">Start</a>
-      <a href="/about">Über mich</a>
-      <a href="/services">Leistungen</a>
-      <a href="/contact">Kontakt</a>
+      <a href="/" class={currentPath === "/" ? "active" : ""}>Start</a>
+      <a href="/about" class={currentPath === "/about" ? "active" : ""}>Über mich</a>
+      <a href="/services" class={currentPath === "/services" ? "active" : ""}>Leistungen</a>
+      <a href="/contact" class={currentPath === "/contact" ? "active" : ""}>Kontakt</a>
     </nav>
 
     <main>
