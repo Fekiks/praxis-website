@@ -1,6 +1,8 @@
 ---
 title: Kontakt
 ---
+<h1 style="text-align: center;">Kontakt</h1>
+
 ## Vereinbarung eines Erstgesprächs
 
 Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich jederzeit gerne an mich wenden.\
