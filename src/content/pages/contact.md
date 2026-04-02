@@ -1,37 +1,40 @@
 ---
-title: "Kontakt"
+title: Kontakt
 ---
+## Vereinbarung eines Erstgesprächs
 
-## Kontakt
+Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich jederzeit gerne an mich wenden.\
+In einem ersten Gespräch haben wir die Möglichkeit, uns kennenzulernen und Ihr Anliegen unverbindlich und in Ruhe zu klären.
 
-Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich gerne bei mir melden.
+Gemeinsam schauen wir, ob und wie eine Zusammenarbeit für Sie hilfreich sein kann.
 
-Der erste Schritt ist oft der schwierigste – ich freue mich, wenn Sie Kontakt aufnehmen.
+Der erste Schritt darf sich ungewohnt anfühlen – ich freue mich über Ihre Kontaktaufnahme.
 
----
-
-## Erstgespräch
-
-In einem ersten Gespräch lernen wir uns kennen und besprechen Ihr Anliegen.
-
-Dabei klären wir gemeinsam, ob und wie eine Zusammenarbeit sinnvoll ist.
-
-Das Erstgespräch ist unverbindlich.
-
----
+- - -
 
 ## So erreichen Sie mich
 
-**Telefon:**  
-[Telefonnummer einfügen]
+📧 **E-Mail:**  [k.stumper.psychotherapie@gmail.com](mailto:k.stumper.psychotherapie@gmail.com?subject=Anfrage%20Psychotherapie)
 
-**E-Mail:**  
-[Mailadresse einfügen]
-
----
-
-## Hinweis
+📞 **Telefon:**  [0155 10039425](tel:+4915510039425)
 
 Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin.
 
 Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
+
+- - -
+
+## In dringenden Notfällen
+
+Bitte beachten Sie, dass ich in akuten Krisen oder Notfällen nicht durchgehend erreichbar bin. Wenn Sie sich in einer akuten Notlage befinden, wenden Sie sich bitte an:
+
+* den ärztlichen Bereitschaftsdienst unter **[116 117](tel:116117)**  
+* den Notruf unter **[112](tel:112)**  
+* die TelefonSeelsorge (kostenlos, anonym, rund um die Uhr erreichbar):  
+
+  * **[0800 111 0 111](tel:08001110111)**  
+  * **[0800 111 0 222](tel:08001110222)**  
+  * **[116 123](tel:116123)**  
+* oder die nächstgelegene psychiatrische Klinik
+
+In dringenden Fällen zögern Sie bitte nicht, sofort Hilfe in Anspruch zu nehmen.
