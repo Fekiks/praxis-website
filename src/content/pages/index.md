@@ -14,7 +14,7 @@ In meiner Praxis begleite ich Sie bei psychischen Belastungen und in schwierigen
 Außerdem plane ich ab **Sommer 2026** eine **wöchentliche Therapiegruppe für Betroffene von Zwangserkrankungen**.  
 Derzeit sind noch Plätze frei und ich suche aktuell noch weitere Teilnehmerinnen.
 
-
+---
 ## Wann kann eine Psychotherapie helfen?
 
 Psychotherapie kann sinnvoll sein, wenn Sie sich durch Ihre aktuelle Situation belastet fühlen und das Gefühl haben, diese nicht mehr alleine bewältigen zu können.
