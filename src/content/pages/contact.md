@@ -9,9 +9,7 @@ title: Kontakt
 
 📞 **Telefon:**  [0155 10039425](tel:+4915510039425)
 
-Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin.
-
-Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
+Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin. Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
 
 - - -
 
