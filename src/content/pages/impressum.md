@@ -17,10 +17,10 @@ E-Mail: k.stumper.psychotherapie@gmail.com
 Approbation verliehen in Deutschland
 
 Zuständige Kammer:  
-[Psychotherapeutenkammer Bundesland]
+Psychotherapeutenkammer Nordrhein-Westfalen
 
 Berufsbezeichnung:  
-Psychologische Psychotherapeutin
+Psychologische Psychotherapeutin (Fachkunde: Verhaltenstherapie)
 
 Berufsrechtliche Regelungen:  
 Psychotherapeutengesetz (PsychThG)
