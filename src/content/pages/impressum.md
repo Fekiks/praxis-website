@@ -7,11 +7,12 @@ Angaben gemäß § 5 TMG
 Katja Stumper  
 Psychologische Psychotherapeutin  
 
-[Adresse einfügen]
+Cäsarstraße 70A  
+50968 Köln (Bayenthal)
 
 Kontakt  
-Telefon: [einfügen]  
-E-Mail: [einfügen]
+Telefon: 0155 10039425  
+E-Mail: k.stumper.psychotherapie@gmail.com
 
 Approbation verliehen in Deutschland
 
