@@ -25,6 +25,25 @@ Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail –
 - - -
 
 
+## Derzeitige Vertretungsadresse (Elternzeitvertretung)
+
+Während meiner Elternzeit erreichen Sie meine Vertretung unter folgender Adresse:
+
+**Cäsarstraße 70A**  
+**50968 Köln**
+
+<iframe
+  title="Google Maps: Cäsarstraße 70A, 50968 Köln"
+  src="https://www.google.com/maps?q=C%C3%A4sarstra%C3%9Fe+70A+50968+K%C3%B6ln&output=embed"
+  width="100%"
+  height="320"
+  style="border:0; border-radius: 12px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>
+
+- - -
+
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
 
 Falls Sie derzeit keinen Therapieplatz finden oder sich auf weitere Wartelisten setzen lassen möchten, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen: <a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
