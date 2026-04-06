@@ -24,6 +24,15 @@ Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail –
 
 - - -
 
+
+## Hinweise bei längerer Wartezeit auf einen Therapieplatz
+
+Wenn Sie aktuell keinen Therapieplatz finden, gibt es eine zusätzliche Seite mit konkreten Tipps und Anlaufstellen außerhalb meines Angebots.
+
+<a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
+
+- - -
+
 ## In dringenden Notfällen
 
 Bitte beachten Sie, dass ich in akuten Krisen oder Notfällen nicht durchgehend erreichbar bin. Wenn Sie sich in einer akuten Notlage befinden, wenden Sie sich bitte an:
