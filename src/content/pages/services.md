@@ -7,7 +7,7 @@ Ich behandle ein breites Spektrum psychischer Erkrankungen im Erwachsenenalter. 
 
 ## Kosten
 
-Im Moment vertrete ich meine Kollegin auf ihrem Kassensitz und kann daher mit **allen gesetzlichen Krankenkassen (GKV)** abrechnen.
+Im Moment vertrete ich meine Kollegin auf ihrem Kassensitz und kann daher mit **allen gesetzlichen Krankenkassen** abrechnen. Ihre Krankenkasse trägt die Kosten der Behandlung.
 
 Zusätzlich behandle ich auch **Privatpatientinnen**.
 
