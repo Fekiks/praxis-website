@@ -33,6 +33,7 @@ Aktuell behandle ich in den Räumlichkeiten meiner Kollegin unter folgender Adre
   referrerpolicy="no-referrer-when-downgrade"
 ></iframe>
 
+
 Die Praxisräume befinden sich im Erdgeschoss und sind über den Hof stufenlos erreichbar.
 - - -
 
