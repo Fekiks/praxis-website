@@ -16,9 +16,9 @@ Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail –
 - - -
 
 
-## Derzeitige Praxisadresse (Elternzeitvertretung)
+## Praxisadresse
 
-Aktuell behandle ich in den Räumlichkeiten meiner Kollegin unter folgender Adresse:
+Aktuell behandle ich in den Räumlichkeiten meiner Kollegin, die ich im Rahmen ihrer Elternzeit vertrete. Die Praxisräume befinden sich im Erdgeschoss und sind über den Hof stufenlos erreichbar.
 
 **Cäsarstraße 70A**  
 **50968 Köln**
@@ -34,7 +34,6 @@ Aktuell behandle ich in den Räumlichkeiten meiner Kollegin unter folgender Adre
 ></iframe>
 
 
-Die Praxisräume befinden sich im Erdgeschoss und sind über den Hof stufenlos erreichbar.
 - - -
 
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
