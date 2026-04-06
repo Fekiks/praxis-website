@@ -7,7 +7,8 @@ const pages = defineCollection({
     base: './src/content/pages',
   }),
   schema: z.object({
-    title: z.string(),
+  title: z.string(),
+  description: z.string().optional(),
   }),
 });
 

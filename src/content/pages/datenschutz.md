@@ -1,5 +1,6 @@
 ---
 title: Datenschutz
+description: Datenschutzerklärung der Praxis
 ---
 
 ## Datenschutzerklärung
