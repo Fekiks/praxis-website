@@ -11,6 +11,9 @@ In meiner Praxis begleite ich Sie bei psychischen Belastungen und in schwierigen
 <a href="/contact" class="cta">Erstgespräch anfragen</a>
 
 ---
+Außerdem plane ich ab **Sommer 2026** eine **wöchentliche Therapiegruppe für Betroffene von Zwangserkrankungen**.  
+Derzeit sind noch Plätze frei und ich suche aktuell noch weitere Teilnehmerinnen.
+
 
 ## Wann kann eine Psychotherapie helfen?
 
