@@ -1,3 +1,7 @@
+---
+title: Datenschutz
+---
+
 ## Datenschutzerklärung
 
 Verantwortliche Person:
