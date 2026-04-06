@@ -3,15 +3,6 @@ title: Kontakt
 ---
 <h1 style="text-align: center;">Kontakt</h1>
 
-## Vereinbarung eines Erstgesprächs
-
-Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich jederzeit gerne an mich wenden.\
-In einem ersten Gespräch haben wir die Möglichkeit, uns kennenzulernen und Ihr Anliegen unverbindlich und in Ruhe zu klären. Gemeinsam schauen wir, ob und wie eine Zusammenarbeit für Sie hilfreich sein kann.
-
-Der erste Schritt darf sich ungewohnt anfühlen – ich freue mich über Ihre Kontaktaufnahme.
-
-- - -
-
 ## So erreichen Sie mich
 
 📧 **E-Mail:**  [k.stumper.psychotherapie@gmail.com](mailto:k.stumper.psychotherapie@gmail.com?subject=Anfrage%20Psychotherapie)
