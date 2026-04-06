@@ -13,3 +13,10 @@ Zusätzlich behandle ich auch **Privatpatientinnen**.
 
 Außerdem plane ich ab **Sommer 2026** eine **wöchentliche Therapiegruppe für Betroffene von Zwangserkrankungen**.  
 Derzeit sind noch Plätze frei und ich suche aktuell noch weitere Teilnehmerinnen.
+
+## Vereinbarung eines Erstgesprächs
+
+Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich jederzeit gerne an mich wenden.\
+In einem ersten Gespräch haben wir die Möglichkeit, uns kennenzulernen und Ihr Anliegen unverbindlich und in Ruhe zu klären. Gemeinsam schauen wir, ob und wie eine Zusammenarbeit für Sie hilfreich sein kann.
+
+Der erste Schritt darf sich ungewohnt anfühlen – ich freue mich über Ihre Kontaktaufnahme.
