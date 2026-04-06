@@ -27,9 +27,7 @@ Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail –
 
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
 
-Wenn Sie aktuell keinen Therapieplatz finden, gibt es eine zusätzliche Seite mit konkreten Tipps und Anlaufstellen außerhalb meines Angebots.
-
-<a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
+Falls Sie derzeit keinen Therapieplatz finden, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen: <a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
 
 - - -
 
