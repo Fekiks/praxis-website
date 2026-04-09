@@ -34,9 +34,14 @@ Das bedeutet:
 
 ## Qualifikation
 
-- Studium der Psychologie an der Universität Tübingen  
-- Approbation als psychologische Psychotherapeutin  
-- Ausbildung in Verhaltenstherapie  
+- Bachelor- und Masterstudium der Psychologie an der Universität Tübingen  
+- SG-zertifizierter Abschluss als systemische Beraterin  
+- Weiterbildung zur psychologischen Psychotherapeutin mit Fachkunde Verhaltenstherapie  
+- Zusatzqualifikationen in Gruppentherapie und übenden Verfahren  
+- Tätigkeit im Rahmen der Weiterbildung in einer psychiatrischen Tagesklinik in Ravensburg sowie an der Uniklinik Bonn auf geschützter und offener Station  
+- Ambulante Tätigkeit in der Institutsambulanz 3 bei Abels in Köln sowie bei Prof. Dr. Pukrop  
+- Aktuell Vertretung des Kassensitzes einer Kollegin während ihrer Elternzeit  
+- Derzeit in Weiterbildung zur EMDR-Zertifizierung  
 
 ---
 
