@@ -9,14 +9,18 @@ title: Kontakt
 
 📞 **Telefon:**  [0155 10039425](tel:+4915510039425)
 
-Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin. Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
+<p style="text-align: justify;">
+  Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin. Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
+</p>
 
 - - -
 
 
 ## Praxisadresse
 
-Aktuell behandle ich in den Räumlichkeiten meiner Kollegin, die ich im Rahmen ihrer Elternzeit vertrete. Die Praxisräume befinden sich im Erdgeschoss und sind über den Hof stufenlos erreichbar.
+<p style="text-align: justify;">
+  Aktuell behandle ich in den Räumlichkeiten meiner Kollegin, die ich im Rahmen ihrer Elternzeit vertrete. Die Praxisräume befinden sich im Erdgeschoss und sind über den Hof stufenlos erreichbar.
+</p>
 
 **Cäsarstraße 70A**  
 **50968 Köln**
@@ -36,7 +40,9 @@ Aktuell behandle ich in den Räumlichkeiten meiner Kollegin, die ich im Rahmen i
 
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
 
-Falls Sie derzeit keinen Therapieplatz finden oder sich auf weitere Wartelisten setzen lassen möchten, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen: <a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
+<p style="text-align: justify;">
+  Falls Sie derzeit keinen Therapieplatz finden oder sich auf weitere Wartelisten setzen lassen möchten, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen: <a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche anzeigen</a>
+</p>
 
 - - -
 
