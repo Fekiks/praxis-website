@@ -20,18 +20,6 @@ Eine vertrauensvolle, wertschätzende und klare Zusammenarbeit bildet dabei die 
 
 ---
 
-## Wie ich arbeite
-
-Mir ist wichtig, dass die Therapie für Sie nachvollziehbar und transparent ist.
-
-Das bedeutet:
-
-- wir besprechen gemeinsam Ziele und Vorgehen  
-- Sie behalten jederzeit den Überblick über den Prozess  
-- wir arbeiten in Ihrem Tempo  
-
----
-
 ## Qualifikation
 
 - Bachelor- und Masterstudium der Psychologie an der Universität Tübingen  
@@ -42,9 +30,3 @@ Das bedeutet:
 - Ambulante Tätigkeit in der Institutsambulanz 3 bei Abels in Köln sowie bei Prof. Dr. Pukrop  
 - Aktuell Vertretung des Kassensitzes einer Kollegin während ihrer Elternzeit  
 - Derzeit in Weiterbildung zur EMDR-Zertifizierung  
-
----
-
-## Persönliches Anliegen
-
-Ich sehe meine Aufgabe darin, Sie auf Ihrem Weg zu begleiten – nicht vorzugeben, was richtig ist, sondern gemeinsam mit Ihnen Lösungen zu entwickeln, die zu Ihnen passen.
