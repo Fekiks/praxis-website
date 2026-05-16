@@ -277,8 +277,8 @@ const isActive = (path: string) => {
         box-shadow: none;
       }
 
-      /* Kacheln wie unterhalb des Hero auf der Startseite */
-      .home-sections {
+      /* Kacheln: global, damit Slotted Inhalt aus Seiten (z. B. index) die Klassen trifft */
+      :global(.home-sections) {
         display: flex;
         flex-direction: column;
         gap: 22px;
@@ -286,13 +286,13 @@ const isActive = (path: string) => {
         margin: 0 0 48px;
       }
 
-      main.layout-home .home-sections {
+      :global(main.layout-home .home-sections) {
         width: min(1120px, calc(100% - 32px));
         margin-left: auto;
         margin-right: auto;
       }
 
-      .home-sections :global(section.content-block) {
+      :global(.home-sections section.content-block) {
         background: var(--surface);
         border: 1px solid var(--border);
         border-radius: 22px;
@@ -300,20 +300,20 @@ const isActive = (path: string) => {
         box-shadow: 0 16px 44px var(--shadow);
       }
 
-      .home-sections :global(section.content-block.highlight) {
+      :global(.home-sections section.content-block.highlight) {
         background: linear-gradient(135deg, rgba(200, 185, 166, 0.28), rgba(250, 248, 245, 0.95));
         border-color: var(--taupe-deep);
       }
 
-      .home-sections :global(hr) {
+      :global(.home-sections hr) {
         display: none;
       }
 
-      .home-sections :global(section.content-block > h2:first-child) {
+      :global(.home-sections section.content-block > h2:first-child) {
         margin-top: 0;
       }
 
-      .home-sections :global(section.content-block p:last-child) {
+      :global(.home-sections section.content-block p:last-child) {
         margin-bottom: 0;
       }
 
@@ -450,7 +450,7 @@ const isActive = (path: string) => {
           padding: 24px 20px;
         }
 
-        main.layout-home .home-sections {
+        :global(main.layout-home .home-sections) {
           width: calc(100% - 20px);
         }
 
