@@ -1,4 +1,5 @@
 ---
+import TherapyDiptychSvg from "../components/TherapyDiptychSvg.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getEntry, render } from "astro:content";
 
@@ -25,14 +26,7 @@ const { Content } = await render(entry);
     </div>
     <figure class="hero-art">
       <div class="hero-art-frame">
-        <img
-          src="/images/therapie-diptychon.svg"
-          alt="Symbolbild: Von innerer Unruhe zu Klarheit im therapeutischen Gespräch"
-          width="920"
-          height="480"
-          loading="eager"
-          decoding="async"
-        />
+        <TherapyDiptychSvg />
       </div>
       <figcaption class="hero-caption">
         Gemeinsam Ordnung finden – Schritt für Schritt, in Ihrem Tempo.
@@ -84,12 +78,6 @@ const { Content } = await render(entry);
       0 8px 24px var(--shadow);
   }
 
-  .hero-art img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
 
   .hero-caption {
     margin-top: 14px;
