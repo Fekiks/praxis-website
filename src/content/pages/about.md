@@ -49,7 +49,7 @@ Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Er
 
 * Psychotherapeutische Tätigkeit in einer psychiatrischen Tagesklinik in Ravensburg
 * Klinische Erfahrung am Universitätsklinikum Bonn auf einer geschützten sowie offenen Station der Psychiatrie
-* Ambulante psychotherapeutische Tätigkeit in psychotherapeutischen Institutsambulanzen in Köln, unter anderem bei Prof. Dr. Pukrop sowie bei Dr. Christoph Abel und Pamela Abel
+* Ambulante psychotherapeutische Tätigkeit in psychotherapeutischen Institutsambulanzen in Köln, unter anderem bei Prof. Dr. Dr. Pukrop sowie bei Dr. Christoph Abel und Pamela Abel
 * Aktuell Vertretung eines psychotherapeutischen Kassensitzes im Rahmen einer Elternzeitvertretung
 
 </section>
