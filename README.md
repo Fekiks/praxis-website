@@ -45,6 +45,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Startseiten-Motiv (Diptychon)
 
-Das Symbolbild auf der Startseite ist als **inline SVG** in `src/components/TherapyDiptychSvg.astro` eingebunden. So lädt die Grafik zuverlässig auch bei Hosting mit Unterpfad (z. B. GitHub Pages unter `/repository-name/`).
+Das Symbolbild auf der Startseite ist als **inline SVG** in `src/components/TherapyDiptychSvg.astro` eingebunden und entspricht dem Diptychon-Motiv (zwei Köpfe im Profil, Knoten und Spirale, Linie zwischen den Mündern). So lädt die Grafik zuverlässig auch bei Hosting mit Unterpfad (z. B. GitHub Pages unter `/repository-name/`).
 
-Optional können Sie dort das SVG durch ein eigenes Bild ersetzen oder eine Rasterversion (`PNG`/`WebP`) unter `public/images/` ablegen und in `src/pages/index.astro` wieder als `<img>` einbinden – dann den Pfad mit `import.meta.env.BASE_URL` setzen, falls die Site einen `base`-Pfad nutzt (siehe [Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).
+**Original-Foto:** Für eine pixelgenaue Abbildung eine Rastergrafik unter z. B. `public/images/diptych-hero.jpg` ablegen und in `src/pages/index.astro` per `<img>` einbinden; die `src`-URL soll `import.meta.env.BASE_URL` voranstellen, wenn die Site einen Unterpfad nutzt ([Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).
