@@ -46,3 +46,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## Startseiten-Motiv (Diptychon)
 
 Das Bild auf der Startseite liegt unter `public/images/Bild_Praxis_koepfe.jpg` und wird in `src/pages/index.astro` per `<img>` mit `` `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg` `` eingebunden. Damit funktioniert die Auslieferung auch bei Hosting mit Unterpfad ([Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).
+
+## Suchmaschinen & kanonische URLs
+
+Beim Build liest `astro.config.mjs` die öffentliche Basis-URL aus **`PUBLIC_SITE_URL`** (ohne abschließenden Schrägstrich). Ohne diese Variable gilt der Fallback für GitHub Pages. Darauf basieren Canonical-Tags, Open Graph, JSON-LD und die unter `/sitemap.xml` erzeugte Sitemap (`src/pages/sitemap.xml.ts`).
+
+Bei Umstellung auf eine eigene Domain: `PUBLIC_SITE_URL` beim Build setzen und die Zeile **`Sitemap:`** in `public/robots.txt` auf dieselbe Basis-URL anpassen.

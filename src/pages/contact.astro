@@ -11,7 +11,7 @@ if (!entry) {
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description}>
   <div class="contact-page">
     <Content />
   </div>

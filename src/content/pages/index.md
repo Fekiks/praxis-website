@@ -1,5 +1,7 @@
 ---
 title: "Praxis für Psychotherapie"
+seoTitle: "Psychotherapie Köln – Katja Stumper | Verhaltenstherapie (Kasse & privat)"
+description: "Psychologische Psychotherapie in Köln-Bayenthal: Kassenzulassung und Privatpatientinnen. Verhaltenstherapie, Erstgespräch – Katja Stumper."
 ---
 
 <section class="content-block highlight">

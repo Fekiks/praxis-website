@@ -6,6 +6,6 @@ const entry = await getEntry("pages", "datenschutz");
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={entry.data.title}>
+<BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description}>
   <Content />
 </BaseLayout>

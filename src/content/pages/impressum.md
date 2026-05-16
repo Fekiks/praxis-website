@@ -1,5 +1,7 @@
 ---
 title: "Impressum"
+seoTitle: "Impressum – Katja Stumper Psychotherapie Köln"
+description: "Impressum der Psychotherapiepraxis Katja Stumper in Köln – Pflichtangaben gemäß TMG."
 ---
 
 Angaben gemäß § 5 TMG

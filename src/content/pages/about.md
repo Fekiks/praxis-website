@@ -1,5 +1,7 @@
 ---
 title: "Über mich"
+seoTitle: "Über mich – Psychotherapeutin Katja Stumper | Köln"
+description: "Psychologische Psychotherapeutin in Köln: Verhaltenstherapie mit Schwerpunkten Exposition, ACT und EMDR – gesetzlich versichert und privat."
 ---
 
 ## Über mich
