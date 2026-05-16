@@ -252,6 +252,7 @@ const isActive = (path: string) => {
         height: auto;
         max-height: 48px;
         width: auto;
+        /* Schmale Viewports: vw-Anteil; Desktop-Cap siehe @media (min-width: 769px) unten (nach .nav-links) */
         max-width: min(200px, 36vw);
         object-fit: contain;
         object-position: center;
@@ -288,6 +289,40 @@ const isActive = (path: string) => {
         color: var(--surface);
         background: var(--ink);
         font-weight: 600;
+      }
+
+      /* Desktop: kompaktere Markenzeile + Nav in einer Zeile (Basis .nav-links hat flex-wrap: wrap) */
+      @media (min-width: 769px) {
+        .nav-inner {
+          flex-wrap: nowrap;
+          align-items: center;
+        }
+
+        .brand {
+          max-width: min(400px, 42%);
+          gap: 12px 16px;
+        }
+
+        .brand-text {
+          flex-shrink: 1;
+        }
+
+        .brand strong {
+          font-size: 1.22rem;
+          line-height: 1.18;
+        }
+
+        .brand-logo {
+          max-height: 36px;
+          max-width: 120px;
+        }
+
+        .nav-links {
+          flex-wrap: nowrap;
+          flex: 1;
+          justify-content: flex-end;
+          min-width: 0;
+        }
       }
 
       main {
