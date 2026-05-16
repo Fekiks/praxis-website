@@ -6,8 +6,6 @@ description: "Praxis Kontakt Köln: Adresse Cäsarstraße 70A, Telefon und E-Mai
 
 <section class="content-block">
 
-<h1 style="text-align: center;">Kontakt</h1>
-
 ## So erreichen Sie mich
 
 📧 **E-Mail:**  [k.stumper.psychotherapie@gmail.com](mailto:k.stumper.psychotherapie@gmail.com?subject=Anfrage%20Psychotherapie)
