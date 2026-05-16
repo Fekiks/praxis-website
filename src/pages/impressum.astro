@@ -7,5 +7,7 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description}>
-  <Content />
+  <div class="content-sections">
+    <Content />
+  </div>
 </BaseLayout>
