@@ -145,13 +145,8 @@ const isActive = (path: string) => {
         --border: #d4c9bb;
         --shadow: rgba(20, 20, 20, 0.08);
         --shadow-strong: rgba(20, 20, 20, 0.14);
-        /* Kacheln: Standard-Verlauf (alle Abschnitte) */
-        --card-gradient: linear-gradient(
-          92deg,
-          rgba(200, 185, 166, 0.22) 0%,
-          rgba(242, 236, 227, 0.72) 38%,
-          var(--surface) 100%
-        );
+        /* Standard-Kacheln: einfarbig, nur leicht heller als Seitengrund (--page ~ #e8e0d4) */
+        --card-bg: #f9f6ef;
         /* Hervorgehobene Kacheln: wärmer, etwas kräftiger, weiterhin harmonisch */
         --card-highlight-gradient: linear-gradient(
           102deg,
@@ -308,7 +303,7 @@ const isActive = (path: string) => {
       }
 
       :global(.home-sections section.content-block) {
-        background: var(--card-gradient);
+        background: var(--card-bg);
         border: 1px solid var(--border);
         border-radius: 22px;
         padding: clamp(24px, 3.5vw, 40px);
