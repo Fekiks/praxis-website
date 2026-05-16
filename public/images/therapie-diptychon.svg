@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-labelledby="diptychTitle">
+  <title id="diptychTitle">Von innerer Unruhe zu Klarheit – Symbol für Psychotherapie</title>
+  <defs>
+    <clipPath id="panel-left">
+      <rect x="24" y="24" width="402" height="392" rx="2"/>
+    </clipPath>
+    <clipPath id="panel-right">
+      <rect x="474" y="24" width="402" height="392" rx="2"/>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="440" fill="#e8e0d4"/>
+
+  <!-- Left canvas -->
+  <rect x="16" y="16" width="418" height="408" fill="#141414"/>
+  <rect x="32" y="32" width="386" height="376" fill="#c8b9a6"/>
+  <rect x="42" y="32" width="12" height="376" fill="#faf8f5" opacity="0.9"/>
+
+  <g clip-path="url(#panel-left)">
+    <path
+      d="M 96 118 C 96 78 132 48 182 48 C 238 48 278 86 286 134 C 294 188 266 232 218 256 C 186 274 162 300 154 338"
+      fill="#faf8f5"
+      stroke="#141414"
+      stroke-width="3.2"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M 182 128 C 142 104 124 142 138 172 C 152 202 182 214 206 194 C 230 174 236 142 216 122 C 196 102 164 112 154 140 C 144 168 160 198 186 210 C 212 222 242 208 254 180 C 266 152 248 124 220 118 C 192 112 168 132 162 158 C 156 184 170 210 196 220"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 154 338 C 178 356 206 366 238 368"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2.8"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Right canvas -->
+  <rect x="466" y="16" width="418" height="408" fill="#141414"/>
+  <rect x="482" y="32" width="386" height="376" fill="#c8b9a6"/>
+  <rect x="866" y="32" width="12" height="376" fill="#faf8f5" opacity="0.9"/>
+
+  <g clip-path="url(#panel-right)">
+    <path
+      d="M 804 118 C 804 78 768 48 718 48 C 662 48 622 86 614 134 C 606 188 634 232 682 256 C 714 274 738 300 746 338"
+      fill="#faf8f5"
+      stroke="#141414"
+      stroke-width="3.2"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M 746 338 C 722 356 694 366 662 368"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2.8"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 718 210 C 718 176 744 150 772 150 C 800 150 826 176 826 210 C 826 244 800 270 772 270 C 744 270 718 244 718 210 Z"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2.4"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 772 270 C 800 270 826 244 826 210 C 826 176 800 150 772 150 C 744 150 718 176 718 210 C 718 244 744 270 772 270 Z M 772 248 C 788 248 802 232 802 210 C 802 188 788 172 772 172 C 756 172 742 188 742 210 C 742 232 756 248 772 248 Z"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2.2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M 772 248 C 788 248 802 232 802 210 C 802 188 788 172 772 172 C 756 172 742 188 742 210 C 742 232 756 248 772 248 Z M 772 226 C 776 226 780 222 780 210 C 780 198 776 194 772 194 C 768 194 764 198 764 210 C 764 222 768 226 772 226 Z"
+      fill="none"
+      stroke="#141414"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Connecting thread -->
+  <path
+    d="M 434 368 C 448 356 452 356 466 368"
+    fill="none"
+    stroke="#141414"
+    stroke-width="2.8"
+    stroke-linecap="round"
+  />
+</svg>

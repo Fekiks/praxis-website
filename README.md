@@ -43,10 +43,10 @@ All commands are run from the root of the project, from a terminal:
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 
-## Startseiten-Hintergrundbild
+## Startseiten-Motiv (Diptychon)
 
-Lege dein gewünschtes Hintergrundbild mit folgendem Pfad ab:
+Das Symbolbild auf der Startseite liegt unter:
 
-- `public/images/Bild_Praxis_Hintergrund.jpg`
+- `public/images/therapie-diptychon.svg` (Standard, weboptimiert)
 
-Sobald die Datei dort liegt, wird sie automatisch als Hintergrund im Layout angezeigt.
+Optional kann ein eigenes Foto oder Kunstwerk als PNG ergänzt werden – dann in `src/pages/index.astro` den `src`-Pfad anpassen (z. B. `/images/therapie-diptychon.png`).
