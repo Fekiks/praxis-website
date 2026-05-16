@@ -458,16 +458,16 @@ const isActive = (path: string) => {
       }
 
       /*
-        Querformat-Logo: Hohe und Breite gemeinsam begrenzen (nur px, kein großes vw auf Desktop).
-        Desktop: gut lesbar ohne Layout-Sprengris; Mobil unten etwas größer.
+        Querformat-Logo (~3:2): eine niedrige max-height allein erzwingt eine **sehr kleine Breite**
+        (Breite ≈ Höhe × Seitenverhältnis). Darum höhere max-height und max-width gemeinsam.
       */
       .footer-logo {
         display: block;
         margin: 0 auto;
         height: auto;
         width: auto;
-        max-height: 56px;
-        max-width: 260px;
+        max-width: min(400px, 94vw);
+        max-height: 132px;
         object-fit: contain;
         opacity: 0.92;
       }
@@ -536,8 +536,8 @@ const isActive = (path: string) => {
         }
 
         .footer-logo {
-          max-height: 68px;
-          max-width: min(340px, 92vw);
+          max-width: min(440px, 96vw);
+          max-height: 150px;
         }
       }
     </style>
