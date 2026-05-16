@@ -1,8 +1,8 @@
 /** Logo unter `public/` (Breite/Höhe für Layout-Attribute & Schema.org). */
 export const PRACTICE_LOGO = {
-  file: "images/Praxis_Logo.jpg",
-  width: 1536,
-  height: 1024,
+  file: "images/Praxis_Logo_beige.jpg",
+  width: 1774,
+  height: 887,
 } as const;
 
 /** Öffentliche Praxisdaten für Meta-Tags und strukturierte Daten (Schema.org). */
