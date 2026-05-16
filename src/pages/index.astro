@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { PRACTICE, PRACTICE_LOGO } from "../site-config";
 import { getEntry, render } from "astro:content";
 
 const entry = await getEntry("pages", "index");
@@ -12,7 +11,6 @@ if (!entry) {
 const { Content } = await render(entry);
 
 const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
-const logoSrc = `${import.meta.env.BASE_URL}${PRACTICE_LOGO.file}`;
 ---
 
 <BaseLayout
@@ -22,17 +20,6 @@ const logoSrc = `${import.meta.env.BASE_URL}${PRACTICE_LOGO.file}`;
 >
   <section class="hero" aria-labelledby="hero-heading">
     <div class="hero-copy">
-      <div class="hero-logo-wrap">
-        <img
-          src={logoSrc}
-          alt={`Logo: ${PRACTICE.siteName}`}
-          class="hero-logo"
-          width={PRACTICE_LOGO.width}
-          height={PRACTICE_LOGO.height}
-          loading="eager"
-          decoding="async"
-        />
-      </div>
       <p class="hero-eyebrow">Psychologische Psychotherapie</p>
       <h1 id="hero-heading">Herzlich willkommen</h1>
       <p class="hero-lead">
@@ -78,19 +65,6 @@ const logoSrc = `${import.meta.env.BASE_URL}${PRACTICE_LOGO.file}`;
 
   .hero-copy {
     min-width: 0;
-  }
-
-  .hero-logo-wrap {
-    margin: 0 0 clamp(18px, 3vw, 26px);
-  }
-
-  .hero-logo {
-    display: block;
-    width: min(100%, 520px);
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: left center;
   }
 
   .hero-eyebrow {
