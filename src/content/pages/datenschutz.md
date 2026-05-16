@@ -1,6 +1,7 @@
 ---
 title: Datenschutz
-description: Datenschutzerklärung der Praxis
+seoTitle: "Datenschutz – Psychotherapiepraxis Katja Stumper Köln"
+description: "Datenschutzerklärung der Praxis Katja Stumper, Köln – Informationen zur Datenverarbeitung auf dieser Website."
 ---
 
 ## Datenschutzerklärung

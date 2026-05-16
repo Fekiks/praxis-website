@@ -1,0 +1,5 @@
+# Bei eigener Domain: Sitemap-URL anpassen oder gleiche Domain wie PUBLIC_SITE_URL beim Build verwenden.
+User-agent: *
+Allow: /
+
+Sitemap: https://fekiks.github.io/praxis-website/sitemap.xml

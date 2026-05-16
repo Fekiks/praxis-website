@@ -1,5 +1,7 @@
 ---
 title: Leistungen
+seoTitle: "Leistungen – Psychotherapie Köln | Katja Stumper"
+description: "Behandlungsschwerpunkte, Erstgespräch und Kosten: Psychotherapie für Erwachsene in Köln – Kassen- und Privatpatientinnen."
 ---
 ## Behandlungsschwerpunkte
 

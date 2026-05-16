@@ -1,12 +1,95 @@
 ---
+import { DEFAULT_META_DESCRIPTION, PRACTICE } from "../site-config";
+
 interface Props {
   title: string;
+  description?: string;
   layout?: "default" | "home";
+  noindex?: boolean;
 }
 
-const { title, layout = "default" } = Astro.props;
+const { title, description, layout = "default", noindex = false } = Astro.props;
 const currentPath = Astro.url.pathname;
 const isHome = layout === "home";
+
+const metaDescription = (description ?? DEFAULT_META_DESCRIPTION).trim();
+
+const siteBaseHref = Astro.site
+  ? Astro.site.href.endsWith("/")
+    ? Astro.site.href
+    : `${Astro.site.href}/`
+  : null;
+
+const pathClean = Astro.url.pathname.replace(/^\/+|\/+$/g, "");
+const canonicalRel = pathClean === "" ? "./" : `${pathClean}/`;
+
+const canonicalURL =
+  siteBaseHref !== null ? new URL(canonicalRel, siteBaseHref) : null;
+const canonicalHref = canonicalURL?.href ?? null;
+
+const rootUrl =
+  siteBaseHref !== null ? siteBaseHref.replace(/\/+$/, "") || siteBaseHref : null;
+
+const ogImageHref =
+  siteBaseHref !== null
+    ? new URL("images/Bild_Katja.jpg", siteBaseHref).href
+    : null;
+
+const structuredDataJson =
+  Astro.site && siteBaseHref && rootUrl && !noindex
+    ? JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "MedicalBusiness",
+            "@id": `${rootUrl}#practice`,
+            name: PRACTICE.siteName,
+            alternateName: [
+              "Psychotherapie Katja Stumper Köln",
+              "Psychotherapiepraxis Köln Bayenthal",
+            ],
+            description: DEFAULT_META_DESCRIPTION.trim(),
+            url: rootUrl,
+            telephone: PRACTICE.telephone,
+            email: PRACTICE.email,
+            ...(ogImageHref ? { image: [ogImageHref] } : {}),
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: PRACTICE.streetAddress,
+              addressLocality: PRACTICE.addressLocality,
+              postalCode: PRACTICE.postalCode,
+              addressRegion: PRACTICE.addressRegion,
+              addressCountry: PRACTICE.country,
+            },
+            areaServed: {
+              "@type": "City",
+              name: "Köln",
+              containedInPlace: {
+                "@type": "AdministrativeArea",
+                name: "Nordrhein-Westfalen",
+              },
+            },
+            currenciesAccepted: "EUR",
+            paymentAccepted:
+              "Gesetzliche Krankenkassen, Privatversicherung, Selbstzahlung",
+            medicalSpecialty: "Psychotherapy",
+            knowsAbout: [
+              "Verhaltenstherapie",
+              "Expositionstherapie",
+              "Acceptance and Commitment Therapy",
+              "EMDR",
+            ],
+          },
+          {
+            "@type": "Person",
+            "@id": `${rootUrl}#person`,
+            name: PRACTICE.practitionerName,
+            jobTitle: "Psychologische Psychotherapeutin",
+            worksFor: { "@id": `${rootUrl}#practice` },
+          },
+        ],
+      })
+    : null;
 
 const isActive = (path: string) => {
   if (path === "/") return currentPath === "/";
@@ -19,6 +102,26 @@ const isActive = (path: string) => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
+    <meta name="description" content={metaDescription} />
+    {canonicalHref && <link rel="canonical" href={canonicalHref} />}
+    <meta
+      name="robots"
+      content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large"}
+    />
+    <meta name="author" content={PRACTICE.practitionerName} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content={PRACTICE.siteName} />
+    {canonicalHref && <meta property="og:url" content={canonicalHref} />}
+    {ogImageHref && <meta property="og:image" content={ogImageHref} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    {ogImageHref && <meta name="twitter:image" content={ogImageHref} />}
+    <meta name="geo.region" content="DE-NW" />
+    <meta name="geo.placename" content="Köln" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -295,6 +398,9 @@ const isActive = (path: string) => {
         }
       }
     </style>
+    {structuredDataJson && (
+      <script type="application/ld+json" set:html={structuredDataJson} />
+    )}
     <slot name="head" />
   </head>
 
