@@ -443,12 +443,30 @@ const isActive = (path: string) => {
       @media (max-width: 768px) {
         .nav-inner {
           flex-direction: column;
-          align-items: flex-start;
+          align-items: stretch;
           padding: 12px 0;
+          gap: 10px;
         }
 
+        /* Eine Zeile: bei vielen Links horizontal wischen, kein Zeilenumbruch */
         .nav-links {
+          flex-wrap: nowrap;
           justify-content: flex-start;
+          align-items: center;
+          max-width: 100%;
+          overflow-x: auto;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
+          overscroll-behavior-x: contain;
+          gap: 6px;
+          padding-bottom: 4px;
+          scrollbar-width: thin;
+        }
+
+        .nav-links a {
+          flex-shrink: 0;
+          white-space: nowrap;
+          padding: 8px 12px;
         }
 
         main.layout-default,
@@ -465,10 +483,6 @@ const isActive = (path: string) => {
 
         :global(main.layout-home .home-sections) {
           width: calc(100% - 20px);
-        }
-
-        .nav-links a {
-          padding: 8px 12px;
         }
       }
     </style>
