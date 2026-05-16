@@ -49,6 +49,6 @@ Das Bild auf der Startseite liegt unter `public/images/Bild_Praxis_koepfe.jpg` u
 
 ## Suchmaschinen & kanonische URLs
 
-Beim Build liest `astro.config.mjs` die öffentliche Basis-URL aus **`PUBLIC_SITE_URL`** (ohne abschließenden Schrägstrich). Ohne diese Variable gilt der Fallback für GitHub Pages. Darauf basieren Canonical-Tags, Open Graph, JSON-LD und die unter `/sitemap.xml` erzeugte Sitemap (`src/pages/sitemap.xml.ts`).
+Beim Build liest `astro.config.mjs` die öffentliche Basis-URL aus **`PUBLIC_SITE_URL`** (ohne abschließenden Schrägstrich). Ohne diese Variable gilt ein Fallback (aktuell die Vercel-Deployment-URL). Darauf basieren Canonical-Tags, Open Graph, JSON-LD und die unter `/sitemap.xml` erzeugte Sitemap (`src/pages/sitemap.xml.ts`).
 
-Bei Umstellung auf eine eigene Domain: `PUBLIC_SITE_URL` beim Build setzen und die Zeile **`Sitemap:`** in `public/robots.txt` auf dieselbe Basis-URL anpassen.
+**Vercel:** Unter *Project → Settings → Environment Variables* für **Production** `PUBLIC_SITE_URL` auf die gewünschte öffentliche URL setzen (z. B. `https://praxis-website-sand.vercel.app` oder später die eigene Domain). Die Zeile **`Sitemap:`** in `public/robots.txt` soll dieselbe Basis verwenden wie die Production-URL (bei Domain-Umzug hier mit anpassen).
