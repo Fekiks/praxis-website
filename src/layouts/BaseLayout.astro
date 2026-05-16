@@ -4,16 +4,13 @@ import { DEFAULT_META_DESCRIPTION, PRACTICE } from "../site-config";
 interface Props {
   title: string;
   description?: string;
-  layout?: "default" | "home" | "stacked";
+  layout?: "default" | "home";
   noindex?: boolean;
 }
 
 const { title, description, layout = "default", noindex = false } = Astro.props;
 const currentPath = Astro.url.pathname;
 const isHome = layout === "home";
-const isStacked = layout === "stacked";
-
-const mainLayoutClass = isHome ? "layout-home" : isStacked ? "layout-stacked" : "layout-default";
 
 const metaDescription = (description ?? DEFAULT_META_DESCRIPTION).trim();
 
@@ -267,56 +264,6 @@ const isActive = (path: string) => {
           0 4px 14px rgba(200, 185, 166, 0.2);
       }
 
-      main.layout-stacked {
-        margin-top: 40px;
-        margin-bottom: 36px;
-        padding: 0;
-        background: none;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      /* Gestapelte Karten (Startseite + ausgewählte Unterseiten) */
-      .home-sections {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
-        width: 100%;
-        margin: 0 0 48px;
-      }
-
-      main.layout-home .home-sections {
-        width: min(1120px, calc(100% - 32px));
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .home-sections :global(section.content-block) {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        padding: clamp(24px, 3.5vw, 40px);
-        box-shadow: 0 16px 44px var(--shadow);
-      }
-
-      .home-sections :global(section.content-block.highlight) {
-        background: linear-gradient(135deg, rgba(200, 185, 166, 0.28), rgba(250, 248, 245, 0.95));
-        border-color: var(--taupe-deep);
-      }
-
-      .home-sections :global(hr) {
-        display: none;
-      }
-
-      .home-sections :global(section.content-block > h2:first-child) {
-        margin-top: 0;
-      }
-
-      .home-sections :global(section.content-block p:last-child) {
-        margin-bottom: 0;
-      }
-
       main.layout-home {
         width: 100%;
         max-width: none;
@@ -438,20 +385,12 @@ const isActive = (path: string) => {
           justify-content: flex-start;
         }
 
-        main.layout-default,
-        main.layout-stacked {
+        main.layout-default {
           width: calc(100% - 20px);
           margin-top: 16px;
           margin-bottom: 20px;
-        }
-
-        main.layout-default {
           border-radius: 18px;
           padding: 24px 20px;
-        }
-
-        main.layout-home .home-sections {
-          width: calc(100% - 20px);
         }
 
         .nav-links a {
@@ -481,7 +420,7 @@ const isActive = (path: string) => {
       </div>
     </header>
 
-    <main class={mainLayoutClass}>
+    <main class={isHome ? "layout-home" : "layout-default"}>
       <slot />
     </main>
 

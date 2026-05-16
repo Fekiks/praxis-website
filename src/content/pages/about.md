@@ -4,15 +4,9 @@ seoTitle: "Über mich – Psychotherapeutin Katja Stumper | Köln"
 description: "Psychologische Psychotherapeutin in Köln: Verhaltenstherapie mit Schwerpunkten Exposition, ACT und EMDR – gesetzlich versichert und privat."
 ---
 
-<section class="content-block">
-
 ## Über mich
 
 Ich bin approbierte psychologische Psychotherapeutin und begleite Erwachsene in belastenden Lebenssituationen. In meiner Arbeit ist mir besonders wichtig, dass Sie sich verstanden und ernst genommen fühlen. Eine vertrauensvolle therapeutische Beziehung bildet die Grundlage jeder guten psychotherapeutischen Arbeit.
-
-</section>
-
-<section class="content-block">
 
 ## Mein Ansatz
 
@@ -29,12 +23,9 @@ Außerdem nutze ich **EMDR** (Eye Movement Desensitization and Reprocessing), ei
 
 In meiner therapeutischen Arbeit habe ich insbesondere die Kombination aus Expositionstherapie, ACT und EMDR als sehr wirksam erlebt. Deshalb prägen diese Ansätze meine therapeutische Arbeit aktuell in besonderem Maße. Gleichzeitig bedeutet das auch: Wenn Sie sich grundsätzlich nicht vorstellen können, sich im Rahmen einer Therapie belastenden Situationen oder Gefühlen zuzuwenden, bin ich vermutlich nicht die richtige Therapeutin für Sie. Aus meiner Sicht sind Expositionen bei vielen psychischen Erkrankungen ein zentraler Bestandteil nachhaltiger Veränderung.
 
-</section>
-
-<section class="content-block">
+---
 
 ## Qualifikation
-
 Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Erfahrung im ambulanten, teilstationären und klinischen Bereich. In meiner bisherigen Tätigkeit konnte ich Menschen mit unterschiedlichsten psychischen Erkrankungen und Lebenssituationen begleiten und behandeln.
 
 *Qualifikationen und beruflicher Hintergrund*
@@ -51,5 +42,3 @@ Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Er
 * Klinische Erfahrung am Universitätsklinikum Bonn auf einer geschützten sowie offenen Station der Psychiatrie
 * Ambulante psychotherapeutische Tätigkeit in psychotherapeutischen Institutsambulanzen in Köln, unter anderem bei Prof. Dr. Pukrop sowie bei Dr. Christoph Abel und Pamela Abel
 * Aktuell Vertretung eines psychotherapeutischen Kassensitzes im Rahmen einer Elternzeitvertretung
-
-</section>

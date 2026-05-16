@@ -3,16 +3,9 @@ title: Leistungen
 seoTitle: "Leistungen – Psychotherapie Köln | Katja Stumper"
 description: "Behandlungsschwerpunkte, Erstgespräch und Kosten: Psychotherapie für Erwachsene in Köln – Kassen- und Privatpatientinnen."
 ---
-
-<section class="content-block">
-
 ## Behandlungsschwerpunkte
 
 Ich behandle ein breites Spektrum psychischer Erkrankungen im Erwachsenenalter. Dazu zählen insbesondere Angst- und Zwangsstörungen, Depressionen, Traumafolgestörungen, somatoforme Beschwerden sowie AD(H)S und Autismus. Darüber hinaus unterstütze ich Sie auch bei weiteren psychischen Belastungen, etwa in akuten Lebenskrisen sowie bei anhaltendem Stress und Überlastung.
-
-</section>
-
-<section class="content-block">
 
 ## Vereinbarung eines Erstgesprächs
 
@@ -21,14 +14,11 @@ In einem ersten Gespräch haben wir die Möglichkeit, uns kennenzulernen und Ihr
 
 Der erste Schritt darf sich ungewohnt anfühlen – ich freue mich über Ihre Kontaktaufnahme.
 
-</section>
-
-<section class="content-block">
-
 ## Kosten
 
 Im Moment vertrete ich meine Kollegin auf ihrem Kassensitz und kann daher mit **allen gesetzlichen Krankenkassen** abrechnen. Ihre Krankenkasse trägt die Kosten der Behandlung.
 
 Zusätzlich behandle ich auch **Privatpatientinnen**.
 
-</section>
+
+
