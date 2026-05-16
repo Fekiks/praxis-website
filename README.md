@@ -46,3 +46,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## Startseiten-Motiv (Diptychon)
 
 Das Bild auf der Startseite liegt unter `public/images/Bild_Praxis_koepfe.jpg` und wird in `src/pages/index.astro` per `<img>` mit `` `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg` `` eingebunden. Damit funktioniert die Auslieferung auch bei Hosting mit Unterpfad ([Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).
+
+Die Grafik ist auf den Kernbereich **ohne den äußeren grau/schwarzen Fotorahmen** zugeschnitten (die schwarzen Rahmen um die beiden Bildfelder gehören zum Kunstmotiv selbst).

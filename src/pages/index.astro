@@ -26,18 +26,16 @@ const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
       <a href="/contact" class="cta">Erstgespräch anfragen</a>
     </div>
     <figure class="hero-art">
-      <div class="hero-art-frame">
-        <img
-          src={heroHeadsSrc}
-          alt="Diptychon: vom Gedankenknoten zur inneren Ordnung im therapeutischen Gespräch"
-          width="1796"
-          height="849"
-          class="hero-art-img"
-          loading="eager"
-          decoding="async"
-          fetchpriority="high"
-        />
-      </div>
+      <img
+        src={heroHeadsSrc}
+        alt="Diptychon: vom Gedankenknoten zur inneren Ordnung im therapeutischen Gespräch"
+        width="1460"
+        height="565"
+        class="hero-art-img"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
       <figcaption class="hero-caption">
         Gemeinsam Ordnung finden – Schritt für Schritt, in Ihrem Tempo.
       </figcaption>
@@ -79,21 +77,15 @@ const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
     margin: 0;
   }
 
-  .hero-art-frame {
-    padding: 10px;
-    background: var(--ink);
-    border-radius: 20px;
-    box-shadow:
-      0 28px 70px var(--shadow-strong),
-      0 8px 24px var(--shadow);
-  }
-
   .hero-art-img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 14px;
     vertical-align: middle;
+    box-shadow:
+      0 22px 55px rgba(20, 20, 20, 0.12),
+      0 8px 22px rgba(20, 20, 20, 0.06);
   }
 
   .hero-caption {
