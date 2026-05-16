@@ -187,6 +187,7 @@ const isActive = (path: string) => {
 
       nav,
       main,
+      .site-end-logo,
       footer {
         position: relative;
         z-index: 1;
@@ -446,30 +447,35 @@ const isActive = (path: string) => {
         border: 1px solid var(--border);
       }
 
-      footer {
-        text-align: center;
-        margin: 28px 0 30px;
-        font-size: 0.95rem;
-        color: var(--muted);
-      }
-
-      .footer-brand {
-        margin-bottom: 16px;
-      }
-
       /*
-        Querformat-Logo (~3:2): eine niedrige max-height allein erzwingt eine **sehr kleine Breite**
-        (Breite ≈ Höhe × Seitenverhältnis). Darum höhere max-height und max-width gemeinsam.
+        Logo am Seitenende oberhalb des Footers (nicht im <footer>), gleiche Breitenführung wie main.
+        Querformat: max-height und max-width gemeinsam, sonst wird die Darstellung zu schmal.
       */
-      .footer-logo {
+      .site-end-logo {
+        width: min(1120px, calc(100% - 32px));
+        margin: 36px auto 0;
+        padding: 0 16px 12px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .site-end-logo-img {
         display: block;
         margin: 0 auto;
         height: auto;
         width: auto;
-        max-width: min(400px, 94vw);
-        max-height: 132px;
+        max-width: min(320px, 92vw);
+        max-height: 100px;
         object-fit: contain;
         opacity: 0.92;
+      }
+
+      footer {
+        text-align: center;
+        margin: 0 0 28px;
+        padding: 0;
+        font-size: 0.95rem;
+        color: var(--muted);
       }
 
       .footer-links {
@@ -531,13 +537,14 @@ const isActive = (path: string) => {
           width: calc(100% - 20px);
         }
 
-        .footer-brand {
-          margin-bottom: 18px;
+        .site-end-logo {
+          margin-top: 28px;
+          padding-bottom: 10px;
         }
 
-        .footer-logo {
-          max-width: min(440px, 96vw);
-          max-height: 150px;
+        .site-end-logo-img {
+          max-width: min(360px, 94vw);
+          max-height: 112px;
         }
       }
     </style>
@@ -567,18 +574,19 @@ const isActive = (path: string) => {
       <slot />
     </main>
 
+    <aside class="site-end-logo">
+      <img
+        src={logoSrc}
+        alt={`Logo: ${PRACTICE.siteName}`}
+        class="site-end-logo-img"
+        width={PRACTICE_LOGO.width}
+        height={PRACTICE_LOGO.height}
+        loading="lazy"
+        decoding="async"
+      />
+    </aside>
+
     <footer>
-      <div class="footer-brand" aria-hidden="true">
-        <img
-          src={logoSrc}
-          alt=""
-          class="footer-logo"
-          width={PRACTICE_LOGO.width}
-          height={PRACTICE_LOGO.height}
-          loading="lazy"
-          decoding="async"
-        />
-      </div>
       <p class="footer-links">
         <a href="/impressum">Impressum</a> ·
         <a href="/datenschutz">Datenschutz</a>
