@@ -214,20 +214,10 @@ const isActive = (path: string) => {
 
       .brand {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: clamp(12px, 2.2vw, 20px);
-        text-decoration: none;
-        color: var(--text);
-        min-width: 0;
-        flex-shrink: 1;
-      }
-
-      .brand-text {
-        display: flex;
         flex-direction: column;
         gap: 2px;
+        text-decoration: none;
+        color: var(--text);
         min-width: 0;
       }
 
@@ -239,23 +229,11 @@ const isActive = (path: string) => {
         line-height: 1.2;
       }
 
-      .brand .brand-text > span {
+      .brand > span {
         font-size: 0.82rem;
         color: var(--muted);
         letter-spacing: 0.04em;
         text-transform: uppercase;
-      }
-
-      .brand-logo {
-        display: block;
-        flex-shrink: 0;
-        height: auto;
-        max-height: 48px;
-        width: auto;
-        /* Schmale Viewports: vw-Anteil; Desktop-Cap siehe @media (min-width: 769px) unten (nach .nav-links) */
-        max-width: min(200px, 36vw);
-        object-fit: contain;
-        object-position: center;
       }
 
       .nav-links {
@@ -291,30 +269,11 @@ const isActive = (path: string) => {
         font-weight: 600;
       }
 
-      /* Desktop: kompaktere Markenzeile + Nav in einer Zeile (Basis .nav-links hat flex-wrap: wrap) */
+      /* Desktop: Navigation in einer Zeile (Basis .nav-links nutzt flex-wrap: wrap) */
       @media (min-width: 769px) {
         .nav-inner {
           flex-wrap: nowrap;
           align-items: center;
-        }
-
-        .brand {
-          max-width: min(400px, 42%);
-          gap: 12px 16px;
-        }
-
-        .brand-text {
-          flex-shrink: 1;
-        }
-
-        .brand strong {
-          font-size: 1.22rem;
-          line-height: 1.18;
-        }
-
-        .brand-logo {
-          max-height: 36px;
-          max-width: 120px;
         }
 
         .nav-links {
@@ -552,11 +511,6 @@ const isActive = (path: string) => {
           padding: 8px 12px;
         }
 
-        .brand-logo {
-          max-height: 40px;
-          max-width: min(160px, 42vw);
-        }
-
         main.layout-default,
         main.layout-stacked {
           width: calc(100% - 20px);
@@ -584,19 +538,8 @@ const isActive = (path: string) => {
     <header class="site-header">
       <div class="nav-inner">
         <a href="/" class="brand">
-          <span class="brand-text">
-            <strong>Praxis für Psychotherapie</strong>
-            <span>Verhaltenstherapie</span>
-          </span>
-          <img
-            src={logoSrc}
-            alt=""
-            class="brand-logo"
-            width={PRACTICE_LOGO.width}
-            height={PRACTICE_LOGO.height}
-            loading="eager"
-            decoding="async"
-          />
+          <strong>Praxis für Psychotherapie</strong>
+          <span>Verhaltenstherapie</span>
         </a>
         <nav class="nav-links" aria-label="Hauptnavigation">
           <a href="/" class={isActive("/") ? "active" : ""}>Start</a>
