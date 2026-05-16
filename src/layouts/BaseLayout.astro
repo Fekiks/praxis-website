@@ -448,8 +448,8 @@ const isActive = (path: string) => {
       }
 
       /*
-        Logo am Seitenende oberhalb des Footers (nicht im <footer>), gleiche Breitenführung wie main.
-        Querformat: max-height und max-width gemeinsam, sonst wird die Darstellung zu schmal.
+        Logo am Seitenende oberhalb des Footers. Querformat: max-height + Breite gemeinsam;
+        ab Desktop: Bild nutzt die volle Containerbreite (bis max-height), wirkt so größer zu den Seiten.
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -464,10 +464,23 @@ const isActive = (path: string) => {
         margin: 0 auto;
         height: auto;
         width: auto;
-        max-width: min(320px, 92vw);
-        max-height: 100px;
+        max-width: min(360px, 94vw);
+        max-height: 108px;
         object-fit: contain;
         opacity: 0.92;
+      }
+
+      @media (min-width: 769px) {
+        .site-end-logo {
+          width: min(1120px, calc(100% - 24px));
+          padding: 0 12px 16px;
+        }
+
+        .site-end-logo-img {
+          width: 100%;
+          max-width: none;
+          max-height: 200px;
+        }
       }
 
       footer {
@@ -543,8 +556,8 @@ const isActive = (path: string) => {
         }
 
         .site-end-logo-img {
-          max-width: min(360px, 94vw);
-          max-height: 112px;
+          max-width: min(380px, 95vw);
+          max-height: 118px;
         }
       }
     </style>
