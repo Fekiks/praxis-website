@@ -448,8 +448,8 @@ const isActive = (path: string) => {
       }
 
       /*
-        Logo am Seitenende oberhalb des Footers. Querformat: max-height + Breite gemeinsam;
-        ab Desktop: Bild nutzt die volle Containerbreite (bis max-height), wirkt so größer zu den Seiten.
+        Endlogo (stark quer, z. B. ~2:1): volle Containerbreite auf Desktop bis max-height;
+        Mobil ebenfalls volle Breite mit Höhenlimit, damit lange Banner lesbar bleiben.
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -479,7 +479,7 @@ const isActive = (path: string) => {
         .site-end-logo-img {
           width: 100%;
           max-width: none;
-          max-height: 200px;
+          max-height: 240px;
         }
       }
 
@@ -556,8 +556,9 @@ const isActive = (path: string) => {
         }
 
         .site-end-logo-img {
-          max-width: min(380px, 95vw);
-          max-height: 118px;
+          width: 100%;
+          max-width: none;
+          max-height: 128px;
         }
       }
     </style>
