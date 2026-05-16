@@ -40,11 +40,13 @@ title: Kontakt
 
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
 
-<p style="text-align: justify;">
-  Falls Sie derzeit keinen Therapieplatz finden oder sich auf weitere Wartelisten setzen lassen möchten, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen: 
-  
-  <a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche</a>
-</p>
+<div class="follow-text-cta">
+
+<p>Falls Sie derzeit keinen Therapieplatz finden oder sich auf weitere Wartelisten setzen lassen möchten, können Ihnen die folgenden Tipps und Anlaufstellen weiterhelfen:</p>
+
+<a href="/therapieplatz-hilfe" class="cta">Tipps zur Therapieplatzsuche</a>
+
+</div>
 
 - - -
 
