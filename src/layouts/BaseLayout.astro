@@ -147,14 +147,9 @@ const isActive = (path: string) => {
         --shadow-strong: rgba(20, 20, 20, 0.14);
         /* Standard-Kacheln: einfarbig, nur leicht heller als Seitengrund (--page ~ #e8e0d4) */
         --card-bg: #f9f6ef;
-        /* Hervorgehobene Kacheln: wärmer, etwas kräftiger, weiterhin harmonisch */
-        --card-highlight-gradient: linear-gradient(
-          102deg,
-          rgba(184, 152, 132, 0.36) 0%,
-          rgba(255, 241, 232, 0.92) 45%,
-          rgba(251, 246, 238, 1) 100%
-        );
-        --card-highlight-border: rgba(130, 104, 86, 0.38);
+        /* Hervorgehobene Kacheln: einfarbig, etwas dunkler als Seitengrund (--page) */
+        --card-highlight-bg: #ddd4c8;
+        --card-highlight-border: rgba(110, 94, 80, 0.4);
       }
 
       * {
@@ -311,11 +306,9 @@ const isActive = (path: string) => {
       }
 
       :global(.home-sections section.content-block.highlight) {
-        background: var(--card-highlight-gradient);
+        background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
-        box-shadow:
-          0 20px 50px rgba(20, 20, 20, 0.11),
-          0 0 0 1px rgba(255, 255, 255, 0.35) inset;
+        box-shadow: 0 16px 44px var(--shadow);
       }
 
       :global(.home-sections hr) {
