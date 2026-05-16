@@ -41,3 +41,12 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Startseiten-Hintergrundbild
+
+Lege dein gewünschtes Hintergrundbild mit folgendem Pfad ab:
+
+- `public/images/Bild_Praxis_Hintergrund.jpg`
+
+Sobald die Datei dort liegt, wird sie automatisch als Hintergrund im Layout angezeigt.

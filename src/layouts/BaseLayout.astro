@@ -23,6 +23,7 @@ const isActive = (path) => {
         --text: #22302f;
         --muted: #5f6f6d;
         --border: #d7e2df;
+        --homepage-bg-image: url("/images/Bild_Praxis_Hintergrund.jpg");
       }
 
       * {
@@ -34,9 +35,14 @@ const isActive = (path) => {
         margin: 0;
         min-height: 100vh;
         background:
+          linear-gradient(rgba(244, 248, 247, 0.84), rgba(244, 248, 247, 0.9)),
+          var(--homepage-bg-image),
           radial-gradient(circle at top left, #eef5f3 0%, transparent 35%),
           radial-gradient(circle at top right, #eff6f5 0%, transparent 30%),
           var(--accent);
+        background-size: cover, cover, auto, auto, auto;
+        background-position: center, center, center, center, center;
+        background-attachment: fixed, fixed, scroll, scroll, scroll;
         color: var(--text);
         line-height: 1.7;
         display: flex;
