@@ -255,13 +255,53 @@ const isActive = (path: string) => {
       main.layout-default {
         margin-top: 40px;
         margin-bottom: 36px;
-        padding: clamp(28px, 4vw, 48px);
+      }
+
+      /* Gestapelte Karten wie auf der Startseite */
+      .content-sections,
+      .home-sections {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      main.layout-default .content-sections,
+      main.layout-default .home-sections {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 48px;
+      }
+
+      .content-sections :global(section.content-block),
+      .home-sections :global(section.content-block) {
         background: var(--surface);
-        border-radius: 24px;
         border: 1px solid var(--border);
-        box-shadow:
-          0 22px 60px var(--shadow),
-          0 4px 14px rgba(200, 185, 166, 0.2);
+        border-radius: 22px;
+        padding: clamp(24px, 3.5vw, 40px);
+        box-shadow: 0 16px 44px var(--shadow);
+      }
+
+      .content-sections :global(section.content-block.highlight),
+      .home-sections :global(section.content-block.highlight) {
+        background: linear-gradient(135deg, rgba(200, 185, 166, 0.28), rgba(250, 248, 245, 0.95));
+        border-color: var(--taupe-deep);
+      }
+
+      .content-sections :global(hr),
+      .home-sections :global(hr) {
+        display: none;
+      }
+
+      .content-sections :global(section.content-block h2:first-child),
+      .home-sections :global(section.content-block h2:first-child) {
+        margin-top: 0;
+      }
+
+      .content-sections :global(section.content-block p:last-child),
+      .home-sections :global(section.content-block p:last-child) {
+        margin-bottom: 0;
       }
 
       main.layout-home {
@@ -389,8 +429,6 @@ const isActive = (path: string) => {
           width: calc(100% - 20px);
           margin-top: 16px;
           margin-bottom: 20px;
-          border-radius: 18px;
-          padding: 24px 20px;
         }
 
         .nav-links a {

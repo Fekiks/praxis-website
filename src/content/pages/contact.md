@@ -3,6 +3,9 @@ title: Kontakt
 seoTitle: "Kontakt – Psychotherapiepraxis Köln-Bayenthal | Katja Stumper"
 description: "Praxis Kontakt Köln: Adresse Cäsarstraße 70A, Telefon und E-Mail. Psychotherapie mit Kassensitz – auch für Selbstzahlerinnen möglich."
 ---
+
+<section class="content-block">
+
 <h1 style="text-align: center;">Kontakt</h1>
 
 ## So erreichen Sie mich
@@ -15,8 +18,9 @@ description: "Praxis Kontakt Köln: Adresse Cäsarstraße 70A, Telefon und E-Mai
   Bitte haben Sie Verständnis, dass ich während laufender Gespräche telefonisch nicht erreichbar bin. Hinterlassen Sie mir gerne eine Nachricht oder schreiben Sie mir eine E-Mail – ich melde mich zeitnah bei Ihnen zurück.
 </p>
 
-- - -
+</section>
 
+<section class="content-block">
 
 ## Praxisadresse
 
@@ -37,8 +41,9 @@ description: "Praxis Kontakt Köln: Adresse Cäsarstraße 70A, Telefon und E-Mai
   referrerpolicy="no-referrer-when-downgrade"
 ></iframe>
 
+</section>
 
-- - -
+<section class="content-block highlight">
 
 ## Hinweise bei längerer Wartezeit auf einen Therapieplatz
 
@@ -50,7 +55,9 @@ description: "Praxis Kontakt Köln: Adresse Cäsarstraße 70A, Telefon und E-Mai
 
 </div>
 
-- - -
+</section>
+
+<section class="content-block">
 
 ## In dringenden Notfällen
 
@@ -62,3 +69,5 @@ Bitte beachten Sie, dass ich in akuten Krisen oder Notfällen nicht durchgehend 
 * oder die nächstgelegene psychiatrische Klinik
 
 In dringenden Fällen zögern Sie bitte nicht, sofort Hilfe in Anspruch zu nehmen.
+
+</section>

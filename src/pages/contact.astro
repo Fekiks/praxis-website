@@ -12,7 +12,7 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description}>
-  <div class="contact-page">
+  <div class="content-sections contact-page">
     <Content />
   </div>
 </BaseLayout>
@@ -22,13 +22,12 @@ const { Content } = await render(entry);
     margin-bottom: clamp(26px, 4vw, 40px);
   }
 
-  .contact-page :global(h2) {
-    margin-top: 2.35rem;
+  .contact-page :global(section.content-block h2) {
     margin-bottom: 1.2rem;
     line-height: 1.28;
   }
 
-  .contact-page :global(h2:first-of-type) {
+  .contact-page :global(section.content-block > h2:first-of-type) {
     margin-top: 0;
   }
 
@@ -36,13 +35,6 @@ const { Content } = await render(entry);
     margin: 0 0 1.2rem;
     max-width: 62ch;
     line-height: 1.78;
-  }
-
-  .contact-page :global(hr) {
-    margin: 2.5rem 0;
-    border: none;
-    border-top: 1px solid var(--border);
-    opacity: 0.9;
   }
 
   .contact-page :global(iframe) {
