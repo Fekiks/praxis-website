@@ -454,18 +454,22 @@ const isActive = (path: string) => {
       }
 
       .footer-brand {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
       }
 
+      /*
+        Querformat-Logo: nur max-height zu begrenzen reicht nicht, wenn max-width groß ist —
+        die Nutzgröße kann sonst die Seite sprengen. Desktop: enge Pixel-Caps, Mobile: etwas großzügiger.
+      */
       .footer-logo {
         display: block;
         margin: 0 auto;
         height: auto;
-        max-height: 64px;
         width: auto;
-        max-width: min(380px, 94vw);
+        max-height: 42px;
+        max-width: 168px;
         object-fit: contain;
-        opacity: 0.92;
+        opacity: 0.9;
       }
 
       .footer-links {
@@ -525,6 +529,15 @@ const isActive = (path: string) => {
 
         :global(main.layout-home .home-sections) {
           width: calc(100% - 20px);
+        }
+
+        .footer-brand {
+          margin-bottom: 18px;
+        }
+
+        .footer-logo {
+          max-height: 58px;
+          max-width: min(300px, 88vw);
         }
       }
     </style>
