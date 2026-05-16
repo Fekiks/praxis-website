@@ -1,3 +1,10 @@
+/** Logo unter `public/` (Breite/Höhe für Layout-Attribute & Schema.org). */
+export const PRACTICE_LOGO = {
+  file: "images/Praxis_Logo.jpg",
+  width: 1536,
+  height: 1024,
+} as const;
+
 /** Öffentliche Praxisdaten für Meta-Tags und strukturierte Daten (Schema.org). */
 export const PRACTICE = {
   siteName: "Praxis für Psychotherapie – Katja Stumper",
