@@ -11,6 +11,12 @@ if (!entry) {
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description}>
-  <Content />
+<BaseLayout
+  layout="stacked"
+  title={entry.data.seoTitle ?? entry.data.title}
+  description={entry.data.description}
+>
+  <div class="home-sections">
+    <Content />
+  </div>
 </BaseLayout>
