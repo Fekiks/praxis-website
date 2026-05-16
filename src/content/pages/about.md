@@ -6,7 +6,7 @@ description: "Psychologische Psychotherapeutin in Köln: Verhaltenstherapie mit 
 
 ## Über mich
 
-Ich bin approbierte psychologische Psychotherapeutin und begleite Erwachsene in belastenden Lebenssituationen. In meiner Arbeit ist mir besonders wichtig, dass Sie sich verstanden, ernst genommen und gut aufgehoben fühlen. Eine vertrauensvolle therapeutische Beziehung bildet die Grundlage jeder guten psychotherapeutischen Arbeit.
+Ich bin approbierte psychologische Psychotherapeutin und begleite Erwachsene in belastenden Lebenssituationen. In meiner Arbeit ist mir besonders wichtig, dass Sie sich verstanden und ernst genommen fühlen. Eine vertrauensvolle therapeutische Beziehung bildet die Grundlage jeder guten psychotherapeutischen Arbeit.
 
 ## Mein Ansatz
 
