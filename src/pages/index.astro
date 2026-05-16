@@ -1,5 +1,4 @@
 ---
-import TherapyDiptychSvg from "../components/TherapyDiptychSvg.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getEntry, render } from "astro:content";
 
@@ -10,6 +9,8 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+
+const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
 ---
 
 <BaseLayout title={entry.data.title} layout="home">
@@ -26,7 +27,16 @@ const { Content } = await render(entry);
     </div>
     <figure class="hero-art">
       <div class="hero-art-frame">
-        <TherapyDiptychSvg />
+        <img
+          src={heroHeadsSrc}
+          alt="Diptychon: vom Gedankenknoten zur inneren Ordnung im therapeutischen Gespräch"
+          width="1796"
+          height="849"
+          class="hero-art-img"
+          loading="eager"
+          decoding="async"
+          fetchpriority="high"
+        />
       </div>
       <figcaption class="hero-caption">
         Gemeinsam Ordnung finden – Schritt für Schritt, in Ihrem Tempo.
@@ -78,6 +88,13 @@ const { Content } = await render(entry);
       0 8px 24px var(--shadow);
   }
 
+  .hero-art-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    vertical-align: middle;
+  }
 
   .hero-caption {
     margin-top: 14px;
