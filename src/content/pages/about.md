@@ -12,12 +12,18 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 
 </section>
 
-<section class="content-block">
+<section class="content-block about-accordion-section">
 
-## Mein Ansatz
+Ausführlichere Informationen zu **meinem Ansatz** und zu **Qualifikation und Werdegang** können Sie bei Bedarf öffnen.
 
-Meine therapeutische Arbeit orientiert sich an den wissenschaftlichen Leitlinien der AWMF (Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften). Diese Leitlinien fassen den aktuellen Stand der Forschung zu wirksamer Psychotherapie zusammen und bilden eine wichtige Grundlage meiner Behandlung.
-Mehr Informationen finden Sie hier: https://www.awmf.org/leitlinien
+<div class="accordion-stack" role="presentation">
+
+<details class="accordion-item">
+<summary>Mein Ansatz</summary>
+<div class="accordion-body">
+
+Meine therapeutische Arbeit orientiert sich an den wissenschaftlichen Leitlinien der AWMF (Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften). Diese Leitlinien fassen den aktuellen Stand der Forschung zu wirksamer Psychotherapie zusammen und bilden eine wichtige Grundlage meiner Behandlung.  
+Mehr Informationen finden Sie hier: [awmf.org/leitlinien](https://www.awmf.org/leitlinien)
 
 Ein besonderer Schwerpunkt meiner Arbeit liegt auf der **Expositionstherapie**. Dabei werden belastende Situationen und die damit verbundenen Gefühle, Gedanken oder Körperempfindungen schrittweise und in einem sicheren therapeutischen Rahmen aufgesucht, anstatt sie weiterhin zu vermeiden. Dieses Vorgehen kann herausfordernd sein und verlangt oft Mut, Vertrauen und Durchhaltevermögen. Gleichzeitig zeigen wissenschaftliche Studien sehr deutlich, dass Exposition bei vielen psychischen Erkrankungen zu den wirksamsten und nachhaltigsten Behandlungsmethoden gehört.
 
@@ -29,11 +35,12 @@ Außerdem nutze ich **EMDR** (Eye Movement Desensitization and Reprocessing), ei
 
 In meiner therapeutischen Arbeit habe ich insbesondere die Kombination aus Expositionstherapie, ACT und EMDR als sehr wirksam erlebt. Deshalb prägen diese Ansätze meine therapeutische Arbeit aktuell in besonderem Maße. Gleichzeitig bedeutet das auch: Wenn Sie sich grundsätzlich nicht vorstellen können, sich im Rahmen einer Therapie belastenden Situationen oder Gefühlen zuzuwenden, bin ich vermutlich nicht die richtige Therapeutin für Sie. Aus meiner Sicht sind Expositionen bei vielen psychischen Erkrankungen ein zentraler Bestandteil nachhaltiger Veränderung.
 
-</section>
+</div>
+</details>
 
-<section class="content-block about-qualifikation">
-
-## Qualifikation
+<details class="accordion-item about-qual-accordion">
+<summary>Qualifikation</summary>
+<div class="accordion-body">
 
 Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Erfahrung im ambulanten, teilstationären und klinischen Bereich. In meiner bisherigen Tätigkeit konnte ich Menschen mit unterschiedlichsten psychischen Erkrankungen und Lebenssituationen begleiten und behandeln.
 
@@ -51,5 +58,10 @@ Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Er
 * Klinische Erfahrung am Universitätsklinikum Bonn auf einer geschützten sowie offenen Station der Psychiatrie
 * Ambulante psychotherapeutische Tätigkeit in psychotherapeutischen Institutsambulanzen in Köln, unter anderem bei Prof. Dr. Dr. Pukrop sowie bei Dr. Christoph Abel und Pamela Abel
 * Aktuell Vertretung eines psychotherapeutischen Kassensitzes im Rahmen einer Elternzeitvertretung
+
+</div>
+</details>
+
+</div>
 
 </section>
