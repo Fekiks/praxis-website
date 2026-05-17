@@ -72,6 +72,15 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
     hyphens: manual;
   }
 
+  /* Qualifikation: kein Blocksatz – vermeidet unnatürliche Wortabstände; kursiv/Listen linksbündig */
+  .about-content :global(.about-qualifikation p),
+  .about-content :global(.about-qualifikation li) {
+    text-align: start;
+    text-align-last: auto;
+    hyphens: manual;
+    word-spacing: normal;
+  }
+
   .about-portrait {
     grid-column: 2;
     grid-row: 1;
