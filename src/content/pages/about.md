@@ -12,30 +12,34 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 
 </section>
 
-<div class="about-teasers-grid" role="list">
-
-<a class="about-teaser-tile-link" href="/about/mein-ansatz/" role="listitem">
+<section class="content-block about-teaser-block">
+<a class="about-teaser-tile-link" href="/about/mein-ansatz/">
 <h3 class="about-teaser-title">Mein Ansatz</h3>
 <p class="about-teaser-text">Meine Arbeit folgt den AWMF-Leitlinien. Schwerpunkte sind <strong>Exposition</strong>, <strong>ACT</strong> und <strong>EMDR</strong> – fundiert, verbindlich und auf Ihre Lebenssituation abgestimmt.</p>
 <span class="about-teaser-cta">Mehr zum therapeutischen Ansatz</span>
 </a>
+</section>
 
-<a class="about-teaser-tile-link" href="/about/qualifikation/" role="listitem">
+<section class="content-block about-teaser-block">
+<a class="about-teaser-tile-link" href="/about/qualifikation/">
 <h3 class="about-teaser-title">Qualifikationen</h3>
 <p class="about-teaser-text">Studium der Psychologie in Tübingen, Approbation mit Fachkunde Verhaltenstherapie, systemische Beratung, Gruppentherapie und <strong>EMDR</strong>-Weiterbildung.</p>
 <span class="about-teaser-cta">Mehr zu Ausbildung und Zusatzqualifikationen</span>
 </a>
+</section>
 
-<a class="about-teaser-tile-link" href="/about/werdegang/" role="listitem">
+<section class="content-block about-teaser-block">
+<a class="about-teaser-tile-link" href="/about/werdegang/">
 <h3 class="about-teaser-title">Beruflicher Werdegang</h3>
 <p class="about-teaser-text">Erfahrung in <strong>Tagesklinik</strong>, stationärer <strong>Psychiatrie</strong> und ambulanter Versorgung – unter anderem in Köln und Bonn.</p>
 <span class="about-teaser-cta">Mehr zur beruflichen Laufbahn</span>
 </a>
+</section>
 
-<a class="about-teaser-tile-link" href="/about/mitgliedschaften/" role="listitem">
+<section class="content-block about-teaser-block">
+<a class="about-teaser-tile-link" href="/about/mitgliedschaften/">
 <h3 class="about-teaser-title">Mitgliedschaften</h3>
 <p class="about-teaser-text">Mitglied in <strong>PTK&nbsp;NRW</strong>, <strong>DPtV</strong> und <strong>DVT</strong> – berufsständische und fachliche Verbände der Psychotherapie.</p>
 <span class="about-teaser-cta">Mehr zu den Verbänden</span>
 </a>
-
-</div>
+</section>
