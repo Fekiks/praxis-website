@@ -498,10 +498,12 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin: 0 auto;
         height: auto;
         width: auto;
-        max-width: min(360px, 94vw);
-        max-height: 108px;
+        max-width: min(296px, 88vw);
+        max-height: 90px;
         object-fit: contain;
         opacity: 1;
+        transform-origin: center;
+        transform: scaleX(1.075);
         /* Fuß-Logo: einheitlich dunkelbraun (~Fließtext) für bessere Lesbarkeit */
         filter: brightness(0) saturate(100%) invert(17%) sepia(12%) saturate(1180%) hue-rotate(348deg)
           brightness(0.93) contrast(0.92);
@@ -514,9 +516,10 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         }
 
         .site-end-logo-img {
-          width: 100%;
-          max-width: none;
-          max-height: 240px;
+          width: auto;
+          max-width: min(408px, 58vw);
+          max-height: 178px;
+          transform: scaleX(1.085);
         }
       }
 
@@ -593,9 +596,10 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         }
 
         .site-end-logo-img {
-          width: 100%;
-          max-width: none;
-          max-height: 128px;
+          width: auto;
+          max-width: min(268px, 84vw);
+          max-height: 78px;
+          transform: scaleX(1.08);
         }
       }
     </style>
