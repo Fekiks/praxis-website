@@ -516,17 +516,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         max-width: min(310px, 90vw);
         max-height: 96px;
         object-fit: contain;
-        /* PNG 1:1 wie Repo-Original; Filter dunkelt auf Braun und wirkt Kanten kräftiger */
-        filter:
-          brightness(0.71)
-          sepia(0.22)
-          saturate(2.05)
-          hue-rotate(348deg)
-          contrast(1.18)
-          drop-shadow(0.42px 0 0 rgb(74 61 53 / 0.55))
-          drop-shadow(-0.42px 0 0 rgb(74 61 53 / 0.55))
-          drop-shadow(0 0.42px 0 rgb(74 61 53 / 0.5))
-          drop-shadow(0 -0.42px 0 rgb(74 61 53 / 0.5));
       }
 
       @media (min-width: 769px) {
