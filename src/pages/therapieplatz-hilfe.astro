@@ -8,116 +8,113 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   description="Tipps und Anlaufstellen bei Wartezeit auf einen Psychotherapieplatz in Köln und deutschlandweit – ergänzend zur Praxis Katja Stumper."
 >
   <div class="home-sections therapie-tips">
-    <section class="content-block">
-      <h1 class="page-title">Ihre Möglichkeiten, einen Therapieplatz zu finden</h1>
-      <p class="intro">
+    <header class="therapie-intro" aria-labelledby="therapie-h1">
+      <p class="therapie-eyebrow">Orientierung</p>
+      <h1 id="therapie-h1">Ihre Möglichkeiten, einen Therapieplatz zu finden</h1>
+      <p class="therapie-lead">
         Hier finden Sie ergänzende Hinweise zur Suche nach einem Therapieplatz außerhalb meines Angebots.
+      </p>
+    </header>
+
+    <section class="content-block">
+      <h2 class="tip-step-title">Institutsambulanzen</h2>
+      <p>
+        In Institutsambulanzen ist die Chance, zeitnah einen Therapieplatz zu erhalten, oft höher, da dort sehr viele Therapeutinnen und Therapeuten arbeiten und ausgebildet werden.
+      </p>
+      <p>Nachfolgend finden Sie einige Adressen von Institutsambulanzen, an die Sie sich wenden können:</p>
+      <ul>
+        <li><a href="https://www.avt-koeln.org/patient-innen/" target="_blank" rel="noopener noreferrer">AVT Köln</a></li>
+        <li>
+          <a href="https://www.hf.uni-koeln.de/42815" target="_blank" rel="noopener noreferrer"
+            >Psychodynamische Hochschulambulanz der Universität zu Köln</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.app-koeln.de/psychotherapie/ambulanz-fuer-psychotherapie/"
+            target="_blank"
+            rel="noopener noreferrer">APP Köln</a
+          >
+        </li>
+        <li>
+          <a href="https://wgi-institut.de/institutsambulanz/" target="_blank" rel="noopener noreferrer"
+            >WGI Institut</a
+          >
+        </li>
+        <li>
+          <a href="https://ipr.iprkoeln.de/ambulanz.html" target="_blank" rel="noopener noreferrer">IPR Köln</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content-block">
+      <h2 class="tip-step-title">Terminservicestelle der KBV</h2>
+      <p>
+        Für weitere Erstgespräche können Sie sich an die Terminservicestelle wenden, diese erreichen Sie telefonisch unter
+        <a href="tel:116117">116117</a> oder online über
+        <a href="https://www.kbv.de/html/terminvermittlung.php" target="_blank" rel="noopener noreferrer"
+          >die Terminvermittlung der KBV</a
+        >.
       </p>
     </section>
 
-    <section class="content-block tips-list-wrap">
-      <ul class="tips-root">
-        <li>
-          <h2 class="tip-step-title">Institutsambulanzen</h2>
-          <p>
-            In Institutsambulanzen ist die Chance, zeitnah einen Therapieplatz zu erhalten, oft höher, da dort sehr viele Therapeutinnen und Therapeuten arbeiten und ausgebildet werden.
-          </p>
-          <p>Nachfolgend finden Sie einige Adressen von Institutsambulanzen, an die Sie sich wenden können:</p>
-          <ul>
-            <li><a href="https://www.avt-koeln.org/patient-innen/" target="_blank" rel="noopener noreferrer">AVT Köln</a></li>
-            <li>
-              <a href="https://www.hf.uni-koeln.de/42815" target="_blank" rel="noopener noreferrer"
-                >Psychodynamische Hochschulambulanz der Universität zu Köln</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.app-koeln.de/psychotherapie/ambulanz-fuer-psychotherapie/"
-                target="_blank"
-                rel="noopener noreferrer">APP Köln</a
-              >
-            </li>
-            <li>
-              <a href="https://wgi-institut.de/institutsambulanz/" target="_blank" rel="noopener noreferrer"
-                >WGI Institut</a
-              >
-            </li>
-            <li>
-              <a href="https://ipr.iprkoeln.de/ambulanz.html" target="_blank" rel="noopener noreferrer">IPR Köln</a>
-            </li>
-          </ul>
-        </li>
+    <section class="content-block">
+      <h2 class="tip-step-title">Direkt in Praxen anfragen</h2>
+      <p>
+        Sie können selbst aktiv werden und direkt in Praxen anrufen. Kontakte finden Sie zum Beispiel
+        über
+        <a href="https://www.therapie.de/psyche/info/" target="_blank" rel="noopener noreferrer">therapie.de</a>.
+        Geben Sie dort unter „Wo suchen Sie?“ Ihren Ort ein und nutzen Sie anschließend die Filter links
+        unter der Karte für eine präzisere Suche.
+      </p>
+    </section>
 
-        <li>
-          <h2 class="tip-step-title">Terminservicestelle der KBV</h2>
-          <p>
-            Für weitere Erstgespräche können Sie sich an die Terminservicestelle wenden, diese erreichen Sie telefonisch unter
-            <a href="tel:116117">116117</a> oder online über
-            <a href="https://www.kbv.de/html/terminvermittlung.php" target="_blank" rel="noopener noreferrer"
-              >die Terminvermittlung der KBV</a
-            >.
-          </p>
-        </li>
+    <section class="content-block">
+      <h2 class="tip-step-title">Doctolib</h2>
+      <p>
+        Sie können auch bei
+        <a href="https://www.doctolib.de" target="_blank" rel="noopener noreferrer">Doctolib</a>
+        nach freien Erstgesprächen und Therapieplätzen suchen.
+      </p>
+    </section>
 
-        <li>
-          <h2 class="tip-step-title">Direkt in Praxen anfragen</h2>
-          <p>
-            Sie können selbst aktiv werden und direkt in Praxen anrufen. Kontakte finden Sie zum Beispiel
-            über
-            <a href="https://www.therapie.de/psyche/info/" target="_blank" rel="noopener noreferrer">therapie.de</a>.
-            Geben Sie dort unter „Wo suchen Sie?“ Ihren Ort ein und nutzen Sie anschließend die Filter links
-            unter der Karte für eine präzisere Suche.
-          </p>
-        </li>
+    <section class="content-block">
+      <h2 class="tip-step-title">Absagen &amp; Kostenerstattung</h2>
+      <p>
+        Sie können Absagen von Psychotherapeutinnen und Psychotherapeuten sammeln, um bei Ihrer
+        Krankenkasse nachzuweisen, dass aktuell kein regulärer Therapieplatz verfügbar ist. Dadurch finanzieren Krankenkassen
+        unter bestimmten Voraussetzungen eine Behandlung bei Therapeutinnen und Therapeuten ohne
+        Kassensitz.
+      </p>
+      <p>
+        Informieren Sie sich direkt bei Ihrer Krankenkasse, welche Nachweise erforderlich sind und wie
+        viele Absagen benötigt werden.
+      </p>
+      <p>
+        Mehr zum <strong>Kostenerstattungsverfahren</strong> finden Sie in der Broschüre der
+        Bundespsychotherapeutenkammer:
+        <a
+          href="https://www.pro-psychologie.de/Kostenerstattung%20Flyer%20BPtK.pdf"
+          target="_blank"
+          rel="noopener noreferrer">PDF „Kostenerstattung“ bei pro-psychologie.de</a
+        >.
+      </p>
+    </section>
 
-        <li>
-          <h2 class="tip-step-title">Doctolib</h2>
-          <p>
-            Sie können auch bei
-            <a href="https://www.doctolib.de" target="_blank" rel="noopener noreferrer">Doctolib</a>
-            nach freien Erstgesprächen und Therapieplätzen suchen.
-          </p>
-        </li>
-
-        <li>
-          <h2 class="tip-step-title">Absagen &amp; Kostenerstattung</h2>
-          <p>
-            Sie können Absagen von Psychotherapeutinnen und Psychotherapeuten sammeln, um bei Ihrer
-            Krankenkasse nachzuweisen, dass aktuell kein regulärer Therapieplatz verfügbar ist. Dadurch finanzieren Krankenkassen
-            unter bestimmten Voraussetzungen eine Behandlung bei Therapeutinnen und Therapeuten ohne
-            Kassensitz.
-          </p>
-          <p>
-            Informieren Sie sich direkt bei Ihrer Krankenkasse, welche Nachweise erforderlich sind und wie
-            viele Absagen benötigt werden.
-          </p>
-          <p>
-            Mehr zum <strong>Kostenerstattungsverfahren</strong> finden Sie in der Broschüre der
-            Bundespsychotherapeutenkammer:
-            <a
-              href="https://www.pro-psychologie.de/Kostenerstattung%20Flyer%20BPtK.pdf"
-              target="_blank"
-              rel="noopener noreferrer">PDF „Kostenerstattung“ bei pro-psychologie.de</a
-            >.
-          </p>
-        </li>
-
-        <li>
-          <h2 class="tip-step-title">Online-Therapie zur Überbrückung</h2>
-          <p>
-            Es besteht die Möglichkeit, eine Online-Therapie zu beginnen. Plattformen wie
-            <a href="https://minddoc.com/de/de/" target="_blank" rel="noopener noreferrer">MindDoc</a>,
-            <a href="https://onlinepsychotherapie.kirinus.de/" target="_blank" rel="noopener noreferrer"
-              >KIRINUS</a
-            >
-            oder
-            <a href="https://invirto.de/tk/" target="_blank" rel="noopener noreferrer">invirto</a>
-            bieten psychotherapeutische Behandlungen per Video an, die von gesetzlichen Krankenkassen
-            finanziert werden können. Solche Angebote können zudem helfen, Wartezeiten auf einen regulären
-            Therapieplatz zu überbrücken.
-          </p>
-        </li>
-      </ul>
+    <section class="content-block">
+      <h2 class="tip-step-title">Online-Therapie zur Überbrückung</h2>
+      <p>
+        Es besteht die Möglichkeit, eine Online-Therapie zu beginnen. Plattformen wie
+        <a href="https://minddoc.com/de/de/" target="_blank" rel="noopener noreferrer">MindDoc</a>,
+        <a href="https://onlinepsychotherapie.kirinus.de/" target="_blank" rel="noopener noreferrer"
+          >KIRINUS</a
+        >
+        oder
+        <a href="https://invirto.de/tk/" target="_blank" rel="noopener noreferrer">invirto</a>
+        bieten psychotherapeutische Behandlungen per Video an, die von gesetzlichen Krankenkassen
+        finanziert werden können. Solche Angebote können zudem helfen, Wartezeiten auf einen regulären
+        Therapieplatz zu überbrücken.
+      </p>
     </section>
 
     <section class="content-block highlight">
@@ -136,47 +133,47 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <style>
-    .page-title {
-      font-size: clamp(1.55rem, 2.2vw, 1.9rem);
-      margin-bottom: 0.55rem;
+    /* Wie die Hero-Zeile auf der Startseite: direkt auf dem Seitenhintergrund, ohne Kachel */
+    .therapie-intro {
+      margin: clamp(4px, 1.5vw, 12px) 0 clamp(10px, 2vw, 18px);
+      padding: 0;
     }
 
-    .intro {
+    .therapie-eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 0;
+      font-weight: 600;
     }
 
-    .tips-root {
-      list-style: disc;
-      margin: 0;
-      padding-left: 1.15em;
-    }
-
-    .tips-root > li {
-      padding-left: 0.2em;
-    }
-
-    .tips-root > li::marker {
+    .therapie-intro h1 {
+      margin: 0 0 14px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(2rem, 3.4vw, 2.85rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
       color: var(--ink);
     }
 
-    .tips-root > li + li {
-      margin-top: 1.65rem;
+    .therapie-lead {
+      margin: 0;
+      max-width: 42ch;
+      font-size: clamp(1.02rem, 1.6vw, 1.12rem);
+      color: var(--text);
+      line-height: 1.65;
     }
 
     .tip-step-title {
-      margin: 0 0 0.75rem;
+      margin: 0 0 0.85rem;
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(1.28rem, 2.1vw, 1.72rem);
       font-weight: 600;
       line-height: 1.22;
       letter-spacing: -0.01em;
       color: var(--ink);
-    }
-
-    .therapie-tips :global(.tips-list-wrap p:last-child),
-    .therapie-tips :global(.tips-list-wrap ul:last-child) {
-      margin-bottom: 0;
     }
 
     .therapie-tips :global(section.content-block.highlight h2) {
