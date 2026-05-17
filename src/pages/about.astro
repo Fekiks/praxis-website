@@ -72,42 +72,45 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
     hyphens: manual;
   }
 
-  /* Teaser-Karten zu Detailseiten */
-  .about-content :global(.about-page .about-teaser-grid) {
+  /*
+   * Vier eigene Kacheln (wie content-block auf Home): keine äußere Kachel um das Raster.
+   * Optik angelehnt an .home-sections section.content-block in BaseLayout.
+   */
+  .about-content :global(.about-page .about-teasers-grid) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-    margin: 4px 0 0;
-    list-style: none;
+    gap: clamp(18px, 2.8vw, 26px);
+    margin: 0;
     padding: 0;
+    width: 100%;
+    list-style: none;
   }
 
-  .about-content :global(.about-page .about-teaser-card) {
+  .about-content :global(.about-page .about-teaser-tile-link) {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 18px 18px 16px;
+    padding: clamp(22px, 3.5vw, 38px);
     border: 1px solid var(--border);
-    border-radius: 20px;
+    border-radius: 22px;
     background: var(--card-bg);
-    box-shadow: 0 12px 36px var(--shadow);
+    box-shadow: 0 16px 44px var(--shadow);
     text-decoration: none;
     color: inherit;
+    min-height: 100%;
     transition:
       box-shadow 0.2s ease,
-      border-color 0.2s ease,
-      transform 0.15s ease;
-    min-height: 100%;
+      border-color 0.2s ease;
   }
 
-  .about-content :global(.about-page .about-teaser-card:hover),
-  .about-content :global(.about-page .about-teaser-card:focus-visible) {
+  .about-content :global(.about-page .about-teaser-tile-link:hover),
+  .about-content :global(.about-page .about-teaser-tile-link:focus-visible) {
     border-color: rgba(120, 100, 85, 0.35);
-    box-shadow: 0 16px 44px rgba(20, 20, 20, 0.1);
+    box-shadow: 0 20px 52px rgba(20, 20, 20, 0.12);
     outline: none;
   }
 
-  .about-content :global(.about-page .about-teaser-card:focus-visible) {
+  .about-content :global(.about-page .about-teaser-tile-link:focus-visible) {
     outline: 2px solid var(--ink);
     outline-offset: 3px;
   }
@@ -129,6 +132,7 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
     color: var(--text);
     text-align: start;
     hyphens: manual;
+    -webkit-hyphens: manual;
   }
 
   .about-content :global(.about-page .about-teaser-cta) {
@@ -141,7 +145,7 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
   }
 
   @media (max-width: 680px) {
-    .about-content :global(.about-page .about-teaser-grid) {
+    .about-content :global(.about-page .about-teasers-grid) {
       grid-template-columns: 1fr;
     }
   }
