@@ -477,8 +477,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       /*
-        Endlogo (stark quer, z. B. ~2:1): volle Containerbreite auf Desktop bis max-height;
-        Mobil ebenfalls volle Breite mit Höhenlimit, damit lange Banner lesbar bleiben.
+        Endlogo (stark quer): weiche Kantenmaske lässt Seitengrund durchscheinen,
+        damit das JPG nicht wie eine harte eingefügte Karte wirkt.
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -496,7 +496,27 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         max-width: min(360px, 94vw);
         max-height: 108px;
         object-fit: contain;
-        opacity: 0.92;
+        opacity: 1;
+        /*
+          Schwarze Maske = sichtbare Bildanteile.
+          Kontrolliertes Ausblenden an den Kanten verschmilzt den Logo-Grund mit --page-Verlauf.
+        */
+        -webkit-mask-image: radial-gradient(
+          ellipse 124% 120% at 50% 54%,
+          #000 0%,
+          #000 71%,
+          transparent 93%
+        );
+        mask-image: radial-gradient(
+          ellipse 124% 120% at 50% 54%,
+          #000 0%,
+          #000 71%,
+          transparent 93%
+        );
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
       }
 
       @media (min-width: 769px) {
@@ -509,6 +529,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           width: 100%;
           max-width: none;
           max-height: 240px;
+          -webkit-mask-image: radial-gradient(
+            ellipse 138% 112% at 50% 50%,
+            #000 0%,
+            #000 66%,
+            transparent 95%
+          );
+          mask-image: radial-gradient(
+            ellipse 138% 112% at 50% 50%,
+            #000 0%,
+            #000 66%,
+            transparent 95%
+          );
         }
       }
 
@@ -588,6 +620,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           width: 100%;
           max-width: none;
           max-height: 128px;
+          -webkit-mask-image: radial-gradient(
+            ellipse 132% 128% at 50% 54%,
+            #000 0%,
+            #000 73%,
+            transparent 93%
+          );
+          mask-image: radial-gradient(
+            ellipse 132% 128% at 50% 54%,
+            #000 0%,
+            #000 73%,
+            transparent 93%
+          );
         }
       }
     </style>
