@@ -502,6 +502,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         max-height: 108px;
         object-fit: contain;
         opacity: 1;
+        /* Fuß-Logo: einheitlich dunkelbraun (~Fließtext) für bessere Lesbarkeit */
+        filter: brightness(0) saturate(100%) invert(17%) sepia(12%) saturate(1180%) hue-rotate(348deg)
+          brightness(0.93) contrast(0.92);
       }
 
       @media (min-width: 769px) {
