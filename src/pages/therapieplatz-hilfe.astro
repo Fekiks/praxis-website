@@ -128,7 +128,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <style>
-    /* Intro: Typo (Ausrichtung siehe is:global unten) */
+    /* Intro: Typo (Ausrichtung: BaseLayout .therapie-tips) */
     .therapie-intro {
       margin: clamp(4px, 1.5vw, 12px) 0 clamp(10px, 2vw, 18px);
       padding: 0;
@@ -155,7 +155,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       line-height: 1.65;
     }
 
-    /* Kacheln: Typo (Ausrichtung im globalen Block unten) */
+    /* Kacheln: Typo (Ausrichtung: BaseLayout .therapie-tips) */
     /* h2 wie globales Layout */
     .therapie-tips :global(section.content-block > h2:first-of-type) {
       margin: 0 auto 14px;
@@ -180,25 +180,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .therapie-tips :global(section.content-block p:last-child),
     .therapie-tips :global(section.content-block ul:last-child) {
       margin-bottom: 0;
-    }
-  </style>
-
-  <style is:global>
-    /* Sicher zentriert: scoped :global traf auf manchen Geräten die Absätze nicht zuverlässig */
-    main.layout-stacked .therapie-tips header.therapie-intro,
-    main.layout-stacked .therapie-tips header.therapie-intro h1,
-    main.layout-stacked .therapie-tips .therapie-lead,
-    main.layout-stacked .therapie-tips section.content-block,
-    main.layout-stacked .therapie-tips section.content-block h2,
-    main.layout-stacked .therapie-tips section.content-block p {
-      text-align: center;
-    }
-
-    main.layout-stacked .therapie-tips section.content-block ul {
-      display: inline-block;
-      margin: 0.75rem auto 0;
-      text-align: left;
-      padding-left: 1.2rem;
     }
   </style>
 </BaseLayout>
