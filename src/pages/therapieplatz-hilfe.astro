@@ -128,14 +128,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <style>
-    /* Intro ohne Kachel; Überschrift bewusst kleiner als die Startseiten-Hero */
+    /* Intro ohne Kachel; zentriert unter der Überschrift */
     .therapie-intro {
       margin: clamp(4px, 1.5vw, 12px) 0 clamp(10px, 2vw, 18px);
       padding: 0;
+      text-align: center;
     }
 
     .therapie-intro h1 {
-      margin: 0 0 12px;
+      margin: 0 auto 12px;
+      text-wrap: balance;
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(1.45rem, 2.5vw, 1.95rem);
       font-weight: 600;
