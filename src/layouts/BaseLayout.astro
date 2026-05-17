@@ -162,23 +162,24 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         --taupe-deep: #8f8374;
         --page: #cfc0b5;
         --page-deep: #bfb0a4;
-        --cream: #faf7f2;
-        --surface: #fffdfa;
+        --cream: #f9f5ef;
+        --surface: #f5f0ea;
         --ink: #1f1b17;
         --text: #2e2721;
         --muted: #5f534a;
-        --border: #c4b6a9;
-        --shadow: rgba(32, 24, 18, 0.075);
-        --shadow-strong: rgba(32, 24, 18, 0.13);
+        --border: #d0c6bb;
+        --shadow: rgba(32, 24, 18, 0.055);
+        --shadow-strong: rgba(32, 24, 18, 0.11);
         /* Überblendungen: Radiale, Hover, Kartenschatten */
-        --overlay-taupe: rgba(158, 140, 124, 0.36);
-        --overlay-taupe-hover: rgba(158, 140, 124, 0.32);
-        --overlay-cream-soft: rgba(250, 247, 242, 0.9);
-        --overlay-taupe-card: rgba(158, 140, 124, 0.2);
-        --header-fill: rgba(250, 247, 242, 0.94);
-        --card-bg: #f9f6f1;
-        --card-highlight-bg: #ebe1d8;
-        --card-highlight-border: rgba(92, 76, 65, 0.36);
+        --overlay-taupe: rgba(158, 140, 124, 0.34);
+        --overlay-taupe-hover: rgba(158, 140, 124, 0.3);
+        --overlay-cream-soft: rgba(249, 245, 239, 0.9);
+        --overlay-taupe-card: rgba(158, 140, 124, 0.16);
+        --header-fill: rgba(249, 245, 239, 0.94);
+        /* Kacheln näher am Seiten-Sandton, weniger harter Hell-Dunkel-Kontrast */
+        --card-bg: #ebe3d9;
+        --card-highlight-bg: #ddd3c8;
+        --card-highlight-border: rgba(92, 76, 65, 0.32);
       }
 
       * {
@@ -347,13 +348,13 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         border: 1px solid var(--border);
         border-radius: 22px;
         padding: clamp(24px, 3.5vw, 40px);
-        box-shadow: 0 16px 44px var(--shadow);
+        box-shadow: 0 13px 38px var(--shadow);
       }
 
       :global(.home-sections section.content-block.highlight) {
         background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
-        box-shadow: 0 16px 44px var(--shadow);
+        box-shadow: 0 13px 38px var(--shadow);
       }
 
       :global(.home-sections hr) {
@@ -498,10 +499,11 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin: 0 auto;
         height: auto;
         width: auto;
-        max-width: min(360px, 94vw);
-        max-height: 108px;
+        max-width: min(280px, 90vw);
+        max-height: 84px;
         object-fit: contain;
         opacity: 1;
+        filter: brightness(0.74) contrast(1.14);
       }
 
       @media (min-width: 769px) {
@@ -511,9 +513,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         }
 
         .site-end-logo-img {
-          width: 100%;
-          max-width: none;
-          max-height: 240px;
+          max-width: min(420px, 62vw);
+          width: auto;
+          max-height: 132px;
         }
       }
 
@@ -590,9 +592,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         }
 
         .site-end-logo-img {
-          width: 100%;
-          max-width: none;
-          max-height: 128px;
+          max-width: min(300px, 92vw);
+          width: auto;
+          max-height: 92px;
         }
       }
     </style>
