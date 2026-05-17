@@ -128,14 +128,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </div>
 
   <style>
-    /* Intro ohne Kachel; Überschrift bewusst kleiner als die Startseiten-Hero */
+    /* Intro ohne Kachel: alles mittig (explizit, damit nichts von globalen Regeln linksbündig bleibt) */
     .therapie-intro {
       margin: clamp(4px, 1.5vw, 12px) 0 clamp(10px, 2vw, 18px);
       padding: 0;
+      text-align: center;
     }
 
     .therapie-intro h1 {
-      margin: 0 0 12px;
+      margin: 0 auto 12px;
+      text-align: center;
+      text-wrap: balance;
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(1.45rem, 2.5vw, 1.95rem);
       font-weight: 600;
@@ -145,17 +148,30 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     }
 
     .therapie-lead {
-      margin: 0;
+      margin: 0 auto;
       max-width: none;
       width: 100%;
+      text-align: center;
+      text-wrap: balance;
       font-size: clamp(1.02rem, 1.6vw, 1.12rem);
       color: var(--text);
       line-height: 1.65;
     }
 
+    /* Kacheln: Text und Überschriften mittig; Liste unter „Institutsambulanzen“ als Block zentriert, Einträge links lesbar */
+    .therapie-tips :global(section.content-block) {
+      text-align: center;
+    }
+
+    .therapie-tips :global(section.content-block ul) {
+      display: inline-block;
+      margin: 0.75rem auto 0;
+      text-align: left;
+    }
     /* Kacheln: h2 wie globales Layout (gleiche Größe wie „In akuten psychischen Krisen“ / Standard-h2) */
     .therapie-tips :global(section.content-block > h2:first-of-type) {
-      margin: 0 0 14px;
+      margin: 0 auto 14px;
+      text-align: center;
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(1.45rem, 2.4vw, 1.85rem);
       font-weight: 600;
