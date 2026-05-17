@@ -31,7 +31,7 @@ In meiner therapeutischen Arbeit habe ich insbesondere die Kombination aus Expos
 
 </section>
 
-<section class="content-block">
+<section class="content-block about-qualifikation">
 
 ## Qualifikation
 
