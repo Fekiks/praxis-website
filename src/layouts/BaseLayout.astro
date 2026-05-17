@@ -477,8 +477,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       /*
-        Endlogo (stark quer): weiche Kantenmaske lässt Seitengrund durchscheinen,
-        damit das JPG nicht wie eine harte eingefügte Karte wirkt.
+        Fußbereichs-Logo (JPG): hellere JPG-Grundfarben gegen den Seitenverlauf durch
+        lokal gleichen Untergrund (--page/--page-deep) + multiply wie „Tinte auf Papier“
+        zusammenziehen – mindert sichtbare Rechteck-Kanten im Asset.
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -486,6 +487,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         padding: 0 16px 12px;
         text-align: center;
         box-sizing: border-box;
+        background: linear-gradient(180deg, var(--page) 0%, var(--page-deep) 88%);
       }
 
       .site-end-logo-img {
@@ -497,26 +499,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         max-height: 108px;
         object-fit: contain;
         opacity: 1;
-        /*
-          Schwarze Maske = sichtbare Bildanteile.
-          Kontrolliertes Ausblenden an den Kanten verschmilzt den Logo-Grund mit --page-Verlauf.
-        */
-        -webkit-mask-image: radial-gradient(
-          ellipse 124% 120% at 50% 54%,
-          #000 0%,
-          #000 71%,
-          transparent 93%
-        );
-        mask-image: radial-gradient(
-          ellipse 124% 120% at 50% 54%,
-          #000 0%,
-          #000 71%,
-          transparent 93%
-        );
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 100% 100%;
-        mask-size: 100% 100%;
+        mix-blend-mode: multiply;
       }
 
       @media (min-width: 769px) {
@@ -529,18 +512,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           width: 100%;
           max-width: none;
           max-height: 240px;
-          -webkit-mask-image: radial-gradient(
-            ellipse 138% 112% at 50% 50%,
-            #000 0%,
-            #000 66%,
-            transparent 95%
-          );
-          mask-image: radial-gradient(
-            ellipse 138% 112% at 50% 50%,
-            #000 0%,
-            #000 66%,
-            transparent 95%
-          );
         }
       }
 
@@ -620,18 +591,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           width: 100%;
           max-width: none;
           max-height: 128px;
-          -webkit-mask-image: radial-gradient(
-            ellipse 132% 128% at 50% 54%,
-            #000 0%,
-            #000 73%,
-            transparent 93%
-          );
-          mask-image: radial-gradient(
-            ellipse 132% 128% at 50% 54%,
-            #000 0%,
-            #000 73%,
-            transparent 93%
-          );
         }
       }
     </style>
