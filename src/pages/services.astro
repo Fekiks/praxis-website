@@ -16,7 +16,81 @@ const { Content } = await render(entry);
   title={entry.data.seoTitle ?? entry.data.title}
   description={entry.data.description}
 >
-  <div class="home-sections">
+  <div class="home-sections services-page">
     <Content />
   </div>
 </BaseLayout>
+
+<style>
+  /* Aufklappbare Kosten-Infos (native <details>, keine JS-Abhängigkeit) */
+  .services-page :global(.accordion-stack) {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 20px 0 18px;
+  }
+
+  .services-page :global(.accordion-item) {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--card-bg);
+    box-shadow: 0 12px 36px var(--shadow);
+    overflow: hidden;
+  }
+
+  .services-page :global(.accordion-item summary) {
+    padding: 16px 18px;
+    cursor: pointer;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.12rem;
+    color: var(--ink);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    line-height: 1.3;
+  }
+
+  .services-page :global(.accordion-item summary::-webkit-details-marker) {
+    display: none;
+  }
+
+  .services-page :global(.accordion-item summary::after) {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-right: 2px solid var(--muted);
+    border-bottom: 2px solid var(--muted);
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+    margin-top: -0.2em;
+  }
+
+  .services-page :global(.accordion-item[open] summary::after) {
+    transform: rotate(-135deg);
+    margin-top: 0.15em;
+  }
+
+  .services-page :global(.accordion-body) {
+    padding: 14px 18px 18px;
+    border-top: 1px solid var(--border);
+    background: rgba(250, 248, 245, 0.45);
+  }
+
+  .services-page :global(.accordion-body p) {
+    margin: 0 0 14px;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    font-size: 1.02rem;
+    line-height: 1.68;
+    color: var(--text);
+  }
+
+  .services-page :global(.accordion-body p:last-child) {
+    margin-bottom: 0;
+  }
+</style>
