@@ -23,21 +23,23 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 </a>
 
 <a class="about-teaser-card" href="/about/qualifikation/" role="listitem">
-<h3 class="about-teaser-title">Qualifikation</h3>
-<p class="about-teaser-text">Psychologie-Studium, Approbation mit Fachkunde Verhaltenstherapie sowie Erfahrung in Klinik, Tagesklinik und ambulanter Versorgung – von Tübingen und Bonn bis Köln.</p>
-<span class="about-teaser-cta">Mehr zu Ausbildung und Werdegang</span>
+<h3 class="about-teaser-title">Qualifikationen</h3>
+<p class="about-teaser-text">Studium der Psychologie in Tübingen, Approbation mit Fachkunde Verhaltenstherapie, systemische Beratung, Gruppentherapie und <strong>EMDR</strong>-Weiterbildung.</p>
+<span class="about-teaser-cta">Mehr zu Ausbildung und Zusatzqualifikationen</span>
+</a>
+
+<a class="about-teaser-card" href="/about/werdegang/" role="listitem">
+<h3 class="about-teaser-title">Beruflicher Werdegang</h3>
+<p class="about-teaser-text">Erfahrung in <strong>Tagesklinik</strong>, stationärer <strong>Psychiatrie</strong> und ambulanter Versorgung – unter anderem in Köln und Bonn.</p>
+<span class="about-teaser-cta">Mehr zur beruflichen Laufbahn</span>
+</a>
+
+<a class="about-teaser-card" href="/about/mitgliedschaften/" role="listitem">
+<h3 class="about-teaser-title">Mitgliedschaften</h3>
+<p class="about-teaser-text">Mitglied in <strong>PTK&nbsp;NRW</strong>, <strong>DPtV</strong> und <strong>DVT</strong> – berufsständische und fachliche Verbände der Psychotherapie.</p>
+<span class="about-teaser-cta">Mehr zu den Verbänden</span>
 </a>
 
 </div>
-
-</section>
-
-<section class="content-block">
-
-## Mitgliedschaften
-
-- Psychotherapeutenkammer Nordrhein-Westfalen (PTK NRW)
-- Deutsche PsychotherapeutenVereinigung (DPtV)
-- Deutscher Fachverband für Verhaltenstherapie e. V. (DVT)
 
 </section>
