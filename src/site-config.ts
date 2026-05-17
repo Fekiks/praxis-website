@@ -1,3 +1,10 @@
+/** Transparentes Raster am Seitenfuß unter `public/`. */
+export const FOOTER_MARK = {
+  file: "images/praxis_footer_logo.png",
+  width: 1536,
+  height: 1024,
+} as const;
+
 /** Öffentliche Praxisdaten für Meta-Tags und strukturierte Daten (Schema.org). */
 export const PRACTICE = {
   siteName: "Praxis für Psychotherapie – Katja Stumper",

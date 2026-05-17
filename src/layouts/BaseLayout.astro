@@ -1,5 +1,9 @@
 ---
-import { DEFAULT_META_DESCRIPTION, PRACTICE } from "../site-config";
+import {
+  DEFAULT_META_DESCRIPTION,
+  FOOTER_MARK,
+  PRACTICE,
+} from "../site-config";
 
 interface Props {
   title: string;
@@ -42,8 +46,13 @@ const appleTouchIconRelative = "images/Bild_Katja.jpg";
 const appleTouchIconAbsoluteHref =
   siteBaseHref !== null ? new URL(appleTouchIconRelative, siteBaseHref).href : null;
 
-/** Social-Vorschau (og:image, twitter:image) — Praxisbild ohne separates Fußlogo */
-const ogImageHref = shareImageAbsoluteHref;
+const footerMarkSrc = `${import.meta.env.BASE_URL}${FOOTER_MARK.file}`;
+const footerMarkAbsoluteHref =
+  siteBaseHref !== null ? new URL(FOOTER_MARK.file, siteBaseHref).href : null;
+
+/** Social-Vorschau: Fußgrafik wenn vorhanden, sonst Praxis-/Hero-JPEG */
+const ogImageHref =
+  footerMarkAbsoluteHref ?? shareImageAbsoluteHref;
 
 const structuredDataJson =
   Astro.site && siteBaseHref && rootUrl && !noindex
@@ -60,7 +69,19 @@ const structuredDataJson =
             ],
             description: DEFAULT_META_DESCRIPTION.trim(),
             url: rootUrl,
-            ...(shareImageAbsoluteHref ? { image: [shareImageAbsoluteHref] } : {}),
+            ...(footerMarkAbsoluteHref
+              ? {
+                  logo: {
+                    "@type": "ImageObject",
+                    url: footerMarkAbsoluteHref,
+                    width: FOOTER_MARK.width,
+                    height: FOOTER_MARK.height,
+                  },
+                  image: [footerMarkAbsoluteHref],
+                }
+              : shareImageAbsoluteHref
+                ? { image: [shareImageAbsoluteHref] }
+                : {}),
             telephone: PRACTICE.telephone,
             email: PRACTICE.email,
             address: {
@@ -198,6 +219,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       nav,
       main,
+      .site-end-logo,
       footer {
         position: relative;
         z-index: 1;
@@ -478,9 +500,39 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         border: 1px solid var(--border);
       }
 
+      .site-end-logo {
+        width: min(1120px, calc(100% - 32px));
+        margin: 36px auto 0;
+        padding: 0 16px 12px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .site-end-logo-img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: auto;
+        max-width: min(310px, 90vw);
+        max-height: 96px;
+        object-fit: contain;
+      }
+
+      @media (min-width: 769px) {
+        .site-end-logo {
+          width: min(1120px, calc(100% - 24px));
+          padding: 0 12px 16px;
+        }
+
+        .site-end-logo-img {
+          max-width: min(440px, 58vw);
+          max-height: 186px;
+        }
+      }
+
       footer {
         text-align: center;
-        margin: 36px 0 28px;
+        margin: 0 0 28px;
         padding: 0;
         font-size: 0.95rem;
         color: var(--muted);
@@ -544,6 +596,16 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         :global(main.layout-home .home-sections) {
           width: calc(100% - 20px);
         }
+
+        .site-end-logo {
+          margin-top: 28px;
+          padding-bottom: 10px;
+        }
+
+        .site-end-logo-img {
+          max-width: min(284px, 88vw);
+          max-height: 86px;
+        }
       }
     </style>
     {structuredDataJson && (
@@ -571,6 +633,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
     <main class={mainLayoutClass}>
       <slot />
     </main>
+
+    <aside class="site-end-logo" aria-label="Praxis-Marke">
+      <img
+        src={footerMarkSrc}
+        alt={`Logo: ${PRACTICE.siteName}`}
+        class="site-end-logo-img"
+        width={FOOTER_MARK.width}
+        height={FOOTER_MARK.height}
+        loading="lazy"
+        decoding="async"
+      />
+    </aside>
 
     <footer>
       <p class="footer-links">
