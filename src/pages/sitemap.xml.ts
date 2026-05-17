@@ -4,6 +4,8 @@ import type { APIRoute } from "astro";
 const PATHS = [
   "/",
   "/about/",
+  "/about/mein-ansatz/",
+  "/about/qualifikation/",
   "/contact/",
   "/services/",
   "/impressum/",

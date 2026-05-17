@@ -106,9 +106,13 @@ const structuredDataJson =
       })
     : null;
 
+const normalizePath = (path: string) => path.replace(/\/+$/, "") || "/";
+
 const isActive = (path: string) => {
-  if (path === "/") return currentPath === "/";
-  return currentPath === path || currentPath === `${path}/`;
+  const cur = normalizePath(currentPath);
+  const target = normalizePath(path);
+  if (target === "/") return cur === "/";
+  return cur === target || cur.startsWith(`${target}/`);
 };
 
 /** Nur bei Vercel-Build gesetzt – zum Abgleich, ob Production wirklich neu gebaut wurde */
