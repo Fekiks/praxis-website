@@ -1,0 +1,499 @@
+---
+import { PRACTICE } from "../site-config";
+
+const accessKeyRaw = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY;
+const accessKey =
+  typeof accessKeyRaw === "string" ? accessKeyRaw.trim() : "";
+const formActive = accessKey.length > 0;
+
+const mailQuery = encodeURIComponent("Anfrage Psychotherapie");
+const mailtoHref = `mailto:${PRACTICE.email}?subject=${mailQuery}`;
+---
+
+<section class="content-block contact-form-block" aria-labelledby="kontaktformular-heading">
+  <h2 id="kontaktformular-heading">Kontaktaufnahme</h2>
+
+  <p class="contact-form-intro">
+    Wenn Sie mir eine erste Nachricht schreiben möchten, können Sie das folgende Formular nutzen –
+    ich lese alle Anfragen persönlich und melde mich zeitnah bei Ihnen.
+  </p>
+
+  {!formActive && (
+    <p class="contact-form-env-hint">
+      Das Formular ist derzeit ohne Serverkonfiguration nicht aktiv. Sie erreichen mich weiterhin direkt per
+      {" "}<a href={mailtoHref}>E-Mail ({PRACTICE.email})</a> oder unter{" "}
+      <a href={`tel:${PRACTICE.telephone.replace(/\s+/g, "")}`}>Telefon</a>.
+      <span class="contact-form-env-meta">
+        (Für Website-Betreiber:in: Umgebungsvariable <code>PUBLIC_WEB3FORMS_ACCESS_KEY</code> setzen.)
+      </span>
+    </p>
+  )}
+
+  <form id="practice-contact-form" class="practice-contact-form" method="post" novalidate>
+    <fieldset class="contact-fields" disabled={!formActive}>
+      <legend class="visually-hidden">Kontaktformular</legend>
+
+      <input type="hidden" name="subject" value={`[Website] Kontakt Psychotherapie – ${PRACTICE.siteName}`} />
+
+      <div class="form-row">
+        <label class="required" for="cf-anliegen-select">Zu welchem Anliegen kontaktieren Sie mich?</label>
+        <select id="cf-anliegen-select" name="anliegen_art" required>
+          <option value="" disabled selected>Bitte wählen</option>
+          <option value="erstgespraech">Erstgespräch / neue Therapie</option>
+          <option value="beratung">Psychotherapeutische Beratung</option>
+          <option value="warteliste">Aufnahme auf eine Wartezeitliste</option>
+          <option value="infos">Informationsanfrage (z.&nbsp;B. Kosten, Vorgehen)</option>
+          <option value="sonstiges">Sonstiges</option>
+        </select>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label class="required" for="cf-name">Ihr Vor- und Nachname</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="form-row">
+          <label class="required" for="cf-email">E-Mail-Adresse</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required />
+        </div>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label class="required" for="cf-phone">Telefon</label>
+          <input id="cf-phone" name="telefon" type="tel" autocomplete="tel" required />
+        </div>
+        <div class="form-row">
+          <label for="cf-beruf">Beruf (optional)</label>
+          <input id="cf-beruf" name="beruf" type="text" autocomplete="organization-title" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="required" for="cf-wohnort">Wohnort oder Stadtteil</label>
+        <input id="cf-wohnort" name="wohnort" type="text" autocomplete="address-level2" required />
+      </div>
+
+      <div class="form-row">
+        <label class="required" for="cf-kasse">Mit welcher gesetzlichen Krankenkasse sind Sie versichert?</label>
+        <input id="cf-kasse" name="krankenkasse" type="text" autocomplete="organization" required />
+      </div>
+
+      <fieldset class="form-radio-group">
+        <legend>Hatten Sie zuvor schon eine Psychotherapie?</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="therapie_zuvor" value="ja" required /> Ja</label>
+          <label><input type="radio" name="therapie_zuvor" value="nein" /> Nein</label>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="cf-therapie-details">
+          Bei „Ja“ oder falls relevant – kurze Angaben (Therapierichtung, Dauer&nbsp;…) (optional)
+        </label>
+        <textarea id="cf-therapie-details" name="therapie_details" rows="3"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label class="required" for="cf-slot">Wann könnte ich Sie erreichen?</label>
+        <textarea
+          id="cf-slot"
+          name="verfuegbarkeit"
+          rows="3"
+          required
+          placeholder="z.&nbsp;B. werktags vormittags, bestimmte Tage&nbsp;…"
+        ></textarea>
+      </div>
+
+      <div class="form-row">
+        <label class="required" for="cf-message">Welches Anliegen möchten Sie ansprechen?</label>
+        <textarea id="cf-message" name="anliegen_detail" rows="6" required></textarea>
+      </div>
+
+      <div class="form-row form-checkbox-row">
+        <label class="checkbox-label required">
+          <input type="checkbox" name="datenschutz_bestaetigt" value="ja" required />
+          Ich habe die{" "}<a href="/datenschutz/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>{" "}
+          zur Kenntnis genommen.*
+        </label>
+      </div>
+
+      <!-- Honeypot: leer lassen (Spam-Schutz Web3Forms) -->
+      <input
+        type="text"
+        name="botcheck"
+        class="contact-honey"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
+
+      <div id="contact-form-status" class="contact-form-status" aria-live="polite" role="status"></div>
+
+      <div class="form-actions">
+        <button type="submit" class="contact-submit">{formActive ? "Nachricht senden" : "Formular gesperrt"}</button>
+      </div>
+    </fieldset>
+  </form>
+
+  {!formActive && (
+    <p class="contact-form-mailto-alt">
+      <a class="cta" href={mailtoHref}>Nachricht direkt per E-Mail schreiben</a>
+    </p>
+  )}
+</section>
+
+{formActive && (
+  <script define:vars={{ web3AccessKey: accessKey }}>
+    const form = document.getElementById("practice-contact-form");
+    const statusEl = document.getElementById("contact-form-status");
+
+    function setStatus(kind, text) {
+      if (!statusEl) return;
+      statusEl.textContent = text;
+      statusEl.dataset.kind = kind;
+    }
+
+    if (form instanceof HTMLFormElement && web3AccessKey) {
+      form.addEventListener("submit", async (ev) => {
+        ev.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (!(submitBtn instanceof HTMLButtonElement)) return;
+
+        setStatus("", "");
+        submitBtn.disabled = true;
+
+        try {
+          const fd = new FormData(form);
+
+          /** @type {Record<string,string>} */
+          const data = {};
+
+          fd.forEach((value, key) => {
+            if (typeof value === "string") {
+              data[key] = value;
+            }
+          });
+
+          /** Zusätzliche strukturierte Zusammenfassung für die E-Mail-Inbox */
+          const zusammen =
+            [`Anliegen (Auswahl): ${data.anliegen_art ?? "-"}`,
+             `Versicherung/Kasse: ${data.krankenkasse ?? "-"}`,
+             `Psychotherapie zuvor: ${data.therapie_zuvor ?? "-"}`,
+             (data.therapie_details ?? "").trim()
+               ? `Frühere Therapie (Details):\n${data.therapie_details}`
+               : null,
+             `Verfügbarkeit/Kontaktzeiten:\n${data.verfuegbarkeit ?? "-"}`,
+             "",
+             "--- Freitext-Anliegen ---",
+             "",
+             data.anliegen_detail ?? "",
+            ].filter(Boolean).join("\n");
+
+          const payload = {
+            access_key: web3AccessKey,
+            ...data,
+            zusammenfassung: zusammen,
+          };
+
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(payload),
+          });
+
+          let body = {};
+          try {
+            body = await res.json();
+          } catch {
+            body = {};
+          }
+
+          const ok = res.ok && body.success === true;
+          const msg =
+            typeof body.message === "string"
+              ? body.message
+              : ok
+                ? "Vielen Dank – Ihre Nachricht wurde übermittelt. Ich melde mich bald bei Ihnen."
+                : "Senden ist fehlgeschlagen. Bitte versuchen Sie es später erneut oder schreiben Sie mir eine E-Mail.";
+
+          setStatus(ok ? "success" : "error", msg);
+          if (ok) form.reset();
+        } catch {
+          setStatus(
+            "error",
+            "Netzwerkfehler. Bitte prüfen Sie Ihre Verbindung oder schreiben Sie mir direkt eine E-Mail."
+          );
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+    }
+  </script>
+)}
+
+<style>
+  .contact-form-block .contact-form-intro {
+    margin: 0 0 1.25rem;
+    max-width: 62ch;
+    line-height: 1.78;
+    color: var(--muted);
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .contact-form-env-hint {
+    margin: 0 0 1.25rem;
+    max-width: 62ch;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    line-height: 1.72;
+    color: var(--text);
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .contact-form-env-meta {
+    display: block;
+    margin-top: 0.55rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-style: italic;
+    text-align: left;
+  }
+
+  .contact-form-env-meta code {
+    font-size: 0.88em;
+    font-family: ui-monospace, monospace;
+    color: var(--taupe-deep);
+  }
+
+  .practice-contact-form {
+    margin-top: 0.25rem;
+  }
+
+  .contact-fields {
+    margin: 0;
+    padding: 0;
+    border: none;
+    min-inline-size: unset;
+    max-width: min(620px, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1.05rem;
+  }
+
+  .form-grid-2 {
+    display: grid;
+    gap: 1.05rem;
+  }
+
+  @media (min-width: 620px) {
+    .form-grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.42rem;
+  }
+
+  .form-radio-group {
+    margin: 0;
+    padding: 0 0 0.15rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .form-radio-group legend {
+    padding: 0;
+    margin: 0 0 0.15rem;
+    font-weight: 600;
+    font-size: 0.94rem;
+    color: var(--text);
+    line-height: 1.35;
+  }
+
+  .radio-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+  }
+
+  .radio-row label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  label.required::after {
+    content: "*";
+    color: var(--taupe-deep);
+    font-weight: 600;
+    margin-left: 0.08em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    font: inherit;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.62rem 0.82rem;
+    box-shadow: 0 2px 0 var(--shadow);
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 2.86rem;
+  }
+
+  select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+    background-position:
+      calc(100% - 18px) 50%,
+      calc(100% - 12px) 50%;
+    background-size: 6px 6px,
+      6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 2.35rem;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid var(--taupe);
+    outline-offset: 1px;
+    border-color: var(--taupe-deep);
+    box-shadow: 0 0 0 3px rgba(158, 140, 124, 0.28);
+  }
+
+  input:disabled,
+  select:disabled,
+  textarea:disabled,
+  button.contact-submit:disabled {
+    opacity: 0.78;
+    cursor: not-allowed;
+  }
+
+  .form-checkbox-row {
+    margin-top: 0.2rem;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    font-weight: 500;
+    line-height: 1.62;
+    max-width: 62ch;
+  }
+
+  .checkbox-label.required::after {
+    content: "";
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    flex-shrink: 0;
+    width: auto;
+    margin-top: 0.22rem;
+    accent-color: var(--taupe-deep);
+  }
+
+  .checkbox-label a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
+  }
+
+  .contact-honey {
+    position: absolute;
+    inset-inline-start: -9999px;
+    inset-block-start: auto;
+    width: 4px;
+    height: 4px;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    border: 0;
+    padding: 0;
+  }
+
+  .contact-form-status {
+    min-height: 1.3em;
+    font-size: 0.93rem;
+    font-weight: 500;
+    line-height: 1.55;
+  }
+
+  .contact-form-status[data-kind="success"] {
+    color: #2f5c3f;
+  }
+
+  .contact-form-status[data-kind="error"] {
+    color: #8f2d2d;
+  }
+
+  .form-actions {
+    margin-top: 0.35rem;
+  }
+
+  button.contact-submit {
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 0.74rem 1.55rem;
+    border: 1px solid var(--muted);
+    color: var(--surface);
+    background: var(--muted);
+    box-shadow:
+      0 2px 0 var(--shadow-strong),
+      0 6px 20px rgba(32, 24, 18, 0.1);
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.15s ease,
+      border-color 0.2s ease;
+  }
+
+  button.contact-submit:hover:not(:disabled) {
+    background: var(--taupe-deep);
+    border-color: var(--taupe-deep);
+    transform: translateY(-1px);
+  }
+
+  .contact-form-mailto-alt {
+    margin: 1.15rem 0 0;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    white-space: nowrap;
+  }
+</style>
