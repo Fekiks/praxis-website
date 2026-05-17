@@ -154,24 +154,24 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
     <style>
       :root {
-        /* Bezug Logo-Hintergrund: warmes Logo-Beige ~#e1d7cd (+ abgestufte Ableitungen). */
-        --taupe: #c0b3a5;
-        --taupe-deep: #ada092;
-        --page: #e1d7cd;
-        --page-deep: #d4cac0;
-        --cream: #ede8e2;
-        --surface: #faf8f5;
+        /* Bezug Logo-Beige; Seitengrund etwas dunkler, helle Flächen minimal heller für mehr Kontrast. */
+        --taupe: #bdb0a2;
+        --taupe-deep: #a89486;
+        --page: #d7cbc0;
+        --page-deep: #c8bcb1;
+        --cream: #f5f1eb;
+        --surface: #fdfbf9;
         --ink: #141414;
         --text: #1f1d1b;
         --muted: #5c5650;
-        --border: #cdc3b8;
+        --border: #c5bab0;
         --shadow: rgba(20, 20, 20, 0.08);
         --shadow-strong: rgba(20, 20, 20, 0.14);
-        --header-fill: rgba(237, 232, 226, 0.92);
-        /* Standard-Kacheln: etwas heller als Seitengrund */
-        --card-bg: #ebe6df;
-        /* Hervorgehobene Kacheln etwas dunkler, zur Logo-Tonlage passend */
-        --card-highlight-bg: #ddd5ca;
+        --header-fill: rgba(245, 241, 235, 0.93);
+        /* Kacheln: heller gegenüber abgedunkeltem Grund */
+        --card-bg: #f4f1ec;
+        /* Hervorhebung zwischen Grund und sehr hellen Kacheln */
+        --card-highlight-bg: #d4c9bf;
         --card-highlight-border: rgba(110, 94, 80, 0.4);
       }
 
@@ -184,8 +184,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse 70% 45% at 12% 0%, rgba(192, 179, 165, 0.42), transparent 55%),
-          radial-gradient(ellipse 55% 40% at 88% 8%, rgba(237, 232, 226, 0.82), transparent 50%),
+          radial-gradient(ellipse 70% 45% at 12% 0%, rgba(178, 165, 150, 0.44), transparent 55%),
+          radial-gradient(ellipse 55% 40% at 88% 8%, rgba(245, 241, 235, 0.86), transparent 50%),
           linear-gradient(180deg, var(--cream) 0%, var(--page) 42%, var(--page-deep) 100%);
         color: var(--text);
         line-height: 1.7;
@@ -268,7 +268,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       .nav-links a:hover {
         color: var(--ink);
-        background: rgba(192, 179, 165, 0.35);
+        background: rgba(178, 165, 150, 0.36);
         transform: translateY(-1px);
       }
 
@@ -308,7 +308,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         border: 1px solid var(--border);
         box-shadow:
           0 22px 60px var(--shadow),
-          0 4px 14px rgba(192, 179, 165, 0.22);
+          0 4px 14px rgba(178, 165, 150, 0.24);
       }
 
       main.layout-stacked {
