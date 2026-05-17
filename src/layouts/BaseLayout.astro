@@ -154,25 +154,31 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
     <style>
       :root {
-        /* Bezug Logo-Beige; Seitengrund etwas dunkler, helle Flächen minimal heller für mehr Kontrast. */
-        --taupe: #bdb0a2;
-        --taupe-deep: #a89486;
-        --page: #d7cbc0;
-        --page-deep: #c8bcb1;
-        --cream: #f5f1eb;
-        --surface: #fdfbf9;
-        --ink: #141414;
-        --text: #1f1d1b;
-        --muted: #5c5650;
-        --border: #c5bab0;
-        --shadow: rgba(20, 20, 20, 0.08);
-        --shadow-strong: rgba(20, 20, 20, 0.14);
-        --header-fill: rgba(245, 241, 235, 0.93);
-        /* Kacheln: heller gegenüber abgedunkeltem Grund */
-        --card-bg: #f4f1ec;
-        /* Hervorhebung zwischen Grund und sehr hellen Kacheln */
-        --card-highlight-bg: #d4c9bf;
-        --card-highlight-border: rgba(110, 94, 80, 0.4);
+        /*
+          Praxis-Farbpalette: warm Sand/Pergament, ruhige Tiefe –
+          wirkt professionell ohne Klinikkühle.
+        */
+        --taupe: #ad9f8f;
+        --taupe-deep: #8f8374;
+        --page: #cfc0b5;
+        --page-deep: #bfb0a4;
+        --cream: #faf7f2;
+        --surface: #fffdfa;
+        --ink: #1f1b17;
+        --text: #2e2721;
+        --muted: #5f534a;
+        --border: #c4b6a9;
+        --shadow: rgba(32, 24, 18, 0.075);
+        --shadow-strong: rgba(32, 24, 18, 0.13);
+        /* Überblendungen: Radiale, Hover, Kartenschatten */
+        --overlay-taupe: rgba(158, 140, 124, 0.36);
+        --overlay-taupe-hover: rgba(158, 140, 124, 0.32);
+        --overlay-cream-soft: rgba(250, 247, 242, 0.9);
+        --overlay-taupe-card: rgba(158, 140, 124, 0.2);
+        --header-fill: rgba(250, 247, 242, 0.94);
+        --card-bg: #f9f6f1;
+        --card-highlight-bg: #ebe1d8;
+        --card-highlight-border: rgba(92, 76, 65, 0.36);
       }
 
       * {
@@ -184,8 +190,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse 70% 45% at 12% 0%, rgba(178, 165, 150, 0.44), transparent 55%),
-          radial-gradient(ellipse 55% 40% at 88% 8%, rgba(245, 241, 235, 0.86), transparent 50%),
+          radial-gradient(ellipse 70% 45% at 12% 0%, var(--overlay-taupe), transparent 55%),
+          radial-gradient(ellipse 55% 40% at 88% 8%, var(--overlay-cream-soft), transparent 50%),
           linear-gradient(180deg, var(--cream) 0%, var(--page) 42%, var(--page-deep) 100%);
         color: var(--text);
         line-height: 1.7;
@@ -268,7 +274,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       .nav-links a:hover {
         color: var(--ink);
-        background: rgba(178, 165, 150, 0.36);
+        background: var(--overlay-taupe-hover);
         transform: translateY(-1px);
       }
 
@@ -308,7 +314,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         border: 1px solid var(--border);
         box-shadow:
           0 22px 60px var(--shadow),
-          0 4px 14px rgba(178, 165, 150, 0.24);
+          0 4px 14px var(--overlay-taupe-card);
       }
 
       main.layout-stacked {
@@ -448,7 +454,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.cta:hover) {
         transform: translateY(-2px);
         box-shadow: 0 14px 30px var(--shadow-strong);
-        background: #2a2826;
+        background: #3a342f;
       }
 
       :global(.follow-text-cta) {
