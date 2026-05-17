@@ -16,7 +16,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">1) Institutsambulanzen kontaktieren</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">1</span>
+        <span class="tip-heading-text">Institutsambulanzen</span>
+      </h2>
       <p>
         In Institutsambulanzen ist die Chance, zeitnah einen Therapieplatz zu erhalten, oft höher, da dort sehr viele Therapeutinnen und Therapeuten arbeiten und ausgebildet werden.
       </p>
@@ -47,7 +50,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">2) Die Terminservicestelle der Kassenärztlichen Bundesvereinigung nutzen</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">2</span>
+        <span class="tip-heading-text">Terminservicestelle der KBV</span>
+      </h2>
       <p>
         Für weitere Erstgespräche können Sie sich an die Terminservicestelle wenden, diese erreichen Sie telefonisch unter
         <a href="tel:116117">116117</a> oder online über
@@ -58,7 +64,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">3) Persönlich bei Therapeutinnen und Therapeuten anfragen</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">3</span>
+        <span class="tip-heading-text">Direkt in Praxen anfragen</span>
+      </h2>
       <p>
         Sie können selbst aktiv werden und direkt in Praxen anrufen. Kontakte finden Sie zum Beispiel
         über
@@ -69,7 +78,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">4) Zusätzlich bei Doctolib schauen</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">4</span>
+        <span class="tip-heading-text">Doctolib</span>
+      </h2>
       <p>
         Sie können auch bei
         <a href="https://www.doctolib.de" target="_blank" rel="noopener noreferrer">Doctolib</a>
@@ -78,7 +90,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">5) Absagen dokumentieren (Kostenerstattung)</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">5</span>
+        <span class="tip-heading-text">Absagen &amp; Kostenerstattung</span>
+      </h2>
       <p>
         Sie können Absagen von Psychotherapeutinnen und Psychotherapeuten sammeln, um bei Ihrer
         Krankenkasse nachzuweisen, dass aktuell kein regulärer Therapieplatz verfügbar ist. Dadurch finanzieren Krankenkassen
@@ -89,10 +104,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Informieren Sie sich direkt bei Ihrer Krankenkasse, welche Nachweise erforderlich sind und wie
         viele Absagen benötigt werden.
       </p>
+      <p>
+        Mehr zum <strong>Kostenerstattungsverfahren</strong> finden Sie in der Broschüre der
+        Bundespsychotherapeutenkammer:
+        <a
+          href="https://www.pro-psychologie.de/Kostenerstattung%20Flyer%20BPtK.pdf"
+          target="_blank"
+          rel="noopener noreferrer">PDF „Kostenerstattung“ bei pro-psychologie.de</a
+        >.
+      </p>
     </section>
 
     <section class="content-block">
-      <h2 class="tip-title">6) Online-Therapie als Überbrückung nutzen</h2>
+      <h2 class="tip-heading">
+        <span class="tip-num" aria-hidden="true">6</span>
+        <span class="tip-heading-text">Online-Therapie zur Überbrückung</span>
+      </h2>
       <p>
         Es besteht die Möglichkeit, eine Online-Therapie zu beginnen. Plattformen wie
         <a href="https://minddoc.com/de/de/" target="_blank" rel="noopener noreferrer">MindDoc</a>,
@@ -107,8 +134,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
     </section>
 
-    <section class="content-block crisis-card">
-      <h2 class="tip-title">In akuten psychischen Krisen</h2>
+    <section class="content-block highlight">
+      <h2>In akuten psychischen Krisen</h2>
       <p>
         Bitte kontaktieren Sie in dringenden psychischen Krisen unverzüglich den Notruf
         (<a href="tel:112">112</a>, <a href="tel:110">110</a>) oder eine Klinik mit psychiatrischer
@@ -133,20 +160,48 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       margin-bottom: 0;
     }
 
-    .tip-title {
-      font-size: clamp(1.02rem, 1.6vw, 1.2rem);
-      margin-top: 0;
-      margin-bottom: 0.4rem;
+    .tip-heading {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin: 0 0 1rem;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.28rem, 2.1vw, 1.72rem);
+      font-weight: 600;
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .tip-num {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2rem;
+      height: 2rem;
+      margin-top: 0.06em;
+      padding: 0 0.35rem;
+      border-radius: 999px;
+      background: var(--card-highlight-bg);
+      border: 1px solid var(--card-highlight-border);
+      font-size: 0.92em;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .tip-heading-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .therapie-tips :global(section.content-block h2:not(.tip-heading)) {
+      margin-bottom: 1rem;
     }
 
     .therapie-tips :global(section.content-block p:last-child),
     .therapie-tips :global(section.content-block ul:last-child) {
       margin-bottom: 0;
-    }
-
-    .therapie-tips :global(section.crisis-card) {
-      border-left: 5px solid #d86a6a;
-      background: linear-gradient(180deg, #fff 0%, #fff6f6 100%);
     }
   </style>
 </BaseLayout>
