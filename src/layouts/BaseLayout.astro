@@ -352,6 +352,23 @@ const isActive = (path: string) => {
         margin-bottom: 0;
       }
 
+      /* Therapieplatz-Hilfe: Intro + Kacheln – mittig (Seiten-Scoped-Styles waren auf dem Gerät nicht zuverlässig) */
+      :global(.therapie-tips header.therapie-intro),
+      :global(.therapie-tips header.therapie-intro h1),
+      :global(.therapie-tips .therapie-lead),
+      :global(.therapie-tips section.content-block),
+      :global(.therapie-tips section.content-block h2),
+      :global(.therapie-tips section.content-block p) {
+        text-align: center !important;
+      }
+
+      :global(.therapie-tips section.content-block ul) {
+        display: inline-block !important;
+        margin: 0.75rem auto 0 !important;
+        text-align: left !important;
+        padding-left: 1.2rem;
+      }
+
       main.layout-home {
         width: 100%;
         max-width: none;
