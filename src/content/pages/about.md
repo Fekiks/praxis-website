@@ -15,31 +15,31 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/mein-ansatz/">
 <h3 class="about-teaser-title">Mein Ansatz</h3>
-<p class="about-teaser-text">Meine Arbeit folgt den AWMF-Leitlinien. Schwerpunkte sind <strong>Exposition</strong>, <strong>ACT</strong> und <strong>EMDR</strong> – fundiert, verbindlich und auf Ihre Lebenssituation abgestimmt.</p>
-<span class="about-teaser-cta">Mehr zum therapeutischen Ansatz</span>
+<p class="about-teaser-text">Verhaltenstherapie nach aktuellen Leitlinien – mit Expositionsarbeit, ACT und EMDR als zentrale Schwerpunkte.</p>
+<span class="about-teaser-cta">Zum therapeutischen Ansatz</span>
 </a>
 </section>
 
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/qualifikation/">
 <h3 class="about-teaser-title">Qualifikationen</h3>
-<p class="about-teaser-text">Studium der Psychologie in Tübingen, Approbation mit Fachkunde Verhaltenstherapie, systemische Beratung, Gruppentherapie und <strong>EMDR</strong>-Weiterbildung.</p>
-<span class="about-teaser-cta">Mehr zu Ausbildung und Zusatzqualifikationen</span>
+<p class="about-teaser-text">Studium Psychologie, Approbation mit Fachkunde Verhaltenstherapie und ausgewählte Zusatzqualifikationen.</p>
+<span class="about-teaser-cta">Zu den Qualifikationen</span>
 </a>
 </section>
 
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/werdegang/">
 <h3 class="about-teaser-title">Beruflicher Werdegang</h3>
-<p class="about-teaser-text">Erfahrung in <strong>Tagesklinik</strong>, stationärer <strong>Psychiatrie</strong> und ambulanter Versorgung – unter anderem in Köln und Bonn.</p>
-<span class="about-teaser-cta">Mehr zur beruflichen Laufbahn</span>
+<p class="about-teaser-text">Tätigkeit in Tagesklinik, Klinik und ambulanter Psychotherapie – mit Stationen u. a. in Ravensburg, Bonn und Köln.</p>
+<span class="about-teaser-cta">Zum beruflichen Werdegang</span>
 </a>
 </section>
 
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/mitgliedschaften/">
 <h3 class="about-teaser-title">Mitgliedschaften</h3>
-<p class="about-teaser-text">Mitglied in <strong>PTK&nbsp;NRW</strong>, <strong>DPtV</strong> und <strong>DVT</strong> – berufsständische und fachliche Verbände der Psychotherapie.</p>
-<span class="about-teaser-cta">Mehr zu den Verbänden</span>
+<p class="about-teaser-text">Mitglied in der Psychotherapeutenkammer NRW sowie in DPtV und DVT.</p>
+<span class="about-teaser-cta">Zu den Mitgliedschaften</span>
 </a>
 </section>
