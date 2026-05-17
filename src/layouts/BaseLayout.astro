@@ -1,5 +1,6 @@
 ---
-import { DEFAULT_META_DESCRIPTION, PRACTICE, PRACTICE_LOGO } from "../site-config";
+import footerMark from "../assets/footer/footer_praxis_mark.png";
+import { DEFAULT_META_DESCRIPTION, PRACTICE } from "../site-config";
 
 interface Props {
   title: string;
@@ -33,9 +34,9 @@ const canonicalHref = canonicalURL?.href ?? null;
 const rootUrl =
   siteBaseHref !== null ? siteBaseHref.replace(/\/+$/, "") || siteBaseHref : null;
 
-const logoSrc = `${import.meta.env.BASE_URL}${PRACTICE_LOGO.file}`;
+const logoSrc = footerMark.src;
 const logoAbsoluteHref =
-  siteBaseHref !== null ? new URL(PRACTICE_LOGO.file, siteBaseHref).href : null;
+  siteBaseHref !== null ? new URL(footerMark.src, siteBaseHref).href : null;
 
 /** Social / Link-Vorschau (og:image, twitter:image) — Praxislogo statt Porträt */
 const ogImageHref = logoAbsoluteHref;
@@ -60,8 +61,8 @@ const structuredDataJson =
                   logo: {
                     "@type": "ImageObject",
                     url: logoAbsoluteHref,
-                    width: PRACTICE_LOGO.width,
-                    height: PRACTICE_LOGO.height,
+                    width: footerMark.width,
+                    height: footerMark.height,
                   },
                 }
               : {}),
@@ -483,7 +484,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       /*
-        Fußbereichs-Logo (PNG mit Alphakanal): Grafik bereits dunkelbraun; liegt auf dem Seitenverlauf.
+        Fußbereichs-Logo (importiert aus `src/assets/footer/`, läuft als `/_astro/…`).
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -631,8 +632,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         src={logoSrc}
         alt={`Logo: ${PRACTICE.siteName}`}
         class="site-end-logo-img"
-        width={PRACTICE_LOGO.width}
-        height={PRACTICE_LOGO.height}
+        width={footerMark.width}
+        height={footerMark.height}
         loading="lazy"
         decoding="async"
       />
