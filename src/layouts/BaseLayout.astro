@@ -359,20 +359,24 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin-bottom: 0;
       }
 
-      /* Therapieplatz-Hilfe: Intro + Kacheln – mittig (Seiten-Scoped-Styles waren auf dem Gerät nicht zuverlässig) */
+      /* Therapieplatz-Hilfe: Intro zentriert; Kachel-Inhalt linksbündig */
       :global(.therapie-tips header.therapie-intro),
       :global(.therapie-tips header.therapie-intro h1),
-      :global(.therapie-tips .therapie-lead),
-      :global(.therapie-tips section.content-block),
-      :global(.therapie-tips section.content-block h2),
-      :global(.therapie-tips section.content-block p) {
+      :global(.therapie-tips .therapie-lead) {
         text-align: center !important;
       }
 
+      :global(.therapie-tips section.content-block),
+      :global(.therapie-tips section.content-block h2),
+      :global(.therapie-tips section.content-block p),
+      :global(.therapie-tips section.content-block li) {
+        text-align: start !important;
+      }
+
       :global(.therapie-tips section.content-block ul) {
-        display: inline-block !important;
-        margin: 0.75rem auto 0 !important;
-        text-align: left !important;
+        display: block !important;
+        margin: 0.75rem 0 0 !important;
+        text-align: start !important;
         padding-left: 1.2rem;
       }
 
