@@ -65,3 +65,13 @@ Ich verfüge über eine breit gefächerte psychotherapeutische Ausbildung mit Er
 </div>
 
 </section>
+
+<section class="content-block">
+
+## Mitgliedschaften
+
+- Psychotherapeutenkammer Nordrhein-Westfalen (PTK NRW)
+- Deutsche PsychotherapeutenVereinigung (DPtV)
+- Deutscher Fachverband für Verhaltenstherapie e. V. (DVT)
+
+</section>
