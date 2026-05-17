@@ -1,6 +1,7 @@
 /** Logo unter `public/` (Breite/Höhe für Layout-Attribute & Schema.org). */
 export const PRACTICE_LOGO = {
-  file: "images/Praxis_Logo_footer.png",
+  /** Neuer Dateiname, damit CDNs/Browser nicht die alte `…_footer.png`-Version weiter ausliefern. */
+  file: "images/Praxis_Logo_footer_darkbrown.png",
   width: 1536,
   height: 1024,
 } as const;
