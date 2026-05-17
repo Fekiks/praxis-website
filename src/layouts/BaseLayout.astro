@@ -483,9 +483,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       /*
-        Fußbereichs-Logo (JPG): hellere JPG-Grundfarben gegen den Seitenverlauf durch
-        lokal gleichen Untergrund (--page/--page-deep) + multiply wie „Tinte auf Papier“
-        zusammenziehen – mindert sichtbare Rechteck-Kanten im Asset.
+        Fußbereichs-Logo (PNG mit Alphakanal): liegt direkt auf dem Seitenverlauf, ohne Blend-/JPG-Anpassungen.
       */
       .site-end-logo {
         width: min(1120px, calc(100% - 32px));
@@ -493,7 +491,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         padding: 0 16px 12px;
         text-align: center;
         box-sizing: border-box;
-        background: linear-gradient(180deg, var(--page) 0%, var(--page-deep) 88%);
       }
 
       .site-end-logo-img {
@@ -505,7 +502,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         max-height: 108px;
         object-fit: contain;
         opacity: 1;
-        mix-blend-mode: multiply;
       }
 
       @media (min-width: 769px) {
