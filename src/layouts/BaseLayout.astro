@@ -138,7 +138,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     {vercelGitSha && <meta name="build-git-sha" content={vercelGitSha} />}
     <title>{title}</title>
     <meta name="description" content={metaDescription} />
@@ -564,40 +563,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       @media (max-width: 768px) {
-        /* Typik näher zum Lesen auf schmalen Viewports (~Handy) */
-        html {
-          font-size: 110%;
-          -webkit-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-        }
-
-        body {
-          line-height: 1.72;
-        }
-
-        :global(h1) {
-          font-size: clamp(2.1rem, 7vw + 0.95rem, 2.92rem);
-        }
-
-        :global(h2) {
-          font-size: clamp(1.48rem, 6vw + 0.78rem, 1.92rem);
-        }
-
-        :global(h3) {
-          font-size: 1.3rem;
-        }
-
-        :global(p),
-        :global(li) {
-          font-size: 1.12rem;
-        }
-
-        .brand strong {
-          font-size: 1.38rem;
-        }
-
         .nav-inner {
-          width: min(1120px, calc(100% - 22px));
           flex-direction: column;
           align-items: stretch;
           padding: 12px 0;
@@ -622,37 +588,23 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         .nav-links a {
           flex-shrink: 0;
           white-space: nowrap;
-          padding: 10px 14px;
-          font-size: 1rem;
-        }
-
-        :global(.cta) {
-          font-size: 1.04rem;
-          padding: 15px 22px;
-        }
-
-        footer {
-          font-size: 1rem;
+          padding: 8px 12px;
         }
 
         main.layout-default,
         main.layout-stacked {
-          width: calc(100% - 16px);
+          width: calc(100% - 20px);
           margin-top: 16px;
           margin-bottom: 20px;
         }
 
         main.layout-default {
           border-radius: 18px;
-          padding: 24px 18px;
+          padding: 24px 20px;
         }
 
         :global(main.layout-home .home-sections) {
-          width: calc(100% - 16px);
-        }
-
-        main {
-          width: min(1120px, calc(100% - 22px));
+          width: calc(100% - 20px);
         }
 
         .site-end-logo {
