@@ -110,12 +110,15 @@ const isActive = (path: string) => {
   if (path === "/") return currentPath === "/";
   return currentPath === path || currentPath === `${path}/`;
 };
+
+/** Nur bei Vercel-Build gesetzt – zum Abgleich, ob Production wirklich neu gebaut wurde */
+const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 ---
 
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    {vercelGitSha && <meta name="build-git-sha" content={vercelGitSha} />}
     <title>{title}</title>
     <meta name="description" content={metaDescription} />
     {canonicalHref && <link rel="canonical" href={canonicalHref} />}
