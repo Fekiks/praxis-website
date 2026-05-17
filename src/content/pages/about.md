@@ -15,7 +15,7 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/mein-ansatz/">
 <h3 class="about-teaser-title">Mein Ansatz</h3>
-<p class="about-teaser-text">Verhaltenstherapie nach aktuellen Leitlinien – mit Expositionsarbeit, ACT und EMDR als zentrale Schwerpunkte.</p>
+<p class="about-teaser-text">Meine therapeutische Arbeit orientiert sich an den aktuellen Leitlinien, wobei Expositionsarbeit, ACT und EMDR zentrale Schwerpunkte sind.</p>
 <span class="about-teaser-cta">Zum therapeutischen Ansatz</span>
 </a>
 </section>
@@ -23,7 +23,7 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/qualifikation/">
 <h3 class="about-teaser-title">Qualifikationen</h3>
-<p class="about-teaser-text">Studium Psychologie, Approbation mit Fachkunde Verhaltenstherapie und ausgewählte Zusatzqualifikationen.</p>
+<p class="about-teaser-text">Ich habe Psychologie studiert, bin approbierte Psychologische Psychotherapeutin mit Fachkunde Verhaltenstherapie und verfüge über ausgewählte Zusatzqualifikationen.</p>
 <span class="about-teaser-cta">Zu den Qualifikationen</span>
 </a>
 </section>
@@ -31,7 +31,7 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/werdegang/">
 <h3 class="about-teaser-title">Beruflicher Werdegang</h3>
-<p class="about-teaser-text">Tätigkeit in Tagesklinik, Klinik und ambulanter Psychotherapie – mit Stationen u. a. in Ravensburg, Bonn und Köln.</p>
+<p class="about-teaser-text">In meiner bisherigen beruflichen Laufbahn konnte ich in unterschiedlichen Settings Erfahrung sammeln – von der Tagesklinik und stationären Psychiatrie bis zur ambulanten psychotherapeutischen Versorgung in Köln.</p>
 <span class="about-teaser-cta">Zum beruflichen Werdegang</span>
 </a>
 </section>
@@ -39,7 +39,7 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/mitgliedschaften/">
 <h3 class="about-teaser-title">Mitgliedschaften</h3>
-<p class="about-teaser-text">Mitglied in der Psychotherapeutenkammer NRW sowie in DPtV und DVT.</p>
+<p class="about-teaser-text">Ich bin Mitglied der Psychotherapeutenkammer Nordrhein-Westfalen sowie der Deutschen PsychotherapeutenVereinigung und des Deutschen Fachverbands für Verhaltenstherapie e. V.</p>
 <span class="about-teaser-cta">Zu den Mitgliedschaften</span>
 </a>
 </section>
