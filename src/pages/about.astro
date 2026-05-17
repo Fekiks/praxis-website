@@ -72,47 +72,44 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
     hyphens: manual;
   }
 
+  /* Über-mich-Spalte: Kacheln nur untereinander, mit klarem Zwischenraum (wie globales home-sections gap). */
+  .about-content :global(.home-sections.about-page) {
+    gap: clamp(24px, 3.5vw, 34px);
+  }
+
   /*
-   * Vier eigene Kacheln (wie content-block auf Home): keine äußere Kachel um das Raster.
-   * Optik angelehnt an .home-sections section.content-block in BaseLayout.
+   * Themen: jeweils normales section.content-block (Aussehen wie „Über mich“).
+   * Klickbereich ist der Link innen ohne zweite Kartendarstellung.
    */
-  .about-content :global(.about-page .about-teasers-grid) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(18px, 2.8vw, 26px);
+  .about-content :global(.about-page section.about-teaser-block) {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .about-content :global(.about-page section.about-teaser-block:has(.about-teaser-tile-link:hover)),
+  .about-content :global(.about-page section.about-teaser-block:has(.about-teaser-tile-link:focus-visible)) {
+    border-color: rgba(120, 100, 85, 0.35);
+    box-shadow: 0 20px 52px rgba(20, 20, 20, 0.12);
   }
 
   .about-content :global(.about-page .about-teaser-tile-link) {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: clamp(22px, 3.5vw, 38px);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    background: var(--card-bg);
-    box-shadow: 0 16px 44px var(--shadow);
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
     text-decoration: none;
     color: inherit;
-    min-height: 100%;
-    transition:
-      box-shadow 0.2s ease,
-      border-color 0.2s ease;
-  }
-
-  .about-content :global(.about-page .about-teaser-tile-link:hover),
-  .about-content :global(.about-page .about-teaser-tile-link:focus-visible) {
-    border-color: rgba(120, 100, 85, 0.35);
-    box-shadow: 0 20px 52px rgba(20, 20, 20, 0.12);
-    outline: none;
   }
 
   .about-content :global(.about-page .about-teaser-tile-link:focus-visible) {
     outline: 2px solid var(--ink);
-    outline-offset: 3px;
+    outline-offset: 4px;
+    border-radius: 4px;
   }
 
   .about-content :global(.about-page .about-teaser-title) {
@@ -142,12 +139,6 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
     text-decoration: underline;
     text-underline-offset: 3px;
     margin-top: 2px;
-  }
-
-  @media (max-width: 680px) {
-    .about-content :global(.about-page .about-teasers-grid) {
-      grid-template-columns: 1fr;
-    }
   }
 
   .about-portrait {
