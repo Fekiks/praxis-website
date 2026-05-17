@@ -16,7 +16,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </header>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Institutsambulanzen</h2>
+      <h2>Institutsambulanzen</h2>
       <p>
         In Institutsambulanzen ist die Chance, zeitnah einen Therapieplatz zu erhalten, oft höher, da dort sehr viele Therapeutinnen und Therapeuten arbeiten und ausgebildet werden.
       </p>
@@ -47,7 +47,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Terminservicestelle der KBV</h2>
+      <h2>Terminservicestelle der KBV</h2>
       <p>
         Für weitere Erstgespräche können Sie sich an die Terminservicestelle wenden, diese erreichen Sie telefonisch unter
         <a href="tel:116117">116117</a> oder online über
@@ -58,7 +58,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Direkt in Praxen anfragen</h2>
+      <h2>Direkt in Praxen anfragen</h2>
       <p>
         Sie können selbst aktiv werden und direkt in Praxen anrufen. Kontakte finden Sie zum Beispiel
         über
@@ -69,7 +69,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Doctolib</h2>
+      <h2>Doctolib</h2>
       <p>
         Sie können auch bei
         <a href="https://www.doctolib.de" target="_blank" rel="noopener noreferrer">Doctolib</a>
@@ -78,7 +78,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Absagen &amp; Kostenerstattung</h2>
+      <h2>Absagen &amp; Kostenerstattung</h2>
       <p>
         Sie können Absagen von Psychotherapeutinnen und Psychotherapeuten sammeln, um bei Ihrer
         Krankenkasse nachzuweisen, dass aktuell kein regulärer Therapieplatz verfügbar ist. Dadurch finanzieren Krankenkassen
@@ -97,7 +97,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="content-block">
-      <h2 class="tip-step-title">Online-Therapie zur Überbrückung</h2>
+      <h2>Online-Therapie zur Überbrückung</h2>
       <p>
         Es besteht die Möglichkeit, eine Online-Therapie zu beginnen. Plattformen wie
         <a href="https://minddoc.com/de/de/" target="_blank" rel="noopener noreferrer">MindDoc</a>,
@@ -152,21 +152,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       line-height: 1.65;
     }
 
-    .tip-step-title {
-      margin: 0 0 0.85rem;
+    /* Kacheln: eine Skala für alle Überschriften + einheitlicher Fließtext (Mobil wirkten h2 global vs. früher .tip-step-title unterschiedlich) */
+    .therapie-tips :global(section.content-block > h2:first-of-type) {
+      margin: 0 0 0.8rem;
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(1.28rem, 2.1vw, 1.72rem);
+      font-size: clamp(1.18rem, 0.92rem + 1.1vw, 1.4rem);
       font-weight: 600;
-      line-height: 1.22;
+      line-height: 1.28;
       letter-spacing: -0.01em;
       color: var(--ink);
     }
 
-    .therapie-tips :global(section.content-block.highlight h2) {
-      margin-bottom: 1rem;
+    .therapie-tips :global(section.content-block p),
+    .therapie-tips :global(section.content-block li) {
+      font-size: 1.05rem;
+      line-height: 1.68;
     }
 
-    .therapie-tips :global(section.content-block.highlight p:last-child) {
+    .therapie-tips :global(section.content-block a:not(.cta)) {
+      font-size: inherit;
+    }
+
+    .therapie-tips :global(section.content-block p:last-child),
+    .therapie-tips :global(section.content-block ul:last-child) {
       margin-bottom: 0;
     }
   </style>
