@@ -1,6 +1,6 @@
-/** Fußbereich: `public/images/Praxis_Logo_transparent.jpg` (wie im Repo abgelegt). */
+/** Transparentes Raster am Seitenfuß unter `public/`. */
 export const FOOTER_MARK = {
-  file: "images/Praxis_Logo_transparent.jpg",
+  file: "images/praxis_footer_logo.png",
   width: 1536,
   height: 1024,
 } as const;
