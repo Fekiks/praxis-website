@@ -1,8 +1,7 @@
 ---
 /**
- * Gemeinsamer Block: „Wann kann Psychotherapie helfen?“ + aufklappbares Leistungsspektrum.
- * Auf der Startseite (home) mit Kurzüberblick und Link zu /services/;
- * auf der Leistungsseite (services) nur Unterteil Leistungsspektrum (unter Behandlungsschwerpunkte).
+ * Gemeinsamer aufklappbarer „Leistungsspektrum“-Block + auf Startseite: „Wann ist Psychotherapie sinnvoll?“ + Link zu /services/
+ * Auf der Leistungsseite: nur Unterüberschrift Leistungsspektrum (unter Behandlungsschwerpunkte).
  */
 interface Props {
   variant?: "home" | "services";
@@ -14,26 +13,27 @@ const isHome = variant === "home";
 
 <section
   class:list={["content-block", "lei-spektrum-root", isHome && "lei-spektrum-root--home", !isHome && "lei-spektrum-root--services"]}
-  aria-labelledby={isHome ? "lei-spektrum-h2" : "lei-spektrum-h3"}
-  id="leistungsspektrum"
+  aria-labelledby={isHome ? "psychotherapie-wann-h2" : "lei-spektrum-h3"}
+  id={isHome ? "psychotherapie-wann" : "leistungsspektrum"}
 >
   {
     isHome && (
       <>
-        <h2 id="lei-spektrum-h2">Wann kann eine Psychotherapie helfen?</h2>
+        <h2 id="psychotherapie-wann-h2">Wann ist Psychotherapie sinnvoll?</h2>
         <p>
-          Psychotherapie kann sinnvoll sein, wenn Sie sich durch Ihre aktuelle Situation belastet fühlen und das Gefühl
-          haben, diese nicht mehr alleine bewältigen zu können. Auf der Seite{" "}
-          <a href="/services/">Leistungen</a> finden Sie außerdem{" "}
-          <strong>Erstgespräch, Ablauf und Kosten</strong> – hier geht es zunächst um eine übersichtliche Einordnung
-          typischer Themenfelder:
+          Psychotherapie kann dann helfen, wenn Sie spüren, dass **Belastung, Ängste, Niedergeschlagenheit oder Krisen**
+          Ihr Leben über längere Zeit spürbar einschränken — und wenn Sie mehr **Struktur, Entlastung und professionelle Begleitung** wünschen, als Freundeskreis oder Selbsthilfe allein aktuell bieten können. Darunter fallen zum Beispiel:
         </p>
         <ul>
           <li>Ängste und Panik</li>
-          <li>Depressionen</li>
-          <li>Stress und Überlastung</li>
-          <li>Lebenskrisen oder Veränderungen</li>
+          <li>depressive oder schwunglose Phasen</li>
+          <li>stressbedingte oder körpernahe Überforderungen</li>
+          <li>nach Belastenden Ereignissen oder in Lebenskrisen</li>
         </ul>
+        <p class="lei-spektrum-bridge">
+          Typische **Störungsbereiche aus dem Erwachsenenalter** können Sie sich hier einzeln **aufklappen**; ausführlichere Informationen zum **Erstgespräch, Vorgehen und Kosten** gibt es auf der Seite{" "}
+          <a href="/services/">Leistungen</a>.
+        </p>
       </>
     )
   }
@@ -296,6 +296,14 @@ const isHome = variant === "home";
 
   .lei-spektrum-root--home :global(li:last-child) {
     margin-bottom: 0;
+  }
+
+  .lei-spektrum-bridge {
+    margin: 0 0 0.85rem;
+    max-width: 62ch;
+    line-height: 1.74;
+    text-align: justify;
+    hyphens: auto;
   }
 
   .lei-spektrum-heading {
