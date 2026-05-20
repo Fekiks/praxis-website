@@ -20,3 +20,11 @@ Derzeit sind noch Plätze frei und ich suche aktuell noch weitere Teilnehmerinne
 In meiner Praxis arbeiten wir überwiegend nach den Grundsätzen der **Verhaltenstherapie** und nutzen dort, wo es passt, **bewährte Weiterentwicklungen und Zusatzverfahren** (z.&nbsp;B. bei starken Ängsten, Depressionen oder Trauma). Übungen im Alltag, klare Strukturen und die **gemeinsame Vereinbarung** nächster Schritte gehören dazu ebenso wie ein **geschütztes, vertrauliches Gespräch** — **im Tempo**, das Sie aktuell tragen können.
 
 </section>
+
+<section class="content-block" id="psychotherapie-wann">
+
+## Wann ist Psychotherapie sinnvoll?
+
+Psychotherapie kann Hilfe bedeuten, wenn belastende Gefühle, starke Ängste, anhaltende Niedergeschlagenheit oder Krisen und Einschnitte Ihr Leben über längere Zeit merklich einschränken — und Sie **strukturierte, vertrauliche Begleitung** zusätzlich zu dem möchten, was Sie bereits selbst oder in Ihrem Umfeld leisten können. Orientierung zu **Kosten und Versicherung** bietet die Rubrik [Organisatorisches](/services/).
+
+</section>

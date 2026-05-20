@@ -1,6 +1,6 @@
 ---
-title: Startseite – weiterführende Abschnitte
-description: "Typischer Ablauf der Psychotherapie und Hinweis zur Website."
+title: Startseite – Ablauf
+description: "Typischer Ablauf der Psychotherapie auf der Homepage."
 ---
 
 <section class="content-block" id="psychotherapie-ablauf">
@@ -12,13 +12,5 @@ In der Regel beginnt Kontakt zu einer möglichen Zusammenarbeit mit einem **unve
 Wenn es weitergehen soll, sind **Probatorische Sitzungen, Antrag bei der gesetzlichen Kasse oder private Abrechnung** die typischen Formalien — dazu gibt es Orientierung unter <a href="/services/">Organisatorisches</a> (**Kosten&nbsp;&amp;&nbsp;Absicherung**).
 
 Im weiteren Verlauf treffen wir uns in **vereinbarten Sitzungen** in einem **für Sie machbaren Abstand**. Auf Wunsch und wo hilfreich ergänzen wir das Gespräch durch **Übungen oder kleine Hausaufgaben im Alltag** — ohne zusätzliche Überforderung Ihres üblichen Rhythmus.
-
-</section>
-
-<section class="content-block">
-
-## Hinweis
-
-Diese Website befindet sich aktuell noch im Aufbau.
 
 </section>
