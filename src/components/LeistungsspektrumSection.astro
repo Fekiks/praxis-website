@@ -1,42 +1,34 @@
 ---
 /**
- * Gemeinsamer aufklappbarer „Leistungsspektrum“-Block + auf Startseite: „Wann ist Psychotherapie sinnvoll?“ + Link zu /services/
- * Auf der Leistungsseite: nur Unterüberschrift Leistungsspektrum (unter Behandlungsschwerpunkte).
+ * Gemeinsamer „Leistungsspektrum“-Akkordeon-Block nur auf der Startseite („Wann … sinnvoll?“).
+ * Kosten/Inhalt organisatorischer Art: eigene Markdown-Datei unter /services/.
  */
-interface Props {
-  variant?: "home" | "services";
-}
-
-const { variant = "services" } = Astro.props;
-const isHome = variant === "home";
 ---
 
 <section
-  class:list={["content-block", "lei-spektrum-root", isHome && "lei-spektrum-root--home", !isHome && "lei-spektrum-root--services"]}
-  aria-labelledby={isHome ? "psychotherapie-wann-h2" : "lei-spektrum-h3"}
-  id={isHome ? "psychotherapie-wann" : "leistungsspektrum"}
+  class="content-block lei-spektrum-root lei-spektrum-root--home"
+  aria-labelledby="psychotherapie-wann-h2"
+  id="psychotherapie-wann"
 >
-  {
-    isHome && (
-      <>
-        <h2 id="psychotherapie-wann-h2">Wann ist Psychotherapie sinnvoll?</h2>
-        <p>
-          Psychotherapie kann dann helfen, wenn Sie spüren, dass **Belastung, Ängste, Niedergeschlagenheit oder Krisen**
-          Ihr Leben über längere Zeit spürbar einschränken — und wenn Sie mehr **Struktur, Entlastung und professionelle Begleitung** wünschen, als Freundeskreis oder Selbsthilfe allein aktuell bieten können. Darunter fallen zum Beispiel:
-        </p>
-        <ul>
-          <li>Ängste und Panik</li>
-          <li>depressive oder schwunglose Phasen</li>
-          <li>stressbedingte oder körpernahe Überforderungen</li>
-          <li>nach Belastenden Ereignissen oder in Lebenskrisen</li>
-        </ul>
-        <p class="lei-spektrum-bridge">
-          Typische **Störungsbereiche aus dem Erwachsenenalter** können Sie sich hier einzeln **aufklappen**; ausführlichere Informationen zum **Erstgespräch, Vorgehen und Kosten** gibt es auf der Seite{" "}
-          <a href="/services/">Leistungen</a>.
-        </p>
-      </>
-    )
-  }
+  <h2 id="psychotherapie-wann-h2">Wann ist Psychotherapie sinnvoll?</h2>
+  <p>
+    Psychotherapie kann dann helfen, wenn Sie spüren, dass{" "}
+    <strong>Belastung, Ängste, Niedergeschlagenheit oder Krisen</strong> Ihr Leben über längere Zeit spürbar
+    einschränken — und wenn Sie mehr <strong>Struktur, Entlastung und professionelle Begleitung</strong> wünschen, als
+    Freundeskreis oder Selbsthilfe allein aktuell bieten können. Darunter fallen zum Beispiel:
+  </p>
+  <ul>
+    <li>Ängste und Panik</li>
+    <li>depressive oder schwunglose Phasen</li>
+    <li>stressbedingte oder körpernahe Überforderungen</li>
+    <li>nach belastenden Ereignissen oder in Lebenskrisen</li>
+  </ul>
+  <p class="lei-spektrum-bridge">
+    Typische <strong>Störungsbereiche aus dem Erwachsenenalter</strong> können Sie sich hier einzeln{" "}
+    <strong>aufklappen</strong>; zu{" "}
+    <strong>Kosten, Krankenkasse, Privatabrechnung und Kostenerstattung</strong> gibt es Orientierung unter{" "}
+    <a href="/services/">Organisatorisches</a>.
+  </p>
 
   <h3 class="lei-spektrum-heading" id="lei-spektrum-h3">Leistungsspektrum</h3>
 
@@ -258,15 +250,9 @@ const isHome = variant === "home";
     </details>
   </div>
 
-  {
-    isHome && (
-      <p class="lei-spektrum-footer">
-        <a href="/services/" class="cta">
-          Zu Leistungen, Ablauf und Kosten
-        </a>
-      </p>
-    )
-  }
+  <p class="lei-spektrum-footer">
+    <a href="/services/" class="cta">Zu Kosten und Absicherung</a>
+  </p>
 </section>
 
 <style>
@@ -319,10 +305,6 @@ const isHome = variant === "home";
 
   .lei-spektrum-root--home .lei-spektrum-heading {
     margin-top: 0.35rem;
-  }
-
-  .lei-spektrum-root--services .lei-spektrum-heading {
-    margin-top: 1.05rem;
   }
 
   .lei-spektrum-hint {

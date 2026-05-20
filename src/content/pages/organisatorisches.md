@@ -1,24 +1,14 @@
 ---
-title: Leistungen – Erstgespräch und Kosten
-description: "Vereinbarung eines Erstgesprächs und orientierende Kosteninformationen."
+title: Organisatorisches
+seoTitle: "Organisatorisches – Kosten und Versicherung | Psychotherapie Köln | Katja Stumper"
+description: "Orientierung zu Kassen, Privatversicherung, Selbstzahlung und Kostenerstattung bei psychotherapeutischer Behandlung in Köln-Bayenthal."
 ---
-
-<section class="content-block">
-
-## Vereinbarung eines Erstgesprächs
-
-Wenn Sie Unterstützung suchen oder Fragen haben, können Sie sich jederzeit gerne an mich wenden.\
-In einem ersten Gespräch haben wir die Möglichkeit, uns kennenzulernen und Ihr Anliegen unverbindlich und in Ruhe zu klären. Gemeinsam schauen wir, ob und wie eine Zusammenarbeit für Sie hilfreich sein kann.
-
-Der erste Schritt darf sich ungewohnt anfühlen – ich freue mich über Ihre Kontaktaufnahme.
-
-</section>
 
 <section class="content-block services-kosten-block">
 
 ## Kosten & Absicherung
 
-Im Folgenden finden Sie orientierende Informationen zu möglichen Kosten und zum Ablauf – jeweils abhängig von Ihrer Versicherungssituation. Klicken Sie auf eine Überschrift, um den Eintrag zu öffnen.
+Im Folgenden finden Sie orientierende Informationen zu **Kosten** und **Versicherungswegen** — jeweils abhängig von Ihrer Absicherung. **Klicken Sie auf eine Überschrift**, um den Eintrag zu öffnen.
 
 <div class="accordion-stack" role="presentation">
 
