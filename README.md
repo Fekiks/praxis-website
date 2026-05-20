@@ -45,10 +45,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Startseiten-Motiv (Diptychon)
 
-Das Bild auf der Startseite liegt unter `public/images/Bild_Praxis_koepfe.jpg` und wird in `src/pages/index.astro` per `<img>` mit `` `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg` `` eingebunden. Damit funktioniert die Auslieferung auch bei Hosting mit Unterpfad ([Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).
+Das Symbolbild auf der Startseite ist als **inline SVG** in `src/components/TherapyDiptychSvg.astro` eingebunden. So lädt die Grafik zuverlässig auch bei Hosting mit Unterpfad (z. B. GitHub Pages unter `/repository-name/`).
 
-## Suchmaschinen & kanonische URLs
-
-Beim Build liest `astro.config.mjs` die öffentliche Basis-URL aus **`PUBLIC_SITE_URL`** (ohne abschließenden Schrägstrich). Ohne diese Variable gilt ein Fallback (aktuell die Vercel-Deployment-URL). Darauf basieren Canonical-Tags, Open Graph, JSON-LD und die unter `/sitemap.xml` erzeugte Sitemap (`src/pages/sitemap.xml.ts`).
-
-**Vercel:** Unter *Project → Settings → Environment Variables* für **Production** `PUBLIC_SITE_URL` auf die gewünschte öffentliche URL setzen (z. B. `https://praxis-website-sand.vercel.app` oder später die eigene Domain). Die Zeile **`Sitemap:`** in `public/robots.txt` soll dieselbe Basis verwenden wie die Production-URL (bei Domain-Umzug hier mit anpassen).
+Optional können Sie dort das SVG durch ein eigenes Bild ersetzen oder eine Rasterversion (`PNG`/`WebP`) unter `public/images/` ablegen und in `src/pages/index.astro` wieder als `<img>` einbinden – dann den Pfad mit `import.meta.env.BASE_URL` setzen, falls die Site einen `base`-Pfad nutzt (siehe [Astro `base`](https://docs.astro.build/de/reference/configuration-reference/#base)).

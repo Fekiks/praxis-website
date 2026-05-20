@@ -1,134 +1,16 @@
 ---
-import {
-  DEFAULT_META_DESCRIPTION,
-  FOOTER_MARK,
-  PRACTICE,
-} from "../site-config";
-
 interface Props {
   title: string;
-  description?: string;
-  layout?: "default" | "home" | "stacked";
-  noindex?: boolean;
+  layout?: "default" | "home";
 }
 
-const { title, description, layout = "default", noindex = false } = Astro.props;
+const { title, layout = "default" } = Astro.props;
 const currentPath = Astro.url.pathname;
 const isHome = layout === "home";
-const isStacked = layout === "stacked";
-
-const mainLayoutClass = isHome ? "layout-home" : isStacked ? "layout-stacked" : "layout-default";
-
-const metaDescription = (description ?? DEFAULT_META_DESCRIPTION).trim();
-
-const siteBaseHref = Astro.site
-  ? Astro.site.href.endsWith("/")
-    ? Astro.site.href
-    : `${Astro.site.href}/`
-  : null;
-
-const pathClean = Astro.url.pathname.replace(/^\/+|\/+$/g, "");
-const canonicalRel = pathClean === "" ? "./" : `${pathClean}/`;
-
-const canonicalURL =
-  siteBaseHref !== null ? new URL(canonicalRel, siteBaseHref) : null;
-const canonicalHref = canonicalURL?.href ?? null;
-
-const rootUrl =
-  siteBaseHref !== null ? siteBaseHref.replace(/\/+$/, "") || siteBaseHref : null;
-
-/** Hero-Unterlage unter `public/images/` für OG/Twitter/Schema.org (Fußbereich ohne Logo-Grafik). */
-const shareImageRelative = "images/Bild_Praxis_koepfe.jpg";
-const shareImageAbsoluteHref =
-  siteBaseHref !== null ? new URL(shareImageRelative, siteBaseHref).href : null;
-
-const appleTouchIconRelative = "images/Bild_Katja.jpg";
-const appleTouchIconAbsoluteHref =
-  siteBaseHref !== null ? new URL(appleTouchIconRelative, siteBaseHref).href : null;
-
-const footerMarkSrc = `${import.meta.env.BASE_URL}${FOOTER_MARK.file}`;
-const footerMarkAbsoluteHref =
-  siteBaseHref !== null ? new URL(FOOTER_MARK.file, siteBaseHref).href : null;
-
-/** Social-Vorschau: Fußgrafik wenn vorhanden, sonst Praxis-/Hero-JPEG */
-const ogImageHref =
-  footerMarkAbsoluteHref ?? shareImageAbsoluteHref;
-
-const structuredDataJson =
-  Astro.site && siteBaseHref && rootUrl && !noindex
-    ? JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "MedicalBusiness",
-            "@id": `${rootUrl}#practice`,
-            name: PRACTICE.siteName,
-            alternateName: [
-              "Psychotherapie Katja Stumper Köln",
-              "Psychotherapiepraxis Köln Bayenthal",
-            ],
-            description: DEFAULT_META_DESCRIPTION.trim(),
-            url: rootUrl,
-            ...(footerMarkAbsoluteHref
-              ? {
-                  logo: {
-                    "@type": "ImageObject",
-                    url: footerMarkAbsoluteHref,
-                    width: FOOTER_MARK.width,
-                    height: FOOTER_MARK.height,
-                  },
-                  image: [footerMarkAbsoluteHref],
-                }
-              : shareImageAbsoluteHref
-                ? { image: [shareImageAbsoluteHref] }
-                : {}),
-            telephone: PRACTICE.telephone,
-            email: PRACTICE.email,
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: PRACTICE.streetAddress,
-              addressLocality: PRACTICE.addressLocality,
-              postalCode: PRACTICE.postalCode,
-              addressRegion: PRACTICE.addressRegion,
-              addressCountry: PRACTICE.country,
-            },
-            areaServed: {
-              "@type": "City",
-              name: "Köln",
-              containedInPlace: {
-                "@type": "AdministrativeArea",
-                name: "Nordrhein-Westfalen",
-              },
-            },
-            currenciesAccepted: "EUR",
-            paymentAccepted:
-              "Gesetzliche Krankenkassen, Privatversicherung, Selbstzahlung",
-            medicalSpecialty: "Psychotherapy",
-            knowsAbout: [
-              "Verhaltenstherapie",
-              "Expositionstherapie",
-              "Acceptance and Commitment Therapy",
-              "EMDR",
-            ],
-          },
-          {
-            "@type": "Person",
-            "@id": `${rootUrl}#person`,
-            name: PRACTICE.practitionerName,
-            jobTitle: "Psychologische Psychotherapeutin",
-            worksFor: { "@id": `${rootUrl}#practice` },
-          },
-        ],
-      })
-    : null;
-
-const normalizePath = (path: string) => path.replace(/\/+$/, "") || "/";
 
 const isActive = (path: string) => {
-  const cur = normalizePath(currentPath);
-  const target = normalizePath(path);
-  if (target === "/") return cur === "/";
-  return cur === target || cur.startsWith(`${target}/`);
+  if (path === "/") return currentPath === "/";
+  return currentPath === path || currentPath === `${path}/`;
 };
 
 /** Nur bei Vercel-Build gesetzt – zum Abgleich, ob Production wirklich neu gebaut wurde */
@@ -140,62 +22,26 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
     <meta charset="UTF-8" />
     {vercelGitSha && <meta name="build-git-sha" content={vercelGitSha} />}
     <title>{title}</title>
-    <meta name="description" content={metaDescription} />
-    {canonicalHref && <link rel="canonical" href={canonicalHref} />}
-    <meta
-      name="robots"
-      content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large"}
-    />
-    <meta name="author" content={PRACTICE.practitionerName} />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={metaDescription} />
-    <meta property="og:locale" content="de_DE" />
-    <meta property="og:site_name" content={PRACTICE.siteName} />
-    {canonicalHref && <meta property="og:url" content={canonicalHref} />}
-    {ogImageHref && <meta property="og:image" content={ogImageHref} />}
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={metaDescription} />
-    {ogImageHref && <meta name="twitter:image" content={ogImageHref} />}
-    <meta name="geo.region" content="DE-NW" />
-    <meta name="geo.placename" content="Köln" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
       rel="stylesheet"
     />
-    {appleTouchIconAbsoluteHref && (
-      <link rel="apple-touch-icon" href={appleTouchIconAbsoluteHref} />
-    )}
 
     <style>
       :root {
-        /*
-          Praxis-Farbpalette: hellbeige Kacheln/Flächen, weniger Weißkontrast.
-        */
-        --taupe: #ad9f8f;
-        --taupe-deep: #8f8374;
-        --page: #cfc0b5;
-        --page-deep: #bfb0a4;
-        --cream: #f5efe6;
-        --surface: #f7f2ea;
-        --ink: #1f1b17;
-        --text: #2e2721;
-        --muted: #5f534a;
-        --border: #c9c1b6;
-        --shadow: rgba(32, 24, 18, 0.072);
-        --shadow-strong: rgba(32, 24, 18, 0.12);
-        /* Überblendungen: Radiale, Hover, Kartenschatten */
-        --overlay-taupe: rgba(158, 140, 124, 0.34);
-        --overlay-taupe-hover: rgba(158, 140, 124, 0.3);
-        --overlay-cream-soft: rgba(245, 239, 230, 0.9);
-        --overlay-taupe-card: rgba(158, 140, 124, 0.18);
-        --header-fill: rgba(253, 251, 246, 0.97); /* Kopfzeile heller als Kacheln */
-        --card-bg: #efe8df;
-        --card-highlight-bg: #e4dbd0;
-        --card-highlight-border: rgba(92, 76, 65, 0.32);
+        --taupe: #c8b9a6;
+        --taupe-deep: #b5a492;
+        --page: #e8e0d4;
+        --cream: #f5f1eb;
+        --surface: #faf8f5;
+        --ink: #141414;
+        --text: #1f1d1b;
+        --muted: #5c5650;
+        --border: #d4c9bb;
+        --shadow: rgba(20, 20, 20, 0.08);
+        --shadow-strong: rgba(20, 20, 20, 0.14);
       }
 
       * {
@@ -207,9 +53,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin: 0;
         min-height: 100vh;
         background:
-          radial-gradient(ellipse 70% 45% at 12% 0%, var(--overlay-taupe), transparent 55%),
-          radial-gradient(ellipse 55% 40% at 88% 8%, var(--overlay-cream-soft), transparent 50%),
-          linear-gradient(180deg, var(--cream) 0%, var(--page) 42%, var(--page-deep) 100%);
+          radial-gradient(ellipse 70% 45% at 12% 0%, rgba(200, 185, 166, 0.45), transparent 55%),
+          radial-gradient(ellipse 55% 40% at 88% 8%, rgba(250, 248, 245, 0.75), transparent 50%),
+          linear-gradient(180deg, var(--cream) 0%, var(--page) 42%, #ddd4c8 100%);
         color: var(--text);
         line-height: 1.7;
         display: flex;
@@ -228,7 +74,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         position: sticky;
         top: 0;
         z-index: 10;
-        background: var(--header-fill);
+        background: rgba(250, 248, 245, 0.9);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid var(--border);
         box-shadow: 0 8px 28px var(--shadow);
@@ -261,7 +107,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         line-height: 1.2;
       }
 
-      .brand > span {
+      .brand span {
         font-size: 0.82rem;
         color: var(--muted);
         letter-spacing: 0.04em;
@@ -291,7 +137,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       .nav-links a:hover {
         color: var(--ink);
-        background: var(--overlay-taupe-hover);
+        background: rgba(200, 185, 166, 0.35);
         transform: translateY(-1px);
       }
 
@@ -331,79 +177,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         border: 1px solid var(--border);
         box-shadow:
           0 22px 60px var(--shadow),
-          0 4px 14px var(--overlay-taupe-card);
-      }
-
-      main.layout-stacked {
-        margin-top: 40px;
-        margin-bottom: 36px;
-        padding: 0;
-        background: none;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-      }
-
-      /* Kacheln: global, damit Slotted Inhalt aus Seiten (z. B. index) die Klassen trifft */
-      :global(.home-sections) {
-        display: flex;
-        flex-direction: column;
-        gap: 22px;
-        width: 100%;
-        margin: 0 0 48px;
-      }
-
-      :global(main.layout-home .home-sections) {
-        width: min(1120px, calc(100% - 32px));
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      :global(.home-sections section.content-block) {
-        background: var(--card-bg);
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        padding: clamp(24px, 3.5vw, 40px);
-        box-shadow: 0 16px 44px var(--shadow);
-      }
-
-      :global(.home-sections section.content-block.highlight) {
-        background: var(--card-highlight-bg);
-        border-color: var(--card-highlight-border);
-        box-shadow: 0 16px 44px var(--shadow);
-      }
-
-      :global(.home-sections hr) {
-        display: none;
-      }
-
-      :global(.home-sections section.content-block > h2:first-child) {
-        margin-top: 0;
-      }
-
-      :global(.home-sections section.content-block p:last-child) {
-        margin-bottom: 0;
-      }
-
-      /* Therapieplatz-Hilfe: Intro zentriert; Kachel-Inhalt linksbündig */
-      :global(.therapie-tips header.therapie-intro),
-      :global(.therapie-tips header.therapie-intro h1),
-      :global(.therapie-tips .therapie-lead) {
-        text-align: center !important;
-      }
-
-      :global(.therapie-tips section.content-block),
-      :global(.therapie-tips section.content-block h2),
-      :global(.therapie-tips section.content-block p),
-      :global(.therapie-tips section.content-block li) {
-        text-align: start !important;
-      }
-
-      :global(.therapie-tips section.content-block ul) {
-        display: block !important;
-        margin: 0.75rem 0 0 !important;
-        text-align: start !important;
-        padding-left: 1.2rem;
+          0 4px 14px rgba(200, 185, 166, 0.2);
       }
 
       main.layout-home {
@@ -471,24 +245,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.cta:hover) {
         transform: translateY(-2px);
         box-shadow: 0 14px 30px var(--shadow-strong);
-        background: #3a342f;
-      }
-
-      :global(.follow-text-cta) {
-        margin-top: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-      }
-
-      :global(.follow-text-cta > p) {
-        margin: 0;
-        text-align: justify;
-      }
-
-      :global(.follow-text-cta .cta) {
-        margin-top: 0;
+        background: #2a2826;
       }
 
       :global(img.content-image) {
@@ -542,8 +299,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       footer {
         text-align: center;
-        margin: 0 0 28px;
-        padding: 0;
+        margin: 28px 0 30px;
         font-size: 0.95rem;
         color: var(--muted);
       }
@@ -565,62 +321,27 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       @media (max-width: 768px) {
         .nav-inner {
           flex-direction: column;
-          align-items: stretch;
+          align-items: flex-start;
           padding: 12px 0;
-          gap: 10px;
         }
 
-        /* Eine Zeile: bei vielen Links horizontal wischen, kein Zeilenumbruch */
         .nav-links {
-          flex-wrap: nowrap;
           justify-content: flex-start;
-          align-items: center;
-          max-width: 100%;
-          overflow-x: auto;
-          overflow-y: hidden;
-          -webkit-overflow-scrolling: touch;
-          overscroll-behavior-x: contain;
-          gap: 6px;
-          padding-bottom: 4px;
-          scrollbar-width: thin;
-        }
-
-        .nav-links a {
-          flex-shrink: 0;
-          white-space: nowrap;
-          padding: 8px 12px;
-        }
-
-        main.layout-default,
-        main.layout-stacked {
-          width: calc(100% - 20px);
-          margin-top: 16px;
-          margin-bottom: 20px;
         }
 
         main.layout-default {
+          width: calc(100% - 20px);
+          margin-top: 16px;
+          margin-bottom: 20px;
           border-radius: 18px;
           padding: 24px 20px;
         }
 
-        :global(main.layout-home .home-sections) {
-          width: calc(100% - 20px);
-        }
-
-        .site-end-logo {
-          margin-top: 28px;
-          padding-bottom: 10px;
-        }
-
-        .site-end-logo-img {
-          max-width: min(284px, 88vw);
-          max-height: 86px;
+        .nav-links a {
+          padding: 8px 12px;
         }
       }
     </style>
-    {structuredDataJson && (
-      <script type="application/ld+json" set:html={structuredDataJson} />
-    )}
     <slot name="head" />
   </head>
 
@@ -629,18 +350,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       <div class="nav-inner">
         <a href="/" class="brand">
           <strong>Praxis für Psychotherapie</strong>
-          <span>{PRACTICE.practitionerName}</span>
+          <span>Verhaltenstherapie</span>
         </a>
         <nav class="nav-links" aria-label="Hauptnavigation">
           <a href="/" class={isActive("/") ? "active" : ""}>Start</a>
           <a href="/about" class={isActive("/about") ? "active" : ""}>Über mich</a>
-          <a href="/services" class={isActive("/services") ? "active" : ""}>Organisatorisches</a>
+          <a href="/services" class={isActive("/services") ? "active" : ""}>Leistungen</a>
           <a href="/contact" class={isActive("/contact") ? "active" : ""}>Kontakt</a>
         </nav>
       </div>
     </header>
 
-    <main class={mainLayoutClass}>
+    <main class={isHome ? "layout-home" : "layout-default"}>
       <slot />
     </main>
 
