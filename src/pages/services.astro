@@ -25,13 +25,15 @@ const { Content } = await render(entry);
   /* Aufklappbare Kosten-Infos (Markdown / organisatorisches) */
 
   .services-page :global(.accordion-stack) {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: clamp(12px, 2vw, 16px);
     margin: 20px 0 18px;
+    align-items: start;
   }
 
   .services-page :global(.accordion-item) {
+    min-width: 0;
     border: 1px solid var(--border);
     border-radius: 20px;
     background: var(--card-bg);
