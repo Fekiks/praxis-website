@@ -11,6 +11,60 @@ if (!entry) {
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={entry.data.title}>
-  <Content />
+<BaseLayout
+  layout="stacked"
+  title={entry.data.seoTitle ?? entry.data.title}
+  description={entry.data.description}
+>
+  <div class="home-sections contact-page">
+    <Content />
+  </div>
 </BaseLayout>
+
+<style>
+  .contact-page :global(h1) {
+    margin-bottom: clamp(26px, 4vw, 40px);
+  }
+
+  .contact-page :global(section.content-block h2) {
+    margin-bottom: 1.2rem;
+    line-height: 1.28;
+  }
+
+  .contact-page :global(section.content-block > h2:first-of-type) {
+    margin-top: 0;
+  }
+
+  .contact-page :global(p) {
+    margin: 0 0 1.2rem;
+    max-width: 62ch;
+    line-height: 1.78;
+  }
+
+  .contact-page :global(iframe) {
+    display: block;
+    margin: 1.65rem 0 0.35rem;
+    width: 100%;
+    height: 320px;
+  }
+
+  .contact-page :global(ul) {
+    margin: 0.75rem 0 1.35rem;
+    padding-left: 1.4rem;
+    max-width: 62ch;
+  }
+
+  .contact-page :global(li) {
+    margin-bottom: 0.55rem;
+    line-height: 1.74;
+  }
+
+  .contact-page :global(li:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* Hinweisblock unter der Karte etwas Luft geben */
+  .contact-page :global(.follow-text-cta) {
+    margin-top: 0.35rem;
+  }
+</style>

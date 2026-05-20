@@ -9,18 +9,210 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+
+const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
 ---
 
-<BaseLayout title={entry.data.title}>
-  <div class="about-content">
-    <Content />
+<BaseLayout
+  layout="stacked"
+  title={entry.data.seoTitle ?? entry.data.title}
+  description={entry.data.description}
+>
+  <div class="about-layout" id="about-page-root">
+    <div class="about-content">
+      <div class="home-sections about-page">
+        <Content />
+      </div>
+    </div>
+    <aside class="about-portrait" aria-label="Portrait">
+      <figure class="about-portrait-frame">
+        <img
+          src={portraitSrc}
+          alt="Portrait von Katja Stumper"
+          width="1254"
+          height="1254"
+          sizes="(max-width: 820px) min(280px, 88vw), 260px"
+          class="about-portrait-img"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption class="about-portrait-caption">
+          <span class="about-portrait-name">Katja Stumper</span>
+          <span class="about-portrait-qual">
+            Psychologische Psychotherapeutin (VT) und Psychologin M.Sc.
+          </span>
+        </figcaption>
+      </figure>
+    </aside>
   </div>
 </BaseLayout>
 
 <style>
-  .about-content :global(p:first-of-type) {
+  .about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(200px, 268px);
+    gap: clamp(28px, 4vw, 44px);
+    align-items: start;
+  }
+
+  .about-content {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .about-content :global(p) {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  .about-content :global(li) {
+    text-align: start;
+    hyphens: manual;
+  }
+
+  /*
+   * Themen: jeweils normales section.content-block (Aussehen wie „Über mich“).
+   * Klickbereich ist der Link innen ohne zweite Kartendarstellung.
+   */
+  .about-content :global(.about-page section.about-teaser-block) {
+    margin: 0;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .about-content :global(.about-page section.about-teaser-block:has(.about-teaser-tile-link:hover)),
+  .about-content :global(.about-page section.about-teaser-block:has(.about-teaser-tile-link:focus-visible)) {
+    border-color: rgba(158, 140, 124, 0.42);
+    box-shadow: 0 20px 52px rgba(32, 24, 18, 0.1);
+  }
+
+  .about-content :global(.about-page .about-teaser-tile-link) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .about-content :global(.about-page .about-teaser-tile-link:focus-visible) {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  /* Titelzeile wie „Über mich“ (globales h2 in BaseLayout) */
+  .about-content :global(.about-page .about-teaser-title) {
+    margin: 0 0 14px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+    line-height: 1.25;
+    color: var(--ink);
+  }
+
+  /* Fließtext wie erster Absatz in der Über-mich-Kachel */
+  .about-content :global(.about-page .about-teaser-text) {
+    margin: 0;
+    flex: 1;
     font-size: 1.04rem;
     font-weight: 400;
     line-height: 1.7;
+    color: var(--text);
+    text-align: start;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+
+  .about-content :global(.about-page .about-teaser-cta) {
+    font-size: 1.04rem;
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-top: 2px;
+  }
+
+  .about-portrait {
+    grid-column: 2;
+    grid-row: 1;
+    position: sticky;
+    top: 88px;
+  }
+
+  .about-portrait-frame {
+    margin: 0;
+  }
+
+  .about-portrait-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    border: 1px solid var(--border);
+    box-shadow:
+      0 20px 48px rgba(32, 24, 18, 0.1),
+      0 6px 18px rgba(32, 24, 18, 0.055);
+  }
+
+  .about-portrait-caption {
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .about-portrait-name {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+    line-height: 1.25;
+  }
+
+  .about-portrait-qual {
+    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--muted);
+    max-width: 100%;
+  }
+
+  .about-content :global(.home-sections section.content-block:first-of-type p:first-of-type) {
+    font-size: 1.04rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 820px) {
+    .about-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .about-portrait {
+      grid-column: 1;
+      grid-row: 1;
+      position: static;
+      justify-self: center;
+      max-width: 288px;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    .about-content {
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
 </style>

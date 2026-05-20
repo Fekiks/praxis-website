@@ -6,6 +6,8 @@ const entry = await getEntry("pages", "impressum");
 const { Content } = await render(entry);
 ---
 
-<BaseLayout title={entry.data.title}>
-  <Content />
+<BaseLayout title={entry.data.seoTitle ?? entry.data.title} description={entry.data.description} layout="stacked">
+  <div class="home-sections">
+    <Content />
+  </div>
 </BaseLayout>

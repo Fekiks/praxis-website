@@ -1,0 +1,5 @@
+# Muss zur öffentlichen Basis-URL passen (wie PUBLIC_SITE_URL beim Build).
+User-agent: *
+Allow: /
+
+Sitemap: https://praxis-website-sand.vercel.app/sitemap.xml

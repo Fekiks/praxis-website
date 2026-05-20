@@ -4,12 +4,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { getEntry, render } from "astro:content";
 
 const entry = await getEntry("pages", "index");
+const tail = await getEntry("pages", "index-tail");
 
 if (!entry) {
   throw new Error('Eintrag "index" nicht gefunden.');
 }
+if (!tail) {
+  throw new Error('Eintrag "index-tail" nicht gefunden.');
+}
 
-const { Content } = await render(entry);
+const { Content: ContentLead } = await render(entry);
+const { Content: ContentTail } = await render(tail);
+
+const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
 ---
 
 <BaseLayout title={entry.data.title} layout="home">

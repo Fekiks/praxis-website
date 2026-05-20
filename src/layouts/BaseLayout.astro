@@ -12,12 +12,15 @@ const isActive = (path: string) => {
   if (path === "/") return currentPath === "/";
   return currentPath === path || currentPath === `${path}/`;
 };
+
+/** Nur bei Vercel-Build gesetzt – zum Abgleich, ob Production wirklich neu gebaut wurde */
+const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 ---
 
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    {vercelGitSha && <meta name="build-git-sha" content={vercelGitSha} />}
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -61,6 +64,7 @@ const isActive = (path: string) => {
 
       nav,
       main,
+      .site-end-logo,
       footer {
         position: relative;
         z-index: 1;
@@ -141,6 +145,21 @@ const isActive = (path: string) => {
         color: var(--surface);
         background: var(--ink);
         font-weight: 600;
+      }
+
+      /* Desktop: Navigation in einer Zeile (Basis .nav-links nutzt flex-wrap: wrap) */
+      @media (min-width: 769px) {
+        .nav-inner {
+          flex-wrap: nowrap;
+          align-items: center;
+        }
+
+        .nav-links {
+          flex-wrap: nowrap;
+          flex: 1;
+          justify-content: flex-end;
+          min-width: 0;
+        }
       }
 
       main {
@@ -237,11 +256,56 @@ const isActive = (path: string) => {
         border: 1px solid var(--border);
       }
 
+      .site-end-logo {
+        width: min(1120px, calc(100% - 32px));
+        margin: 36px auto 0;
+        padding: 0 16px 12px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .site-end-logo-img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        width: auto;
+        max-width: min(310px, 90vw);
+        max-height: 96px;
+        object-fit: contain;
+        /* PNG 1:1 wie Repo-Original; Filter dunkelt auf Braun und wirkt Kanten kräftiger */
+        filter:
+          brightness(0.71)
+          sepia(0.22)
+          saturate(2.05)
+          hue-rotate(348deg)
+          contrast(1.18)
+          drop-shadow(0.42px 0 0 rgb(74 61 53 / 0.55))
+          drop-shadow(-0.42px 0 0 rgb(74 61 53 / 0.55))
+          drop-shadow(0 0.42px 0 rgb(74 61 53 / 0.5))
+          drop-shadow(0 -0.42px 0 rgb(74 61 53 / 0.5));
+      }
+
+      @media (min-width: 769px) {
+        .site-end-logo {
+          width: min(1120px, calc(100% - 24px));
+          padding: 0 12px 16px;
+        }
+
+        .site-end-logo-img {
+          max-width: min(440px, 58vw);
+          max-height: 186px;
+        }
+      }
+
       footer {
         text-align: center;
         margin: 28px 0 30px;
         font-size: 0.95rem;
         color: var(--muted);
+      }
+
+      .footer-links {
+        margin: 0;
       }
 
       footer a {
@@ -301,9 +365,23 @@ const isActive = (path: string) => {
       <slot />
     </main>
 
+    <aside class="site-end-logo" aria-label="Praxis-Marke">
+      <img
+        src={footerMarkSrc}
+        alt={`Logo: ${PRACTICE.siteName}`}
+        class="site-end-logo-img"
+        width={FOOTER_MARK.width}
+        height={FOOTER_MARK.height}
+        loading="lazy"
+        decoding="async"
+      />
+    </aside>
+
     <footer>
-      <a href="/impressum">Impressum</a> ·
-      <a href="/datenschutz">Datenschutz</a>
+      <p class="footer-links">
+        <a href="/impressum">Impressum</a> ·
+        <a href="/datenschutz">Datenschutz</a>
+      </p>
     </footer>
   </body>
 </html>

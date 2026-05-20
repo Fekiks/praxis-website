@@ -1,7 +1,10 @@
 ---
 title: Datenschutz
-description: Datenschutzerklärung der Praxis
+seoTitle: "Datenschutz – Psychotherapiepraxis Katja Stumper Köln"
+description: "Datenschutzerklärung der Praxis Katja Stumper, Köln – Informationen zur Datenverarbeitung auf dieser Website."
 ---
+
+<section class="content-block">
 
 ## Datenschutzerklärung
 
@@ -10,7 +13,9 @@ Katja Stumper
 [Adresse]
 [E-Mail]
 
----
+</section>
+
+<section class="content-block">
 
 ### Hosting
 
@@ -29,7 +34,9 @@ Diese Daten sind erforderlich, um die Website bereitzustellen und die Sicherheit
 
 Es kann zu einer Datenübertragung in die USA kommen. Vercel verwendet Standardvertragsklauseln gemäß Art. 46 DSGVO.
 
----
+</section>
+
+<section class="content-block">
 
 ### Datenverarbeitung
 
@@ -37,7 +44,9 @@ Diese Website verwendet **keine Cookies** und **keine Tracking- oder Analyse-Too
 
 Es erfolgt keine Weitergabe Ihrer Daten an Dritte.
 
----
+</section>
+
+<section class="content-block">
 
 ### Ihre Rechte
 
@@ -45,8 +54,12 @@ Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Ve
 
 Zudem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
 
----
+</section>
+
+<section class="content-block">
 
 ### Sicherheit
 
 Diese Website nutzt eine SSL-/TLS-Verschlüsselung.
+
+</section>
