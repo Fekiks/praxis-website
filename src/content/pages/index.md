@@ -25,6 +25,6 @@ In meiner Praxis arbeiten wir überwiegend nach den Grundsätzen der **Verhalten
 
 ## Wann ist Psychotherapie sinnvoll?
 
-Psychotherapie kann Hilfe bedeuten, wenn belastende Gefühle, starke Ängste, anhaltende Niedergeschlagenheit oder Krisen und Einschnitte Ihr Leben über längere Zeit merklich einschränken — und Sie **strukturierte, vertrauliche Begleitung** zusätzlich zu dem möchten, was Sie bereits selbst oder in Ihrem Umfeld leisten können. Orientierung zu **Kosten und Versicherung** bietet die Rubrik [Organisatorisches](/services/).
+Psychotherapie kann Hilfe bedeuten, wenn belastende Gefühle, starke Ängste, anhaltende Niedergeschlagenheit oder Krisen und Einschnitte Ihr Leben über längere Zeit merklich einschränken — und Sie **strukturierte, vertrauliche Begleitung** zusätzlich zu dem möchten, was Sie bereits selbst oder in Ihrem Umfeld leisten können.
 
 </section>
