@@ -12,14 +12,12 @@ Ich arbeite evidenzbasiert und orientiere mich an anerkannten diagnostischen Kri
 
 ### Leistungsspektrum
 
-Die Kurzinfos unten sind bewusst wie eine **„Wissen zu Störungsbildern“**-Übersicht aufgebaut – mit einer **Leitfrage pro Thema** (vergleichbar einführenden Fragen auf manchen Praxis-Aufklärungsseiten zu Diagnosen) und etwas **Tiefgang nach dem Aufklappen**. Sie **ersetzen keine persönliche Diagnostik oder Beratung**; sie sollen beim **Einordnen** helfen.
-
-**Öffnen Sie ein Thema durch Klick** auf die Zeile mit dem Plus (+).
+Die Übersicht nutzt **Oberbegriffe** aus dem Spektrum psychischer Störungen. **Geschlossene** Kacheln zeigen ein **Plus (+)** – ein Klick öffnet die Kurzinfo; **geöffnet** erscheint ein **Minus (−)** zum Wieder-Zuklappen. Die Texte **ersetzen keine persönliche Diagnostik oder Beratung**; sie sollen beim **Einordnen** helfen.
 
 <div class="accordion-stack accordion-stack--spectrum" role="presentation">
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was ist eine Depression, woran merkt man sie – und wie kann Psychotherapie helfen?</span></summary>
+<summary><span class="spectrum-cat">Affektive Störungen</span></summary>
 <div class="accordion-body">
 
 **Depressive Episoden** sind mehr als kurze Niedergeschlagenheit: Gedrückte Stimmung, Interessenverlust, Antriebsminderung oder merkliche Erschöpfung gehören dazu ebenso wie Schlaf- und Appetitveränderungen, Konzentrationsschwierigkeiten oder Gefühle von Wertlosigkeit. **Bipolare Störungen** zeigen zusätzlich schwungvolle oder gereizte Phasen (Manie bzw. Hypomanie); die Zeitläufe unterscheiden sich stark zwischen Menschen.
@@ -30,7 +28,7 @@ In der Therapie klären wir zunächst, ob es um eine **aktuell belastende Lebens
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was sind Angststörungen, Phobien und Panikattacken – und wie verläuft eine Therapie typischerweise?</span></summary>
+<summary><span class="spectrum-cat">Angststörungen</span></summary>
 <div class="accordion-body">
 
 Bei einer **spezifischen Phobie** ist die Angst an ein bestimmtes Objekt oder an Situationen gekoppelt – etwa Höhe, Tiere, Injektionen oder Flug. **Panikattacken** treten oft plötzlich mit starkem körperlichen Unbehagen auf (Herzrasen, Atemnot, Schwindel) und können **weitere Ängste auslösen** („passiert das wieder?“). **Agoraphobie**, **soziale Ängste** oder die **generalisierte Angststörung** (ständiges Grübeln, „Was wäre wenn …?“ mit Verspannung) gehören ebenfalls hierher.
@@ -41,7 +39,7 @@ Psychotherapeutisch stehen zunächst oft **Verstehen und Entschärfung**, dann *
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Wie äußern sich Zwänge und was können Betroffene an sich noch verändern?</span></summary>
+<summary><span class="spectrum-cat">Zwangsstörungen</span></summary>
 <div class="accordion-body">
 
 Die **Zwangsstörung** verbindet meist wiederkehrende **Zwangsgedanken** mit dem Drang nach **äußeren oder inneren Ritualen**, um **kurzfristig** Unbehagen zu senken. Viele Menschen erkennen die Übertreibung relativ klar – fühlen sich aber zugleich **eingeengt**. In der Therapie geht es darum, **Sicherheitsverhalten** weniger automatisch werden zu lassen und **andere Bewältigungswege** sowie **Mitgefühl mit der eigenen Unsicherheit** zu stärken.
@@ -50,7 +48,7 @@ Die **Zwangsstörung** verbindet meist wiederkehrende **Zwangsgedanken** mit dem
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was sind Essstörungen – und wobei wirkt Psychotherapie konkret?</span></summary>
+<summary><span class="spectrum-cat">Essstörungen</span></summary>
 <div class="accordion-body">
 
 **Essstörungen** verbinden Körperbild, **Gefühlsregulation** und ein **gestörtes Verhältnis zu Essen und Kontrolle**. Man unterscheidet u. a. **Anorexia nervosa**, **Bulimie** sowie **Binge-Eating-Störung** mit wiederkehrenden Essattacken ohne regelmäßige „Gegenmaßnahmen“. Therapeutisch stehen **Auslöser**, **Hunger und Sättigung**, **andere Wege zur emotionalen Entlastung** und eine **schrittweise Normalisierung** des Essalltags im Vordergrund.
@@ -59,7 +57,7 @@ Die **Zwangsstörung** verbindet meist wiederkehrende **Zwangsgedanken** mit dem
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was sind komplexere Trauma- und Überforderungsbilder – und welche Unterstützung gibt es?</span></summary>
+<summary><span class="spectrum-cat">Posttraumatische Belastungsstörung und Anpassungsreaktionen</span></summary>
 <div class="accordion-body">
 
 Nach bedrohenden oder belastenden Ereignissen reagiert nicht jeder Mensch gleich lang und gleich stark. Bei einer **Posttraumatischen Belastungsstörung** können etwa **aufdringliche Erinnerungen oder Alpträume**, **Vermeidung**, **Übererregbarkeit** oder **taube Stimmung** auftreten – **über längere Zeit** spürbar belastender, als „übliche Trauer oder Erschöpfung“. **Komplexes Trauma** bezieht sich oft auf **wiederholte oder länger währende belastende Erfahrungen**. **Anpassungsstörungen** zeigen **depressive oder ängstliche Symptome**, die **zeitlich eng** mit einer konkreten belastenden Lebenslage zusammenhängen.
@@ -70,7 +68,7 @@ Traumafokussierte Schritte sollten **einvernehmlich**, **ohne erneute Überforde
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Wie äußert sich stark belastende Trauer und wann hilft Begleitung außerhalb der Familie?</span></summary>
+<summary><span class="spectrum-cat">Trauer und komplizierte Verlaufsformen</span></summary>
 <div class="accordion-body">
 
 **Trauer** nach Verlust gehört zur menschlichen Erfahrung; sie verläuft unterschiedlich lang und mit wechselnden Phasen. Professionelle Begleitung kann helfen, wenn Sie sich **lange „eingefroren“** fühlen, **stark überfordert** sind oder **Schuld, Wut, Isolation** kaum mehr allein tragen können. In der Therapie geht es um **Orientierung ohne vorschnelle Krankheitsetiketten**, **Mitgefühl** und um **tragfähige Schritte im Alltag**, wenn der Verlust Sie stark einschränkt.
@@ -79,7 +77,7 @@ Traumafokussierte Schritte sollten **einvernehmlich**, **ohne erneute Überforde
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was sind psychosomatische Störungen – und wo endet Organklärung, wo hilft Psychotherapie weiter?</span></summary>
+<summary><span class="spectrum-cat">Psychosomatische Störungen</span></summary>
 <div class="accordion-body">
 
 **Psychosomatische** bzw. **funktionelle** Beschwerden sind **echte körperliche Symptome** – mit oder ohne vollständig erklärbare organische Befunde. Oft spielen **Stress, Konflikte und Gefühlsregulation** eine große Rolle (z. B. wiederkehrende Schmerzen, **Kopf- oder Magen-Darm-Beschwerden**, Herzrasen oder Schwindel **ohne** allein ausreichende somatische Erklärung). Wir sehen **Körper und Psyche zusammen**, **stimmen uns bei Bedarf mit ärztlicher Diagnostik ab** und arbeiten an **belastungsärmeren Routinen** im Alltag.
@@ -88,7 +86,7 @@ Traumafokussierte Schritte sollten **einvernehmlich**, **ohne erneute Überforde
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was gehört zu Sexualbeschwerden – und wie geht Gesprächstherapie damit sorgsam um?</span></summary>
+<summary><span class="spectrum-cat">Sexuelle Funktionsstörungen</span></summary>
 <div class="accordion-body">
 
 Hier können **vermindertes Lusterleben**, **Erregungs- oder Orgasmusstörungen**, **Schmerzen beim Geschlechtsverkehr** oder **starke Ängste vor „Versagen“** vorkommen – **einzeln oder kombiniert**. **Somatische Faktoren**, **Partnerschaftsdynamik** und **frühere Erfahrungen** wirken ebenso mit wie **Erwartungsdruck** und **Scham**. Im Gespräch geht es **diskret und würdevoll** voran: **Sie** bestimmen Thema und Tempo – schon Klärung ohne Druck kann entlasten.
@@ -97,7 +95,7 @@ Hier können **vermindertes Lusterleben**, **Erregungs- oder Orgasmusstörungen*
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was können Schlafstörungen auslösen – und wie hängen sie mit psychischer Gesundheit zusammen?</span></summary>
+<summary><span class="spectrum-cat">Schlafstörungen</span></summary>
 <div class="accordion-body">
 
 **Schlafstörungen** im engeren Sinn meinen etwa: sehr langes **Einschlafen**, häufiges **Durchwachen** oder **sehr frühes** Erwachen **ohne** Erholungsgefühl – **mehrmals pro Woche** und **über Wochen**, sodass **Tagsüber** Leistung oder Stimmung leiden. Mitspielen können **Stress, Angst, Depression oder PTBS**, aber auch **somatische Erkrankungen**, **Medikation** oder **starker Reiz- bzw. Mediengebrauch vor dem Schlaf**. Psychotherapeutisch helfen oft **Schlafhygiene**, **Routinen zum Runterkommen** und **Übungen gegen Grübeln und Anspannung**.
@@ -106,7 +104,7 @@ Hier können **vermindertes Lusterleben**, **Erregungs- oder Orgasmusstörungen*
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Wie lässt sich ein Burnout merken und was können Betroffene zuerst entschärfen?</span></summary>
+<summary><span class="spectrum-cat">Burnout und chronische Überforderung</span></summary>
 <div class="accordion-body">
 
 **Burnout** bzw. eine **chronische Überforderungsreaktion** zeigt sich oft durch **innere Leere**, **erhöhte Reizbarkeit**, **zunehmende Distanz zu Aufgaben**, **körperliche Erschöpfung ohne Erholung** und das **Gefühl, im Alltag „nicht mehr mitzukommen“**. Das ist **keine** „persönliche Schwäche“, sondern meist **kumulierte Überlast** durch **Zeitdruck, Rollen und Erwartungen** (von außen und von innen). Therapeutisch stehen oft **grenzenbewusster Alltag**, **Klärung Ihrer persönlichen Werte**, **emotionale Unterstützung** und konkrete **Erholungsroutinen ohne Moralisieren** im Vordergrund – plus die Frage, ob **zusätzlich** depressive oder ängstliche Anteile stärker adressiert werden sollten.
@@ -115,7 +113,7 @@ Hier können **vermindertes Lusterleben**, **Erregungs- oder Orgasmusstörungen*
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Was bedeuten AD(H)S und Autismus-Spektrum im Erwachsenenalter in der Psychotherapie?</span></summary>
+<summary><span class="spectrum-cat">AD(H)S und Autismus-Spektrum</span></summary>
 <div class="accordion-body">
 
 **AD(H)S** beschreibt u. a. **erschwerte Daueraufmerksamkeit**, **motorische oder innere Ruhelosigkeit** und **Impulsivität**, die **Arbeit, Organisation oder Beziehungen** wiederkehrend strapazieren können. Verläufe im **Autismus-Spektrum** sind sehr unterschiedlich – etwa hinsichtlich **sensorischer Sensibilität**, **Kommunikation** oder des **Bedürfnisses nach Struktur und Vorhersagbarkeit**.
@@ -126,7 +124,7 @@ Psychotherapeutisch liegt der Fokus **nicht** darauf, **Neurodiversität „wegz
 </details>
 
 <details class="accordion-item">
-<summary><span class="spectrum-q">Wie können Selbstwertprobleme und hartnäckige zwischenmenschliche Muster angegangen werden?</span></summary>
+<summary><span class="spectrum-cat">Selbstwert und zwischenmenschliche Muster</span></summary>
 <div class="accordion-body">
 
 Viele Menschen leiden unter einem **ständig kritischen Innenton**, **hohem Vergleichsstress**, **Ängsten vor Zurückweisung** oder **festgefahrenen zwischenmenschlichen Konfliktspiralen**. Manche dieser Muster können im Rahmen **diagnostischer Kriterien einer Persönlichkeitsstörung** beschrieben worden sein – häufig genügt bereits **systematische Arbeit an Selbstwert**, **Kommunikation** und **Grenzen**.

@@ -69,18 +69,19 @@ const { Content } = await render(entry);
       background-color 0.2s ease;
   }
 
-  .services-page :global(.accordion-stack--spectrum .accordion-item summary::before) {
+  /* Geöffnet: Minus signalisiert „einklappen“ */
+  .services-page :global(.accordion-stack--spectrum .accordion-item[open] summary::before) {
     content: "−";
     background: rgba(95, 83, 74, 0.16);
   }
 
-  /* Lange Leitfrage (Beer-Stil): sans statt Serif in der Kopfzeile */
-  .services-page :global(.accordion-stack--spectrum .accordion-item summary .spectrum-q) {
-    font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 0.975rem;
-    font-weight: 500;
-    color: var(--text);
-    line-height: 1.45;
+  /* Kurze Oberbegriffe in der Kopfzeile (Serif wie übrige Accordion-Zeilen) */
+  .services-page :global(.accordion-stack--spectrum .accordion-item summary .spectrum-cat) {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.12rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
   }
 
   /* Aufklappbare Kosten-Infos (native <details>, keine JS-Abhängigkeit) */
