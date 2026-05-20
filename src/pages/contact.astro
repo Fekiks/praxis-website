@@ -1,20 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ContactFormSection from "../components/ContactFormSection.astro";
 import { getEntry, render } from "astro:content";
 
 const entry = await getEntry("pages", "contact");
-const after = await getEntry("pages", "contact-after");
 
 if (!entry) {
   throw new Error('Eintrag "contact" nicht gefunden.');
 }
-if (!after) {
-  throw new Error('Eintrag "contact-after" nicht gefunden.');
-}
 
 const { Content } = await render(entry);
-const { Content: ContentAfter } = await render(after);
 ---
 
 <BaseLayout
@@ -24,8 +18,6 @@ const { Content: ContentAfter } = await render(after);
 >
   <div class="home-sections contact-page">
     <Content />
-    <ContactFormSection />
-    <ContentAfter />
   </div>
 </BaseLayout>
 
