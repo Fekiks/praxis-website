@@ -19,6 +19,6 @@ Ergänzend arbeite ich sehr gerne mit Elementen aus **ACT** (Acceptance and Comm
 
 Außerdem nutze ich **EMDR** (Eye Movement Desensitization and Reprocessing), eine wissenschaftlich anerkannte Methode zur Verarbeitung belastender Erfahrungen und emotionaler Erinnerungen. Ursprünglich wurde EMDR zur Behandlung von Traumafolgestörungen entwickelt, inzwischen wird die Methode jedoch auch erfolgreich bei vielen anderen psychischen Belastungen eingesetzt, insbesondere wenn belastende Erfahrungen emotional weiterhin stark nachwirken.
 
-In meiner therapeutischen Arbeit habe ich insbesondere die Kombination aus Expositionstherapie, ACT und EMDR als sehr wirksam erlebt. Deshalb prägen diese Ansätze meine therapeutische Arbeit aktuell in besonderem Maße. Gleichzeitig bedeutet das auch: Wenn Sie sich grundsätzlich nicht vorstellen können, sich im Rahmen einer Therapie belastenden Situationen oder Gefühlen zuzuwenden, bin ich vermutlich nicht die richtige Therapeutin für Sie. Aus meiner Sicht sind Expositionen bei vielen psychischen Erkrankungen ein zentraler Bestandteil nachhaltiger Veränderung.
+In meiner therapeutischen Arbeit habe ich insbesondere die Kombination aus Expositionstherapie, ACT und EMDR als sehr wirksam erlebt. Deshalb prägen diese Ansätze meine therapeutische Arbeit aktuell in besonderem Maße. Gleichzeitig bedeutet das auch: Wenn Sie sich grundsätzlich nicht vorstellen können, sich im Rahmen einer Therapie belastenden Situationen oder Gefühlen zuzuwenden, bin ich vermutlich nicht die richtige Therapeutin für Sie.
 
 </section>
