@@ -14,8 +14,8 @@ Ab **Mitte Juli 2026** startet eine **wöchentliche Therapiegruppe für Menschen
 
 ## Was ist Psychotherapie?
 
-**Psychotherapie** ist eine **wissenschaftlich anerkannte**, auf regelmäßigen Gesprächen und strukturierten therapeutischen Verfahren aufbauende Unterstützung bei **psychischen Belastungen** und weitergehend auch bei **psychischen Krankheiten**. Gemeinsames Ziel ist, Zusammenhänge zwischen Erleben, Denken und Verhalten nachvollziehbar zu machen und **tragfähigere Bewältigung im Alltag** zu ermöglichen.
+Psychotherapie ist ein wissenschaftlich anerkanntes Verfahren zur Behandlung psychischer Belastungen und Erkrankungen. In einem geschützten und vertrauensvollen Rahmen werden belastende Gedanken, Gefühle und Verhaltensweisen gemeinsam betrachtet, um deren Zusammenhänge besser zu verstehen und hilfreiche Veränderungen zu ermöglichen.
 
-In meiner Praxis arbeiten wir überwiegend nach den Grundsätzen der **Verhaltenstherapie** und nutzen dort, wo es passt, **bewährte Weiterentwicklungen und Zusatzverfahren** (z.&nbsp;B. bei starken Ängsten, Depressionen oder Trauma). Übungen im Alltag, klare Strukturen und die **gemeinsame Vereinbarung** nächster Schritte gehören dazu ebenso wie ein **geschütztes, vertrauliches Gespräch** — **im Tempo**, das Sie aktuell tragen können.
+Ziel der Psychotherapie ist es, psychisches Leiden zu verringern, persönliche Ressourcen zu stärken und neue Wege im Umgang mit belastenden Situationen zu entwickeln. Die therapeutische Arbeit orientiert sich dabei an Ihren individuellen Anliegen, Bedürfnissen und Zielen.
 
 </section>
