@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEntry, render } from "astro:content";
+
+const entry = await getEntry("pages", "spektrum/depressionen");
+if (!entry) throw new Error('Eintrag "spektrum/depressionen" nicht gefunden.');
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  layout="stacked"
+  title={entry.data.seoTitle ?? entry.data.title}
+  description={entry.data.description}
+>
+  <div class="home-sections spektrum-subpage">
+    <p class="spektrum-back">
+      <a href="/#psychotherapie-wann">← Zurück zur Übersicht</a>
+    </p>
+    <Content />
+  </div>
+</BaseLayout>
+
+<style>
+  .spektrum-subpage :global(.content-block p) {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    max-width: none;
+    line-height: 1.78;
+  }
+  .spektrum-subpage :global(.content-block h2) {
+    margin-bottom: 1.2rem;
+    line-height: 1.28;
+  }
+  .spektrum-back {
+    margin: 0 0 22px;
+    font-size: 0.95rem;
+  }
+  .spektrum-back a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .spektrum-back a:hover,
+  .spektrum-back a:focus-visible {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

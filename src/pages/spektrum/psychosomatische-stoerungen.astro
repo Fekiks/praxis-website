@@ -1,17 +1,9 @@
----
+﻿---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getCollection, render } from "astro:content";
+import { getEntry, render } from "astro:content";
 
-export async function getStaticPaths() {
-  const allPages = await getCollection("pages");
-  const spektrumPages = allPages.filter((p) => p.id.startsWith("spektrum/"));
-  return spektrumPages.map((entry) => ({
-    params: { slug: entry.id.replace("spektrum/", "") },
-    props: { entry },
-  }));
-}
-
-const { entry } = Astro.props;
+const entry = await getEntry("pages", "spektrum/psychosomatische-stoerungen");
+if (!entry) throw new Error('Eintrag "spektrum/psychosomatische-stoerungen" nicht gefunden.');
 const { Content } = await render(entry);
 ---
 
@@ -36,23 +28,19 @@ const { Content } = await render(entry);
     max-width: none;
     line-height: 1.78;
   }
-
   .spektrum-subpage :global(.content-block h2) {
     margin-bottom: 1.2rem;
     line-height: 1.28;
   }
-
   .spektrum-back {
     margin: 0 0 22px;
     font-size: 0.95rem;
   }
-
   .spektrum-back a {
     color: var(--muted);
     text-decoration: none;
     font-weight: 500;
   }
-
   .spektrum-back a:hover,
   .spektrum-back a:focus-visible {
     color: var(--ink);
