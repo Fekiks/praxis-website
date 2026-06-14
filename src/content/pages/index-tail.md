@@ -14,11 +14,3 @@ Wenn es weitergehen soll, sind **Probatorische Sitzungen, Antrag bei der gesetzl
 Im weiteren Verlauf treffen wir uns in **vereinbarten Sitzungen** in einem **für Sie machbaren Abstand**. Auf Wunsch und wo hilfreich ergänzen wir das Gespräch durch **Übungen oder kleine Hausaufgaben im Alltag** — ohne zusätzliche Überforderung Ihres üblichen Rhythmus.
 
 </section>
-
-<section class="content-block">
-
-## Hinweis
-
-Diese Website befindet sich aktuell noch im Aufbau.
-
-</section>
