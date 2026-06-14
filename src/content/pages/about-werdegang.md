@@ -8,7 +8,7 @@ description: "Klinische und ambulante Tätigkeit: Tagesklinik, Psychiatrie am Un
 
 ## Beruflicher Werdegang
 
-In meiner bisherigen beruflichen Laufbahn konnte ich in unterschiedlichen Settings Erfahrung sammeln – von der Tagesklinik und stationären Psychiatrie bis zur ambulanten psychotherapeutischen Versorgung in Köln.
+In meiner bisherigen beruflichen Laufbahn konnte ich in unterschiedlichen Settings Erfahrung sammeln – von der Tagesklinik und stationären Psychiatrie bis zur ambulanten psychotherapeutischen Versorgung.
 
 * Psychotherapeutische Tätigkeit in einer psychiatrischen Tagesklinik in Ravensburg
 * Klinische Erfahrung am Universitätsklinikum Bonn auf einer geschützten sowie offenen Station der Psychiatrie

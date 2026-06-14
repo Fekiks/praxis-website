@@ -31,7 +31,7 @@ Ich bin approbierte psychologische Psychotherapeutin mit Fachkunde in der Verhal
 <section class="content-block about-teaser-block">
 <a class="about-teaser-tile-link" href="/about/werdegang/">
 <h3 class="about-teaser-title">Beruflicher Werdegang</h3>
-<p class="about-teaser-text">In meiner bisherigen beruflichen Laufbahn konnte ich in unterschiedlichen Settings Erfahrung sammeln – von der Tagesklinik und stationären Psychiatrie bis zur ambulanten psychotherapeutischen Versorgung in Köln.</p>
+<p class="about-teaser-text">In meiner bisherigen beruflichen Laufbahn konnte ich in unterschiedlichen Settings Erfahrung sammeln – von der Tagesklinik und stationären Psychiatrie bis zur ambulanten psychotherapeutischen Versorgung.</p>
 <span class="about-teaser-cta">Zum beruflichen Werdegang</span>
 </a>
 </section>
