@@ -11,32 +11,11 @@
   id="psychotherapie-wann"
 >
   <h2 id="psychotherapie-wann-h2">Wann ist Psychotherapie sinnvoll?</h2>
-  <p>
+  <p class="lei-spektrum-intro">
     Psychotherapie kann dann helfen, wenn Sie spüren, dass{" "}
     <strong>Belastung, Ängste, Niedergeschlagenheit oder Krisen</strong> Ihr Leben über längere Zeit spürbar
     einschränken — und wenn Sie mehr <strong>Struktur, Entlastung und professionelle Begleitung</strong> wünschen, als
-    Freundeskreis oder Selbsthilfe allein aktuell bieten können. Darunter fallen zum Beispiel:
-  </p>
-  <ul>
-    <li>Ängste und Panik</li>
-    <li>depressive oder schwunglose Phasen</li>
-    <li>stressbedingte oder körpernahe Überforderungen</li>
-    <li>nach belastenden Ereignissen oder in Lebenskrisen</li>
-  </ul>
-  <p class="lei-spektrum-bridge">
-    Typische <strong>Störungsbereiche aus dem Erwachsenenalter</strong> können Sie sich hier einzeln{" "}
-    <strong>aufklappen</strong>; zu{" "}
-    <strong>Kosten, Krankenkasse, Privatabrechnung und Kostenerstattung</strong> gibt es Orientierung unter{" "}
-    <a href="/services/">Organisatorisches</a>.
-  </p>
-
-  <h3 class="lei-spektrum-heading" id="lei-spektrum-h3">Leistungsspektrum</h3>
-
-  <p class="lei-spektrum-hint">
-    Die Übersicht nutzt <strong>Oberbegriffe</strong> aus dem Spektrum psychischer Störungen. <strong>Geschlossene</strong>{" "}
-    Kacheln zeigen ein <strong>Plus (+)</strong> – ein Klick öffnet die Kurzinfo; <strong>geöffnet</strong> erscheint ein{" "}
-    <strong>Minus (−)</strong> zum Wieder-Zuklappen. Die Texte <strong>ersetzen keine persönliche Diagnostik oder Beratung</strong>;
-    sie sollen beim <strong>Einordnen</strong> helfen.
+    Freundeskreis oder Selbsthilfe allein aktuell bieten können.
   </p>
 
   <div class="accordion-stack accordion-stack--spectrum" role="presentation">
@@ -269,6 +248,10 @@
     hyphens: auto;
   }
 
+  .lei-spektrum-intro {
+    max-width: none !important;
+  }
+
   .lei-spektrum-root--home :global(ul) {
     margin: 0 0 1.15rem;
     padding-left: 1.35rem;
@@ -322,39 +305,14 @@
     text-align: center;
   }
 
+  .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item summary::before),
   .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item summary::after) {
     display: none;
   }
 
   .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item summary) {
-    justify-content: flex-start;
-    gap: 14px;
-  }
-
-  .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item summary::before) {
-    content: "+";
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    width: 1.95rem;
-    height: 1.95rem;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background: rgba(95, 83, 74, 0.11);
-    border: 1px solid rgba(95, 83, 74, 0.15);
-    color: var(--muted);
-    font-family: "DM Sans", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1;
-    transition:
-      transform 0.2s ease,
-      background-color 0.2s ease;
-  }
-
-  .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item[open] summary::before) {
-    content: "−";
-    background: rgba(95, 83, 74, 0.16);
+    gap: 0;
   }
 
   .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item summary .spectrum-cat) {
