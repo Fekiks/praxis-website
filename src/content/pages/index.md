@@ -6,7 +6,7 @@ description: "Psychologische Psychotherapie in Köln-Bayenthal: Was Psychotherap
 
 <section class="content-block highlight">
 
-Ab **Mitte Juli 2026** startet eine **wöchentliche Therapiegruppe für Menschen mit Zwangserkrankungen** – es sind noch Plätze verfügbar.
+Ab **Mitte Juli 2026** startet eine **wöchentliche Therapiegruppe für Menschen mit Zwangserkrankungen** – es sind noch Plätze verfügbar. Falls Sie Interesse haben teilzunehmen, melden Sie sich gerne.
 
 </section>
 

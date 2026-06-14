@@ -328,7 +328,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     margin: 20px 0 18px;
-    align-items: start;
+    align-items: stretch;
   }
 
   @media (max-width: 768px) {
@@ -344,10 +344,10 @@
     }
   }
 
-  .lei-spektrum-root :global(.accordion-item) {
+  .lei-spektrum-root :global(.accordion-stack--spectrum .accordion-item) {
     border: 1px solid var(--border);
     border-radius: 20px;
-    background: var(--card-bg);
+    background: #e2d8cf;
     box-shadow: 0 12px 36px var(--shadow);
     overflow: hidden;
   }
@@ -365,6 +365,7 @@
     justify-content: space-between;
     gap: 10px;
     line-height: 1.3;
+    min-height: 72px;
   }
 
   .lei-spektrum-root :global(.accordion-item summary::-webkit-details-marker) {
