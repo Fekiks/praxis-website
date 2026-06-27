@@ -1,15 +1,17 @@
 ---
 title: Trauma
 seoTitle: "Trauma & PTBS – Psychotherapie Köln | Katja Stumper"
-description: "Informationen zu posttraumatischer Belastungsstörung, komplexem Trauma und Anpassungsreaktionen."
+description: "Informationen zur Posttraumatischen Belastungsstörung: Symptome, Verlauf und therapeutische Begleitung."
 ---
 
 <section class="content-block">
 
 ## Trauma
 
-Nach bedrohenden oder belastenden Ereignissen reagiert nicht jeder Mensch gleich lang und gleich stark. Bei einer **Posttraumatischen Belastungsstörung** können etwa **aufdringliche Erinnerungen oder Alpträume**, **Vermeidung**, **Übererregbarkeit** oder **taube Stimmung** auftreten – **über längere Zeit** spürbar belastender als „übliche Trauer oder Erschöpfung". **Komplexes Trauma** bezieht sich oft auf **wiederholte oder länger währende belastende Erfahrungen**. **Anpassungsstörungen** zeigen **depressive oder ängstliche Symptome**, die **zeitlich eng** mit einer konkreten belastenden Lebenslage zusammenhängen.
+Eine **Posttraumatische Belastungsstörung** kann nach dem Erleben oder Beobachten eines außergewöhnlich belastenden Ereignisses entstehen, das bei nahezu jedem Menschen starke Verzweiflung, Angst oder Hilflosigkeit auslösen würde, beispielsweise schwere Unfälle, Gewalt, Kriegserlebnisse oder sexuelle Übergriffe.
 
-Traumafokussierte Schritte sollten **einvernehmlich**, **ohne erneute Überforderung** und **klar strukturiert** sein; gemeinsamer Maßstab sind **Ihre Ressourcen** und **Ihre Toleranzgrenze**.
+Typisch sind **wiederkehrende, ungewollte Erinnerungen** an das Ereignis, die sich in Form von belastenden Gedanken, Bildern, Albträumen oder sogenannten **„Flashbacks"** zeigen können, bei denen Betroffene das Gefühl haben, das Geschehen erneut zu erleben. Gleichzeitig werden Situationen, Orte, Gedanken oder Gespräche **vermieden**, die an das traumatische Ereignis erinnern könnten.
+
+Darüber hinaus besteht häufig eine **anhaltende innere Anspannung** mit erhöhter Schreckhaftigkeit, Schlafstörungen, Konzentrationsproblemen, Reizbarkeit oder dem Gefühl ständiger Wachsamkeit. Die Beschwerden führen oft zu erheblichem Leidensdruck und beeinträchtigen das soziale, berufliche oder persönliche Leben. Die Symptome treten in der Regel innerhalb von sechs Monaten nach dem belastenden Ereignis auf und halten über einen längeren Zeitraum an.
 
 </section>

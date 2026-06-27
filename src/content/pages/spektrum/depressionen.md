@@ -1,15 +1,15 @@
 ---
-title: Depressionen
-seoTitle: "Depressionen – Psychotherapie Köln | Katja Stumper"
-description: "Informationen zu depressiven Episoden und bipolaren Störungen – und wie Psychotherapie helfen kann."
+title: Depression
+seoTitle: "Depression – Psychotherapie Köln | Katja Stumper"
+description: "Informationen zu Symptomen und Diagnose einer depressiven Episode – und wie Psychotherapie helfen kann."
 ---
 
 <section class="content-block">
 
-## Depressionen
+## Depression
 
-**Depressive Episoden** sind mehr als kurze Niedergeschlagenheit: Gedrückte Stimmung, Interessenverlust, Antriebsminderung oder merkliche Erschöpfung gehören dazu ebenso wie Schlaf- und Appetitveränderungen, Konzentrationsschwierigkeiten oder Gefühle von Wertlosigkeit. **Bipolare Störungen** zeigen zusätzlich schwungvolle oder gereizte Phasen (Manie bzw. Hypomanie); die Zeitläufe unterscheiden sich stark zwischen Menschen.
+Zu den **Hauptsymptomen** einer Depression gehören eine **niedergeschlagene, gedrückte Stimmung**, ein **Verlust von Interesse oder Freude** sowie ein **verminderter Antrieb** beziehungsweise eine erhöhte Erschöpfbarkeit. Weitere häufige Symptome sind unter anderem **Konzentrationsstörungen**, ein geringes Selbstwertgefühl, Schuldgefühle, **Schlafstörungen**, ein verändertes Hungergefühl oder Essverhalten sowie **lebensmüde Gedanken**.
 
-In der Therapie klären wir zunächst, ob es um eine **aktuell belastende Lebenssituation**, um **persistierende Muster**, um **einmalige Krisenphasen** oder um **phasenweise Verläufe** geht und vereinbaren passende nächste Schritte samt konkreten Bewältigungsstrategien.
+Abhängig von der Anzahl und Schwere der Symptome wird eine **leichte, mittelgradige oder schwere depressive Episode** diagnostiziert. Die Beschwerden müssen mindestens zwei Wochen andauern und den Alltag deutlich beeinträchtigen.
 
 </section>

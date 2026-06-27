@@ -1,15 +1,17 @@
 ---
-title: Komplizierte Trauer
-seoTitle: "Komplizierte Trauer – Psychotherapie Köln | Katja Stumper"
-description: "Informationen zu anhaltender Trauer nach Verlust und professioneller Begleitung."
+title: Anpassungsstörung
+seoTitle: "Anpassungsstörung – Psychotherapie Köln | Katja Stumper"
+description: "Informationen zur Anpassungsstörung: Symptome, Auslöser und therapeutische Begleitung."
 ---
 
 <section class="content-block">
 
-## Komplizierte Trauer
+## Anpassungsstörung
 
-**Trauer** nach Verlust gehört zur menschlichen Erfahrung; sie verläuft unterschiedlich lang und mit wechselnden Phasen. Professionelle Begleitung kann helfen, wenn Sie sich **lange „eingefroren"** fühlen, **stark überfordert** sind oder **Schuld, Wut, Isolation** kaum mehr allein tragen können.
+Eine **Anpassungsstörung** kann als Reaktion auf eine belastende Lebensveränderung oder ein einschneidendes Ereignis entstehen, beispielsweise **Trennungen, Konflikte, berufliche Belastungen, Erkrankungen oder Verluste**. Die Beschwerden treten in der Regel innerhalb von einem Monat nach dem belastenden Ereignis auf und stehen in einem zeitlichen Zusammenhang mit diesem.
 
-In der Therapie geht es um **Orientierung ohne vorschnelle Krankheitsetiketten**, **Mitgefühl** und um **tragfähige Schritte im Alltag**, wenn der Verlust Sie stark einschränkt.
+Typische Symptome sind **Niedergeschlagenheit, Sorgen, Ängste, Grübeln, innere Anspannung**, das Gefühl von Überforderung sowie Schwierigkeiten, den Alltag zu bewältigen. Häufig treten zudem Schlafstörungen, Konzentrationsprobleme oder sozialer Rückzug auf.
+
+Die Beschwerden verursachen einen deutlichen Leidensdruck oder Beeinträchtigungen im Alltag, erreichen jedoch nicht das Ausmaß einer anderen psychischen Störung wie beispielsweise einer depressiven Episode oder einer Posttraumatischen Belastungsstörung.
 
 </section>
