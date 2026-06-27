@@ -67,4 +67,16 @@ const { Content } = await render(entry);
   .contact-page :global(.follow-text-cta) {
     margin-top: 0.35rem;
   }
+
+  /* E-Mail und Telefon: immer linksbündig, nie Blocksatz */
+  .contact-page :global(section.content-block:first-of-type > p:not([style])) {
+    text-align: left !important;
+  }
+
+  @media (max-width: 768px) {
+    /* CTA im Hinweisblock zentrieren */
+    .contact-page :global(.follow-text-cta) {
+      align-items: center;
+    }
+  }
 </style>
