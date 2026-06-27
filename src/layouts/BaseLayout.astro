@@ -668,6 +668,14 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           -webkit-hyphens: auto;
         }
 
+        /* CTA-Buttons zentrieren */
+        :global(.cta) {
+          display: block;
+          width: fit-content;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         /* ── Abstände & Kacheln ── */
         :global(.home-sections) {
           gap: 14px;
