@@ -81,13 +81,29 @@ const tiles = [
   @media (max-width: 768px) {
     .spektrum-grid {
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 8px;
+      margin: 14px 0 12px;
+    }
+
+    .spektrum-tile {
+      min-height: 60px;
+      padding: 12px 10px;
+      border-radius: 14px;
+    }
+
+    .spectrum-cat {
+      font-size: 0.97rem;
     }
   }
 
   @media (max-width: 480px) {
     .spektrum-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+    }
+
+    .spectrum-cat {
+      font-size: 0.9rem;
     }
   }
 
