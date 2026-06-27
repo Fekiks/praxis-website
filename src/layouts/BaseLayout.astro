@@ -186,10 +186,13 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         --border: #ddd5c9;
         --shadow: rgba(28, 20, 12, 0.06);
         --shadow-strong: rgba(28, 20, 12, 0.10);
-        /* Akzentfarbe: dunkles Warmbraun */
+        /* Akzentfarbe: dunkles Warmbraun (Buttons, aktive Nav) */
         --accent: #4a3428;
         --accent-dark: #362318;
         --accent-light: rgba(74, 52, 40, 0.09);
+        /* Zweite Akzentfarbe: warmes Terracotta (Überschriften, Highlights) */
+        --accent-2: #ae6e52;
+        --accent-2-light: rgba(174, 110, 82, 0.12);
         /* Überblendungen */
         --overlay-taupe: rgba(110, 95, 80, 0.18);
         --overlay-taupe-hover: rgba(74, 52, 40, 0.08);
@@ -199,7 +202,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         /* Kacheln: weiß für klare Abgrenzung vom Hintergrund */
         --card-bg: #ffffff;
         --card-highlight-bg: #f0ebe2;
-        --card-highlight-border: rgba(74, 52, 40, 0.22);
+        --card-highlight-border: rgba(174, 110, 82, 0.30);
       }
 
       * {
@@ -435,7 +438,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         font-family: "Playfair Display", Georgia, serif;
         margin-top: 0;
         margin-bottom: 14px;
-        color: var(--ink);
+        color: var(--accent-2);
         font-size: clamp(1.45rem, 2.4vw, 1.85rem);
         font-weight: 600;
         line-height: 1.25;
