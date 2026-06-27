@@ -161,12 +161,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
     {ogImageHref && <meta name="twitter:image" content={ogImageHref} />}
     <meta name="geo.region" content="DE-NW" />
     <meta name="geo.placename" content="Köln" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Calibri Light ist als Systemschrift verfügbar; kein externer Font-Import nötig -->
     {appleTouchIconAbsoluteHref && (
       <link rel="apple-touch-icon" href={appleTouchIconAbsoluteHref} />
     )}
@@ -210,7 +205,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       body {
-        font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
         margin: 0;
         min-height: 100vh;
         background:
@@ -261,11 +257,12 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       .brand strong {
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
         font-size: 1.35rem;
         font-weight: 600;
-        letter-spacing: 0.01em;
+        letter-spacing: 0.04em;
         line-height: 1.2;
+        text-transform: uppercase;
       }
 
       .brand > span {
@@ -425,29 +422,35 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       :global(h1) {
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
         font-size: clamp(2rem, 3.4vw, 2.85rem);
-        font-weight: 600;
+        font-weight: 300;
         margin: 0 0 14px;
-        line-height: 1.15;
-        letter-spacing: -0.01em;
+        line-height: 1.18;
+        letter-spacing: 0.05em;
         color: var(--ink);
+        font-style: normal;
       }
 
       :global(h2) {
-        font-family: "Playfair Display", Georgia, serif;
+        font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
         margin-top: 0;
         margin-bottom: 14px;
         color: var(--accent-2);
-        font-size: clamp(1.45rem, 2.4vw, 1.85rem);
-        font-weight: 600;
-        line-height: 1.25;
+        font-size: clamp(1.35rem, 2.2vw, 1.70rem);
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.28;
+        letter-spacing: 0.01em;
       }
 
       :global(h3) {
-        font-family: "Playfair Display", Georgia, serif;
-        color: var(--ink);
-        font-size: 1.25rem;
+        font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
+        color: var(--text);
+        font-size: clamp(1.05rem, 1.6vw, 1.20rem);
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.02em;
         margin-top: 0;
       }
 
@@ -654,16 +657,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
         /* ── Typografie ── */
         :global(h1) {
-          font-size: clamp(1.65rem, 6vw, 2.2rem) !important;
+          font-size: clamp(1.6rem, 6vw, 2.1rem) !important;
           text-align: center !important;
+          letter-spacing: 0.04em !important;
         }
 
         :global(h2) {
-          font-size: clamp(1.25rem, 4.5vw, 1.6rem) !important;
+          font-size: clamp(1.15rem, 4vw, 1.45rem) !important;
           text-align: center !important;
         }
 
         :global(h3) {
+          font-size: clamp(0.98rem, 3.2vw, 1.10rem) !important;
           text-align: center !important;
         }
 
