@@ -649,16 +649,23 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         /* ── Typografie ── */
         :global(h1) {
           font-size: clamp(1.65rem, 6vw, 2.2rem) !important;
+          text-align: center !important;
         }
 
         :global(h2) {
           font-size: clamp(1.25rem, 4.5vw, 1.6rem) !important;
+          text-align: center !important;
         }
 
-        /* Text-justify entfernen auf Handy */
+        :global(h3) {
+          text-align: center !important;
+        }
+
+        /* Blocksatz auf Handy */
         :global(p), :global(li) {
-          text-align: left !important;
+          text-align: justify !important;
           hyphens: auto;
+          -webkit-hyphens: auto;
         }
 
         /* ── Abstände & Kacheln ── */
