@@ -8,7 +8,7 @@ description: "Orientierung zu Kassen, Privatversicherung, Selbstzahlung und Kost
 
 ## Kosten & Absicherung
 
-Im Folgenden finden Sie orientierende Informationen zu **Kosten** und **Versicherungswegen** — jeweils abhängig von Ihrer Absicherung. **Klicken Sie auf eine Überschrift**, um den Eintrag zu öffnen.
+Im Folgenden finden Sie orientierende Informationen zu **Kosten** und **Versicherungswegen** — jeweils abhängig von Ihrer Absicherung. Klicken Sie auf eine Überschrift, um den Eintrag zu öffnen.
 
 <div class="accordion-stack" role="presentation">
 
@@ -17,8 +17,6 @@ Im Folgenden finden Sie orientierende Informationen zu **Kosten** und **Versiche
 <div class="accordion-body">
 
 Derzeit vertrete ich eine Kollegin auf ihrem **Kassensitz** und kann in dieser Zeit mit **allen gesetzlichen Krankenkassen** abrechnen. Die Kosten für die Psychotherapie übernimmt in der Regel Ihre Krankenkasse, sofern die Behandlung bewilligt ist.
-
-In einer erstvollen psychotherapeutischen Versorgung gibt es Wartezeiten und begrenzte Kapazitäten – das ist bundesweit so. Wenn Sie keinen Platz finden, helfen die **kassenärztliche Terminvermittlung** unter **[116 117](tel:116117)** sowie die regionalen Informationen Ihrer **Kassenärztlichen Vereinigung** (KV) bei der Suche nach Vertragspsychotherapeut:innen weiter.
 
 </div>
 </details>
@@ -29,7 +27,7 @@ In einer erstvollen psychotherapeutischen Versorgung gibt es Wartezeiten und beg
 
 Wenn Sie **privat** versichert sind oder eine **Beihilfe** erhalten, hängt die Erstattung von Ihrem individuellen Vertrag ab: wie viele Sitzungen übernommen werden, in welcher Höhe und welche Formalitäten nötig sind. Klären Sie das vor Beginn mit Ihrer Versicherung oder Beihilfestelle und lassen Sie sich die **Beantragungsunterlagen** zusenden.
 
-Die Abrechnung erfolgt nach der **Gebührenordnung für Psychotherapeut:innen (GOP)**. Oft werden die Kosten in voller oder hoher Höhe übernommen – dennoch empfiehlt sich immer eine **Rücksprache mit der Kasse**, bevor die Therapie startet.
+Die Abrechnung erfolgt nach der **[Gebührenordnung für Psychotherapeut:innen (GOP)](https://www.gesetze-im-internet.de/gop/)**. Oft werden die Kosten in voller oder hoher Höhe übernommen – dennoch empfiehlt sich immer eine **Rücksprache mit der Kasse**, bevor die Therapie startet.
 
 </div>
 </details>
@@ -45,19 +43,6 @@ Die Vergütung orientiert sich an der **GOP** (üblicherweise **2,3-facher Satz*
 </div>
 </details>
 
-<details class="accordion-item">
-<summary>Kostenerstattung (gesetzlich versichert)</summary>
-<div class="accordion-body">
-
-Gesetzlich Versicherte können unter bestimmten Voraussetzungen eine Psychotherapie beim **Honorartherapeuten** über das **Kostenerstattungsverfahren** finanzieren lassen. Die Krankenkasse erstattet einen Teil der Kosten, sofern die Voraussetzungen erfüllt sind – der Prozess ist mit **zusätzlichem Verwaltungsaufwand** verbunden.
-
-Einen Überblick bietet u. a. die Broschüre der Bundespsychotherapeutenkammer („Kostenerstattung“) als [PDF bei pro-psychologie.de](https://www.pro-psychologie.de/Kostenerstattung%20Flyer%20BPtK.pdf). Ob dieses Verfahren für Sie infrage kommt, besprechen Sie bitte mit Ihrer Krankenkasse.
-
 </div>
-</details>
-
-</div>
-
-**Privatpatientinnen** behandle ich ebenfalls; zur **Vertretungszeit mit Kassensitz** siehe den ersten Punkt zu den gesetzlichen Kassen.
 
 </section>

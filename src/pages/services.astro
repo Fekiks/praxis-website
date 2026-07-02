@@ -98,6 +98,9 @@ const { Content } = await render(entry);
   .services-page :global(section.content-block h2) {
     margin-bottom: 1.2rem;
     line-height: 1.28;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--ink);
   }
 
   .services-page :global(section.content-block > h2:first-of-type) {
@@ -106,8 +109,11 @@ const { Content } = await render(entry);
 
   .services-page :global(section.content-block p) {
     margin: 0 0 1.2rem;
-    max-width: 62ch;
+    max-width: none;
     line-height: 1.78;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   .services-page :global(section.content-block p:last-child) {

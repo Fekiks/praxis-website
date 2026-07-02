@@ -377,8 +377,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.home-sections section.content-block.highlight) {
         background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
-        padding-top: 18px;
-        padding-bottom: 18px;
         box-shadow:
           0 2px 8px rgba(28, 20, 12, 0.04),
           0 12px 36px rgba(78, 114, 98, 0.10);
@@ -441,7 +439,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         margin-bottom: 16px;
         color: var(--accent-2);
         font-size: clamp(1.28rem, 1.8vw, 1.50rem);
-        font-weight: 400;
+        font-weight: 700;
         font-style: italic;
         line-height: 1.28;
         letter-spacing: 0.01em;
@@ -469,10 +467,12 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         color: var(--ink);
       }
 
-      /* Highlight-Kachel: Text zentriert */
+      /* Highlight-Kachel: Text linksbündig im Blocksatz */
       :global(.home-sections section.content-block.highlight p),
       :global(.home-sections section.content-block.highlight li) {
-        text-align: center;
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
       }
 
       :global(a:not(.cta):not(.brand)) {
