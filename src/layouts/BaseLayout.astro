@@ -619,15 +619,28 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         /* ── Navigation ── */
         .nav-inner {
           flex-wrap: wrap;
-          padding: 14px 0;
+          padding: 12px 0;
           gap: 0;
           align-items: center;
-          width: calc(100% - 32px);
+          width: calc(100% - 48px);
         }
 
+        /* Brand kompakter auf Handy: weniger letter-spacing, kleiner */
+        .brand strong {
+          font-size: 1.05rem;
+          letter-spacing: 0.06em;
+        }
+
+        .brand > span {
+          font-size: 0.74rem;
+        }
+
+        /* Toggle vertikal mittig neben dem Brand */
         .nav-toggle {
           display: flex;
           margin-left: auto;
+          align-self: center;
+          flex-shrink: 0;
         }
 
         /* Geöffnetes Menü: Links in einer Zeile */
@@ -742,7 +755,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       /* ── Sehr kleine Screens (≤ 480px) ── */
       @media (max-width: 480px) {
         .nav-inner {
-          width: calc(100% - 16px);
+          width: calc(100% - 32px);
         }
 
         :global(.home-sections section.content-block) {
