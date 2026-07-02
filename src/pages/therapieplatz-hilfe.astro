@@ -138,10 +138,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       margin: 0 auto 12px;
       text-wrap: balance;
       font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
-      font-size: clamp(1.45rem, 2.5vw, 1.95rem);
+      font-size: clamp(1.10rem, 1.8vw, 1.40rem);
       font-weight: 600;
-      line-height: 1.15;
-      letter-spacing: -0.01em;
+      line-height: 1.22;
+      letter-spacing: 0em;
       color: var(--ink);
     }
 
@@ -172,6 +172,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .therapie-tips :global(section.content-block li) {
       font-size: 1.05rem;
       line-height: 1.68;
+      text-align: justify;
+      hyphens: auto;
+      -webkit-hyphens: auto;
     }
 
     .therapie-tips :global(section.content-block a:not(.cta)) {

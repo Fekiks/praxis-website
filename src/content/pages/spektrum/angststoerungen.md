@@ -22,8 +22,5 @@ Bei der **Generalisierten Angststörung** stehen **anhaltende und übermäßige 
 
 **Phobische Störungen** sind durch eine ausgeprägte Angst vor bestimmten Situationen oder Objekten gekennzeichnet. Betroffene vermeiden die angstauslösenden Situationen häufig oder ertragen sie nur unter starker Angst. Zu den phobischen Störungen zählen insbesondere die **Soziale Angststörung** (früher soziale Phobie), bei der die Angst vor negativer Bewertung, Kritik oder Blamage im Mittelpunkt steht, sowie die **Agoraphobie**, bei der die Sorge besteht, in bestimmten Situationen nicht fliehen zu können oder im Notfall keine Hilfe zu erhalten. Darüber hinaus gibt es **spezifische Phobien**, beispielsweise die Angst vor Höhen, Spinnen, Blut, Spritzen, engen Räumen oder dem Fliegen.
 
-### Weitere Angststörungen
-
-Weitere Angststörungen sind die **Trennungsangststörung**, bei der eine ausgeprägte Angst vor der Trennung von wichtigen Bezugspersonen besteht, sowie der **selektive Mutismus**, bei dem Betroffene in bestimmten sozialen Situationen nicht sprechen können, obwohl sie grundsätzlich dazu in der Lage wären. **Zwangsstörungen** und die **Posttraumatische Belastungsstörung** wurden früher den Angststörungen zugeordnet, werden heute jedoch als eigenständige Störungsbilder klassifiziert.
 
 </section>

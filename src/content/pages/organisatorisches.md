@@ -36,9 +36,11 @@ Die Abrechnung erfolgt nach der **[Gebührenordnung für Psychotherapeut:innen (
 <summary>Selbstzahlerinnen</summary>
 <div class="accordion-body">
 
-Sie können eine Psychotherapie auch **selbst finanzieren** – etwa wenn Sie ohne lange Wartezeiten starten möchten oder keine Kostenübernahme wünschen. In diesem Fall erfährt die Kasse in der Regel **nichts** von der Behandlung, und es liegt **keine Meldung** bei der Krankenkasse vor.
+Sie können eine Psychotherapie auch **selbst finanzieren** – etwa wenn Sie ohne lange Wartezeiten starten möchten oder keine Kostenübernahme durch Ihre Krankenversicherung wünschen. In diesem Fall erfährt die Krankenkasse in der Regel nichts von der Behandlung, und es wird keine Diagnose an die Krankenkasse übermittelt.
 
-Die Vergütung orientiert sich an der **GOP** (üblicherweise **2,3-facher Satz** für Psychologische Psychotherapie; Dauer und Sitzungslänge werden individuell vereinbart). **Außergewöhnliche Belastungen** für medizinische bzw. therapeutische Aufwendungen sind unter bestimmten Voraussetzungen **steuerlich absetzbar** – bei Fragen wenden Sie sich an Ihre Steuerberatung.
+Die Vergütung richtet sich nach der **Gebührenordnung für Psychotherapeutinnen und Psychotherapeuten (GOP)**, in der Regel zum 2,3-fachen Steigerungssatz für psychologische Psychotherapie. Die Dauer der Therapie wird individuell vereinbart. Eine Übersicht der aktuellen Leistungen und Honorare finden Sie [hier](https://psychotherapie-vollborn.de/wp-content/uploads/2024/10/GOP-Tabelle.pdf).
+
+Außergewöhnliche Belastungen für medizinische bzw. psychotherapeutische Aufwendungen können unter bestimmten Voraussetzungen steuerlich geltend gemacht werden. Bei Fragen hierzu wenden Sie sich bitte an Ihre Steuerberatung.
 
 </div>
 </details>

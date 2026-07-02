@@ -291,7 +291,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         padding: 10px 16px;
         border-radius: 999px;
         font-weight: 500;
-        font-size: 0.95rem;
+        font-size: 1.05rem;
       }
 
       .nav-links a:hover {
@@ -377,6 +377,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.home-sections section.content-block.highlight) {
         background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow:
           0 2px 8px rgba(28, 20, 12, 0.04),
           0 12px 36px rgba(78, 114, 98, 0.10);
