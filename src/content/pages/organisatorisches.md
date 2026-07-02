@@ -27,7 +27,7 @@ Derzeit vertrete ich eine Kollegin auf ihrem **Kassensitz** und kann in dieser Z
 
 Wenn Sie **privat** versichert sind oder eine **Beihilfe** erhalten, hängt die Erstattung von Ihrem individuellen Vertrag ab: wie viele Sitzungen übernommen werden, in welcher Höhe und welche Formalitäten nötig sind. Klären Sie das vor Beginn mit Ihrer Versicherung oder Beihilfestelle und lassen Sie sich die **Beantragungsunterlagen** zusenden.
 
-Die Abrechnung erfolgt nach der **[Gebührenordnung für Psychotherapeut:innen (GOP)](https://www.gesetze-im-internet.de/gop/)**. Oft werden die Kosten in voller oder hoher Höhe übernommen – dennoch empfiehlt sich immer eine **Rücksprache mit der Kasse**, bevor die Therapie startet.
+Oft werden die Kosten in voller oder hoher Höhe übernommen – dennoch empfiehlt sich immer eine **Rücksprache mit der Kasse**, bevor die Therapie startet.
 
 </div>
 </details>
