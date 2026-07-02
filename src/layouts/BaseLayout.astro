@@ -213,8 +213,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
           radial-gradient(ellipse 60% 40% at 15% 0%, rgba(110,85,65,0.10), transparent 55%),
           radial-gradient(ellipse 50% 35% at 85% 5%, rgba(250,247,243,0.96), transparent 50%),
           linear-gradient(180deg, var(--cream) 0%, var(--page) 55%, var(--page-deep) 100%);
+        font-size: 1.08rem;
         color: var(--text);
-        line-height: 1.7;
+        line-height: 1.78;
         display: flex;
         flex-direction: column;
       }
@@ -423,9 +424,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       :global(h1) {
         font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
-        font-size: clamp(2rem, 3.4vw, 2.85rem);
+        font-size: clamp(2.2rem, 3.6vw, 3.0rem);
         font-weight: 300;
-        margin: 0 0 14px;
+        margin: 0 0 16px;
         line-height: 1.18;
         letter-spacing: 0.05em;
         color: var(--ink);
@@ -435,9 +436,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(h2) {
         font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
         margin-top: 0;
-        margin-bottom: 14px;
+        margin-bottom: 16px;
         color: var(--accent-2);
-        font-size: clamp(1.35rem, 2.2vw, 1.70rem);
+        font-size: clamp(1.5rem, 2.4vw, 1.85rem);
         font-weight: 400;
         font-style: italic;
         line-height: 1.28;
@@ -447,7 +448,7 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(h3) {
         font-family: "Calibri Light", Calibri, "Segoe UI", Tahoma, sans-serif;
         color: var(--text);
-        font-size: clamp(1.05rem, 1.6vw, 1.20rem);
+        font-size: clamp(1.12rem, 1.7vw, 1.28rem);
         font-weight: 600;
         font-style: normal;
         letter-spacing: 0.02em;
@@ -456,7 +457,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
       :global(p),
       :global(li) {
-        font-size: 1.05rem;
+        font-size: 1.10rem;
+        line-height: 1.82;
       }
 
       :global(a:not(.cta):not(.brand)) {
@@ -670,23 +672,24 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
 
         /* ── Typografie ── */
         :global(h1) {
-          font-size: clamp(1.6rem, 6vw, 2.1rem) !important;
+          font-size: clamp(1.8rem, 6.5vw, 2.3rem) !important;
           text-align: center !important;
           letter-spacing: 0.04em !important;
         }
 
         :global(h2) {
-          font-size: clamp(1.15rem, 4vw, 1.45rem) !important;
+          font-size: clamp(1.28rem, 4.5vw, 1.55rem) !important;
           text-align: center !important;
         }
 
         :global(h3) {
-          font-size: clamp(0.98rem, 3.2vw, 1.10rem) !important;
+          font-size: clamp(1.05rem, 3.5vw, 1.18rem) !important;
           text-align: center !important;
         }
 
         /* Blocksatz auf Handy */
         :global(p), :global(li) {
+          font-size: 1.08rem !important;
           text-align: justify !important;
           hyphens: auto;
           -webkit-hyphens: auto;
