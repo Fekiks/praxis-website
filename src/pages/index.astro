@@ -86,9 +86,12 @@ const heroHeadsSrc = `${import.meta.env.BASE_URL}images/Bild_Praxis_koepfe.jpg`;
 
   .hero-lead {
     margin: 0;
-    max-width: 38ch;
-    font-size: clamp(1.02rem, 1.6vw, 1.12rem);
+    max-width: none;
+    font-size: clamp(1.05rem, 1.6vw, 1.14rem);
     color: var(--text);
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
   }
 
   .hero-art {
