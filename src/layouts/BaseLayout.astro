@@ -377,9 +377,6 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.home-sections section.content-block.highlight) {
         background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
-        max-width: 620px;
-        margin-left: auto;
-        margin-right: auto;
         box-shadow:
           0 2px 8px rgba(28, 20, 12, 0.04),
           0 12px 36px rgba(78, 114, 98, 0.10);
@@ -473,6 +470,15 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       /* Highlight-Kachel: Text linksbündig im Blocksatz */
       :global(.home-sections section.content-block.highlight p),
       :global(.home-sections section.content-block.highlight li) {
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+      }
+
+      /* Startseiten-Fließtexte: Blocksatz auf Desktop */
+      :global(#psychotherapie-was p),
+      :global(#psychotherapie-ablauf p),
+      :global(.lei-spektrum-intro) {
         text-align: justify;
         hyphens: auto;
         -webkit-hyphens: auto;

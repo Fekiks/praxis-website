@@ -198,6 +198,11 @@ const portraitSrc = `${import.meta.env.BASE_URL}images/Bild_Katja.jpg`;
   }
 
   @media (max-width: 768px) {
+    /* Teaser-Titel: gleiche Größe wie mobile h2 */
+    .about-content :global(.about-page .about-teaser-title) {
+      font-size: clamp(1.28rem, 4.5vw, 1.55rem) !important;
+    }
+
     .about-layout {
       grid-template-columns: 1fr;
       gap: 16px;
