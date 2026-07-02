@@ -267,9 +267,9 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       }
 
       .brand > span {
-        font-size: 0.82rem;
+        font-size: 1.0rem;
         color: var(--muted);
-        letter-spacing: 0.04em;
+        letter-spacing: 0.10em;
         text-transform: uppercase;
       }
 
@@ -377,6 +377,8 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
       :global(.home-sections section.content-block.highlight) {
         background: var(--card-highlight-bg);
         border-color: var(--card-highlight-border);
+        padding-top: 18px;
+        padding-bottom: 18px;
         box-shadow:
           0 2px 8px rgba(28, 20, 12, 0.04),
           0 12px 36px rgba(78, 114, 98, 0.10);
@@ -621,28 +623,32 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         /* ── Navigation ── */
         .nav-inner {
           flex-wrap: wrap;
-          padding: 12px 0;
+          padding: 10px 0;
           gap: 0;
           align-items: center;
-          width: calc(100% - 48px);
+          width: calc(100% - 64px);
         }
 
-        /* Brand auf Handy: etwas kleiner als Desktop aber lesbar */
+        /* Brand kompakter auf Handy */
         .brand strong {
-          font-size: 1.18rem;
-          letter-spacing: 0.06em;
+          font-size: 1.08rem;
+          letter-spacing: 0.05em;
         }
 
         .brand > span {
-          font-size: 0.82rem;
+          font-size: 0.76rem;
+          letter-spacing: 0.06em;
         }
 
-        /* Toggle vertikal mittig neben dem Brand */
+        /* Toggle kleiner, mittig neben dem Brand */
         .nav-toggle {
           display: flex;
           margin-left: auto;
           align-self: center;
           flex-shrink: 0;
+          width: 34px;
+          height: 34px;
+          padding: 6px;
         }
 
         /* Geöffnetes Menü: Links in einer Zeile */
