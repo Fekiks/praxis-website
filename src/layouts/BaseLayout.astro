@@ -463,6 +463,18 @@ const vercelGitSha = process.env.VERCEL_GIT_COMMIT_SHA?.trim() ?? "";
         line-height: 1.84;
       }
 
+      /* Fettdruck explizit sicherstellen (wichtig bei Calibri Light weight 300) */
+      :global(strong), :global(b) {
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      /* Highlight-Kachel: Text zentriert */
+      :global(.home-sections section.content-block.highlight p),
+      :global(.home-sections section.content-block.highlight li) {
+        text-align: center;
+      }
+
       :global(a:not(.cta):not(.brand)) {
         color: var(--ink);
         text-underline-offset: 3px;
